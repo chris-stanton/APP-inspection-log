@@ -1,0 +1,27 @@
+
+/*////////////////////////
+//        NAV-BAR       //
+////////////////////////*/
+
+#navBarContainer {
+  background-color: #737373;
+  text-align: center;
+  height: 60px;
+  margin-top: -20px;
+  padding: 8px 0px 0px 0px;
+}
+
+#dashboard {
+  height: 40px;
+  width: 40px;
+}
+
+.navAttr {
+  text-decoration: none;
+  color: white;
+}
+
+.navAttr:active {
+  text-decoration: none;
+  color: none;;
+}
