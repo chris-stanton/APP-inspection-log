@@ -9,15 +9,15 @@ myApp.config(['$routeProvider', function($routeProvider) {
           controller: 'DashboardController',
           controllerAs: 'dbc'
         })
-        .when ('/view-1', {
-            templateUrl: '/views/view_1.html',
-            controller: 'OneController',
-            controllerAs: 'one'
+        .when ('/add_inspection', {
+            templateUrl: '/views/add_inspection.html',
+            controller: 'Add_inspectionController',
+            controllerAs: 'aic'
         })
-        .when ('/view-2', {
-            templateUrl: '/views/view_2.html',
-            controller: 'TwoController',
-            controllerAs: 'two'
+        .when ('/manage_inspections', {
+            templateUrl: '/views/manage_inspections.html',
+            controller: 'Manage_inspectionsController',
+            controllerAs: 'mic'
         })
         .when ('/login', {
             templateUrl: '/views/login.html',
