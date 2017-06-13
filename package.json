@@ -1,0 +1,25 @@
+{
+  "name": "inspection-log",
+  "version": "1.0.0",
+  "description": "",
+  "main": "install.js",
+  "dependencies": {
+    "angular": "*",
+    "angular-route": "*",
+    "body-parser": "*",
+    "bootstrap": "*",
+    "pg": "*",
+    "express": "*",
+    "express-session": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "bcryptjs": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "author": "Chris Stanton",
+  "license": "ISC"
+}
