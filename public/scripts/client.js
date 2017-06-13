@@ -30,6 +30,6 @@ myApp.config(['$routeProvider', function($routeProvider) {
             controllerAs: 'auc'
         })
         .otherwise ( {
-            redirectTo: '/dashboard'
+            redirectTo: '/login'
         });
 }]);
