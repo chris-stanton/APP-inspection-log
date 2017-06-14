@@ -1,5 +1,33 @@
 
+  <div class="rows">
 
- <h2> login </h2>
+    <div class="col-md-12" id="loginMainContainer">
+      <div class="col-md-4">
+<!-- empty container for spacing -->
+      </div>
+      <div class="col-md-4" id="loginContainer">
+        <div class=" col-md-12">
+          <h2 id="loginHeading"> Login </h2>
+        </div>
+        <div class="col-md-12">
+          <span><img class="loginInputIcons" src="/assets/images/icons/black-user.ico"><input ng-model="lc.login.username" class="loginInputs" type="text" placeholder="Username"></span>
+        </div>
+        <div class="col-md-12">
+          <span><img class="loginInputIcons" src="/assets/images/icons/black-password.ico"><input ng-model="lc.login.password" class="loginInputs" type="text" placeholder="Password"></span>
+        </div>
+        <div class="col-md-12 loginButtonDivs">
+          <button ng-click="lc.checkLogin(lc.login)" type="button" id="loginButton"> Login </button>
+        </div>
 
- {{lc.message}}
+        <div class="col-md-12">
+          <div id="loginRegisterDiv">
+            <h6> Sign up here: <a href="#!add_user"> Register </a></h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+<!-- empty container for spacing -->
+      </div>
+    </div>
+
+  </div>

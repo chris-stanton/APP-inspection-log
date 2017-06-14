@@ -22,7 +22,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
         .when ('/login', {
             templateUrl: '/views/login.html',
             controller: 'LoginController',
-            controllerAs: 'ln'
+            controllerAs: 'lc'
         })
         .when ('/add_user', {
             templateUrl: '/views/add_user.html',
@@ -30,6 +30,6 @@ myApp.config(['$routeProvider', function($routeProvider) {
             controllerAs: 'auc'
         })
         .otherwise ( {
-            redirectTo: '/dashboard'
+            redirectTo: '/login'
         });
 }]);
