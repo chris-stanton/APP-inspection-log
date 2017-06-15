@@ -1,9 +1,18 @@
 
-myApp.controller('Add_userController', function() {
-  console.log('Add_userController running');
-  var self = this;
-  self.message = 'angular sourced';
+  myApp.controller('Add_userController', function() {
+    console.log('Add_userController running');
+
+
+      var self = this;
+
+
+      self.message = 'angular sourced';
+
+// button click to add new user to DB
+      self.addNewUser = function(newUser) {
+        console.log(newUser);
+      }
 
 
 
-}); // end controller code block
+    }); // end controller code block

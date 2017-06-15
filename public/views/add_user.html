@@ -1,7 +1,51 @@
 
   <div class="rows">
-    <h2 class="viewHeadings col-md-12"> Add User </h2>
 
-      
+    <h2 class="viewHeadings col-md-12"> Register </h2>
+
+    <div class="col-md-12">
+      <div class="col-md-4">
+<!-- empty container for spacing -->
+      </div>
+      <div class="col-md-4" id="addUserContainer">
+        <div>
+          <label class="left"> First Name: </label>
+            <input type="text" ng-model="auc.newUser.firstName" class="addUserInputs">
+        </div>
+        <div>
+          <label> Last Name: </label>
+            <input type="text" ng-model="auc.newUser.lastName" class="addUserInputs">
+        </div>
+        <div id="userDividerContainer">
+          <div class="col-md-2">
+<!-- empty container for spacing -->
+          </div>
+          <div class="col-md-8" id="userDivider">
+<!-- divider line between user and employer info. -->
+          </div>
+          <div class="col-md-2">
+<!-- empty container for spacing -->
+          </div>
+        </div>
+        <div id="addUserSelect">
+          <label> Company Name: </label></br>
+            <select ng-model="auc.newUser.company">
+              <option> </option>
+              <option> EFS </option>
+              <option> Det_Tronics </option>
+              <option> BP Alaska </option>
+            </select>
+        </div>
+        <div id="addUserRegisterButtonDiv">
+          <button type="button" ng-click="auc.addNewUser(auc.newUser)" id="addUserRegisterButton"> Register </button>
+        </div>
+      </div>
+      <div class="col-md-4">
+<!-- empty container for spacing -->
+      </div>
+    </div>
+
+
+
 
   </div>
