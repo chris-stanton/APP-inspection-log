@@ -8,6 +8,11 @@
 
       self.message = 'angular sourced';
 
+// button click to add new user to DB
+      self.addNewUser = function(newUser) {
+        console.log(newUser);
+      }
+
 
 
     }); // end controller code block
