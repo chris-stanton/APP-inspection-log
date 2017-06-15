@@ -144,3 +144,11 @@
 #userDivider {
   border-bottom: 1px solid black;
 }
+
+#addUserSelect {
+  padding: 0px 0px 20px 0px;
+}
+
+#addUserRegisterButtonDiv {
+  text-align: right;
+}
