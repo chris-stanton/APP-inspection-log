@@ -27,9 +27,9 @@
 <!-- empty container for spacing -->
           </div>
         </div>
-        <div id="addUserSelect">
+        <div id="addUserSelectDiv">
           <label> Company Name: </label></br>
-            <select ng-model="auc.newUser.company">
+            <select ng-model="auc.newUser.company" id="addUserSelect">
               <option> </option>
               <option> EFS </option>
               <option> Det_Tronics </option>
@@ -38,6 +38,11 @@
         </div>
         <div id="addUserRegisterButtonDiv">
           <button type="button" ng-click="auc.addNewUser(auc.newUser)" id="addUserRegisterButton"> Register </button>
+        </div>
+        <div class="col-md-12">
+          <div id="addUserRegisterDiv">
+            <h6><a href="#!add_company"> Register New Company </a></h6>
+          </div>
         </div>
       </div>
       <div class="col-md-4">

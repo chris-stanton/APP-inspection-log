@@ -11,6 +11,7 @@
 // button click to add new user to DB
       self.addNewUser = function(newUser) {
         console.log(newUser);
+        self.newUser = {};
       }
 
 

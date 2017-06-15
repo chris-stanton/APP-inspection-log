@@ -132,7 +132,6 @@
   width: 90%;
   height: 35px;
   font-size: 17px;
-  /*border-radius: 10px;*/
   outline: none;
   margin: 0px 0px 20px 0px;
 }
@@ -145,8 +144,12 @@
   border-bottom: 1px solid black;
 }
 
-#addUserSelect {
+#addUserSelectDiv {
   padding: 0px 0px 20px 0px;
+}
+
+#addUserSelect {
+  width: 250px;
 }
 
 #addUserRegisterButtonDiv {
@@ -166,4 +169,8 @@
 
 #addUserRegisterButton:hover {
   box-shadow: 3px 3px 3px grey;
+}
+
+#addUserRegisterDiv {
+  padding: 20px 0px 0px 0px;
 }
