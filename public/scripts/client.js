@@ -29,6 +29,11 @@ myApp.config(['$routeProvider', function($routeProvider) {
             controller: 'Add_userController',
             controllerAs: 'auc'
         })
+        .when ('/add_company', {
+            templateUrl: '/views/add_company.html',
+            controller: 'Add_companyController',
+            controllerAs: 'acc'
+        })
         .otherwise ( {
             redirectTo: '/login'
         });
