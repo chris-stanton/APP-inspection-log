@@ -3,14 +3,9 @@
 CREATE TABLE users (
 	id SERIAL PRIMARY KEY,
 	username VARCHAR(100) NOT NULL unique,
-	password VARCHAR(100) NOT NULL
-);
-
-CREATE TABLE usersInfo (
-	id SERIAL PRIMARY KEY,
+	password VARCHAR(100) NOT NULL,
 	firstName VARCHAR(100) NOT NULL,
 	lastName VARCHAR(100) NOT NULL,
-	users_id INT NOT NULL,
 	companies_id INT NOT NULL,
 	active boolean DEFAULT true
 );
@@ -22,12 +17,13 @@ CREATE TABLE companies (
 	city VARCHAR(100) NOT NULL,
 	state VARCHAR(100) NOT NULL,
 	zipCode INT NOT NULL,
-	country VARCHAR(100) NOT NULL
+	country VARCHAR(100) NOT NULL,
+	active boolean DEFAULT true
 );
 
 CREATE TABLE inspectionLogs (
 	id SERIAL PRIMARY KEY,
 	userInfo_id INT NOT NULL,
-	
+
 	active boolean DEFAULT true
 );
