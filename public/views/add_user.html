@@ -13,12 +13,12 @@
 <!-- first name div -->
         <div>
           <label class="left"> First Name: </label>
-            <input type="text" ng-model="auc.newUser.firstName" class="addUserInputs">
+            <input type="text" ng-model="auc.newUser.firstName" class="addUserInputs" style="text-transform: capitalize">
         </div>
 <!-- last name div -->
         <div>
           <label> Last Name: </label>
-            <input type="text" ng-model="auc.newUser.lastName" class="addUserInputs">
+            <input type="text" ng-model="auc.newUser.lastName" class="addUserInputs" style="text-transform: capitalize">
         </div>
         <div id="userDividerContainer">
           <div class="col-md-2">
@@ -66,10 +66,10 @@
 <!-- select container -->
         <div id="addUserSelectDiv">
           <label> Company Name: </label></br>
-            <select ng-model="auc.newUser.company" id="addUserSelect">
-              <option> EFS </option>
-              <option> Det_Tronics </option>
-              <option> BP Alaska </option>
+            <select ng-model="auc.newUser.companyId" id="addUserSelect">
+              <option ng-value="1"> EFS </option>
+              <option ng-value="2"> Det_Tronics </option>
+              <option ng-value="3"> BP Alaska </option>
             </select>
         </div>
 <!-- register new user button div -->
@@ -79,7 +79,7 @@
 <!-- register new company redirect div -->
         <div class="col-md-12">
           <div id="addUserRegisterDiv">
-            <h6><a href="#!add_company"> Register New Company </a></h6>
+            <h6><a href="#!add_company"> Register New Company Profile </a></h6>
           </div>
         </div>
       </div>
