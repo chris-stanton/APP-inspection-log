@@ -1,5 +1,5 @@
 
-  myApp.controller('Add_userController', function() {
+  myApp.controller('Add_userController', ['FactoryFactory', function(FactoryFactory) {
     console.log('Add_userController running');
 
 
@@ -10,10 +10,11 @@
 
 // button click to add new user to DB
       self.addNewUser = function(newUser) {
-        console.log(newUser);
+        console.log('New User', newUser);
+        FactoryFactory.addNewUser(newUser);
         self.newUser = {};
       }
 
 
 
-    }); // end controller code block
+    }]); // end controller code block

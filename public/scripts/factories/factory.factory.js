@@ -1,5 +1,12 @@
-myApp.factory('FactoryFactory',['$http',function($http) {
+myApp.factory('FactoryFactory',['$http', function($http) {
 console.log('FactoryFactory running');
+
+
+// adds new user to DB
+  function addNewUser(newUser) {
+    console.log(newUser);
+  }
+
 
 
 
@@ -12,6 +19,8 @@ console.log('FactoryFactory running');
 
 //public API
   return {
+// adds new user to DB
+  addNewUser : addNewUser
 
   }
 
