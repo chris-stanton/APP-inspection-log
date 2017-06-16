@@ -12,7 +12,9 @@
       self.addNewUser = function(newUser) {
         console.log('New User', newUser);
         FactoryFactory.addNewUser(newUser);
+        // empties inputs after submit
         self.newUser = {};
+        self.password = '';
       }
 
 

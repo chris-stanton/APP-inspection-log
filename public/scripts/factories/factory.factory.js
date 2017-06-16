@@ -4,8 +4,17 @@ console.log('FactoryFactory running');
 
 // adds new user to DB
   function addNewUser(newUser) {
-    console.log(newUser);
-  }
+    $http({
+          method: 'POST',
+          url: '/login/addNewUser',
+          data: newUser
+        }).then(function(response){
+          alertify.success('User was added to DB');
+        }).catch(function(error) {
+          alertify.error('User could not be added to DB');
+          console.log('error adding new user to DB', error);
+        });
+  }; // addNewUser()
 
 
 

@@ -3,9 +3,9 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
-var router = require('./server/routes/routes.js')
+var login = require('./server/routes/login.js')
 
-app.use('/inboundURLbase',router)
+// app.use('/inboundURLbase',router)
 
 //Serve back static files
 app.use(express.static(path.join(__dirname, './public')));
@@ -16,6 +16,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, '.public/index.html'));
 })
+
+// routes
+app.use('/login', login);
+
 
 app.set('port', process.env.PORT || 5000);
 app.listen(app.get('port'), function() {
