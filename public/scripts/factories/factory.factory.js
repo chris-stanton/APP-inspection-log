@@ -11,7 +11,7 @@ console.log('FactoryFactory running');
         }).then(function(response){
           alertify.success('User was added to DB');
         }).catch(function(error) {
-          alertify.error('User could not be added to DB');
+          alertify.alert("User could not be added to DB");
           console.log('error adding new user to DB', error);
         });
   }; // addNewUser()
