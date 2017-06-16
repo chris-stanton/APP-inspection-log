@@ -1,5 +1,5 @@
 myApp.factory('FactoryFactory',['$http', function($http) {
-console.log('FactoryFactory running');
+  console.log('FactoryFactory running');
 
 
 // adds new user to DB
@@ -32,5 +32,6 @@ console.log('FactoryFactory running');
   addNewUser : addNewUser
 
   }
+
 
 }]);
