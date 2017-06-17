@@ -16,8 +16,19 @@ myApp.factory('FactoryFactory',['$http', function($http) {
         });
   }; // addNewUser()
 
-
-
+//adds company profile to DB
+  function addNewCompany(newCompany) {
+    $http({
+          method: 'POST',
+          url: '/login/addNewCompany',
+          data: newCompany
+        }).then(function(response){
+          alertify.success('Compant profile was added to DB');
+        }).catch(function(error) {
+          alertify.alert("Company profile could not be added to DB");
+          console.log('error adding company profile to DB', error);
+        });
+  }; // adds company profile to DB
 
 
 
@@ -29,7 +40,9 @@ myApp.factory('FactoryFactory',['$http', function($http) {
 //public API
   return {
 // adds new user to DB
-  addNewUser : addNewUser
+  addNewUser : addNewUser,
+// adds new company profile to DB
+    addNewCompany : addNewCompany
 
   }
 

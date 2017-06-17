@@ -9,6 +9,10 @@ myApp.controller('Add_companyController',['FactoryFactory',function(FactoryFacto
 
   self.message = 'angular sourced';
 
+  self.addNewCompany = function(newCompany) {
+    FactoryFactory.addNewCompany(newCompany);
+    self.newCompany = {};
+  };
 
 
 }]);//end of myApp.controller

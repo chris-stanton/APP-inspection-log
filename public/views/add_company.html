@@ -2,37 +2,44 @@
   <div class="rows">
 
     <div class="col-md-12">
+
       <div class="col-md-4">
 <!-- empty container for spacing -->
       </div>
+
       <div class="col-md-4" id="addCompanyContainer">
         <div class=" col-md-12">
           <h2 id="addCompanyHeading"> Create Company Profile </h2>
         </div>
         <div class="col-md-12">
           <label> Company Name: </label></br>
-            <input ng-model="acc.newCompany.companyName" class="addCompanyInputs" type="text">
+            <input ng-model="acc.newCompany.companyName" class="addCompanyInputs" type="text" style="text-transform: capitalize">
         </div>
         <div class="col-md-12">
           <label> Street Address: </label></br>
-            <input ng-model="acc.newCompany.streetAddress" class="addCompanyInputs" type="text">
+            <input ng-model="acc.newCompany.streetAddress" class="addCompanyInputs" type="text" style="text-transform: capitalize">
         </div>
         <div class="col-md-12">
           <label> City: </label></br>
-            <input ng-model="acc.newCompany.city" class="addCompanyInputs" type="text">
+            <input ng-model="acc.newCompany.city" class="addCompanyInputs" type="text" style="text-transform: capitalize">
         </div>
         <div class="col-md-12">
           <label> State: </label></br>
-            <input ng-model="acc.newCompany.state" class="addCompanyInputs" type="text">
+            <input ng-model="acc.newCompany.state" class="addCompanyInputs" type="text" style="text-transform: uppercase">
         </div>
         <div class="col-md-12">
           <label> Zip Code: </label></br>
             <input ng-model="acc.newCompany.zipCode" class="addCompanyInputs" type="text">
         </div>
+        <div class="col-md-12">
+          <label> Country: </label></br>
+            <input ng-model="acc.newCompany.country" class="addCompanyInputs" type="text">
+        </div>
         <div class="col-md-12 addCompanyButtonDivs">
           <button ng-click="acc.addNewCompany(acc.newCompany)" type="button" id="addCompanyButton"> Create Profile </button>
         </div>
       </div>
+
       <div class="col-md-4">
 <!-- empty container for spacing -->
       </div>
