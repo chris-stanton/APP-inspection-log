@@ -65,11 +65,6 @@
   padding: 0px 0px 20px 0px;
 }
 
-#loginHeading {
-  text-align: center;
-  padding: 0px 0px 30px 0px;
-}
-
 .loginInputIcons {
   height: 40px;
   width: 40px;
@@ -185,11 +180,6 @@
 /*////////////////////////
 //        ADD_USER      //
 ////////////////////////*/
-
-#addCompanyHeading {
-  text-align: center;
-  padding: 20px 0px 30px 0px;
-}
 
 #addCompanyContainer {
   margin: 40px 0px 60px 0px;
