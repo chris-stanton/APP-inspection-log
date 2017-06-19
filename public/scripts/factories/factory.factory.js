@@ -23,7 +23,7 @@ myApp.factory('FactoryFactory',['$http', function($http) {
           url: '/login/addNewCompany',
           data: newCompany
         }).then(function(response){
-          alertify.success('Compant profile was added to DB');
+          alertify.success('Company profile was added to DB');
         }).catch(function(error) {
           alertify.alert("Company profile could not be added to DB");
           console.log('error adding company profile to DB', error);
