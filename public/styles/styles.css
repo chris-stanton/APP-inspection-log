@@ -5,6 +5,7 @@
 
 .viewHeadings {
   text-align: center;
+  font-family: monospace;
   padding: 20px 0px 20px 0px;
 }
 
@@ -61,7 +62,7 @@
   border: 1px solid black;
   border-radius: 20px;
   box-shadow: 15px 8px 15px grey;
-  padding: 20px 0px 20px 0px;
+  padding: 0px 0px 20px 0px;
 }
 
 #loginHeading {
