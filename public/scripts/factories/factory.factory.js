@@ -1,3 +1,4 @@
+
 myApp.factory('FactoryFactory',['$http', '$location', function($http, $location) {
   console.log('FactoryFactory running');
 
