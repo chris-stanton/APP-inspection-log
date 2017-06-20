@@ -30,8 +30,10 @@ myApp.factory('FactoryFactory',['$http', function($http) {
         });
   }; // adds company profile to DB
 
+// calls DB on add user init for all companies
+  function getAllCompanies() {
 
-
+  }
 
 
 
@@ -42,7 +44,10 @@ myApp.factory('FactoryFactory',['$http', function($http) {
 // adds new user to DB
   addNewUser : addNewUser,
 // adds new company profile to DB
-    addNewCompany : addNewCompany
+  addNewCompany : addNewCompany,
+// calls DB on add user init for all companies
+  getAllCompanies : getAllCompanies
+
 
   }
 

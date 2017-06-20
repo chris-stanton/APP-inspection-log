@@ -4,7 +4,8 @@
 
 
       var self = this;
-
+// calls DB on init for all companies
+      FactoryFactory.getAllCompanies();
 
       self.message = 'angular sourced';
 
