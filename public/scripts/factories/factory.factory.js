@@ -14,6 +14,7 @@ myApp.factory('FactoryFactory',['$http', '$location', function($http, $location)
       data: newUser
     }).then(function(response){
       alertify.success('User was added to DB');
+        $location.path('/dashboard');
     }).catch(function(error) {
       alertify.alert("User could not be added to DB");
         console.log('error adding new user to DB', error);
