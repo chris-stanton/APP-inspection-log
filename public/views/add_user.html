@@ -66,10 +66,8 @@
 <!-- select container -->
         <div id="addUserSelectDiv">
           <label> Company Name: </label></br>
-            <select ng-model="auc.newUser.companyId" id="addUserSelect">
-              <option ng-value="1"> EFS </option>
-              <option ng-value="2"> Det_Tronics </option>
-              <option ng-value="3"> BP Alaska </option>
+            <select ng-model="auc.newUser.companyId" id="addUserSelect" style="text-transform: capitalize">
+              <option ng-value="company.id" ng-repeat="company in auc.allCompanies.list"> {{company.companyname}} - {{company.city}}, {{company.state}} </option>
             </select>
         </div>
 <!-- register new user button div -->
