@@ -221,7 +221,7 @@
 //    ADD_INSPECTION    //
 ////////////////////////*/
 
-#inspectionLogMainHeadingDiv {
+.inspectionLogMainHeadingDivs {
   text-align: center;
   font-size: 20px;
   margin: 90px 0px 30px 0px;
