@@ -15,9 +15,9 @@
               <input type="date">
           </div>
         </div>
+
 <!-- job site info container -->
         <div>
-
           <div>
             <label> Inspection Site Location </label>
           </div>
@@ -50,27 +50,58 @@
               <input type="text">
           </div>
         </div>
+
 <!-- inspection log info container -->
-        <div>
-          <div>
-            <label></label>
-              <input type="text">
+        <div class="col-md-12">
+          <div class="col-md-12" id="inspectionLogMainHeadingDiv">
+            <label> Alarm Notificaion Appliances And Curcuit Info. </label>
           </div>
-          <div>
-            <label></label>
-              <input type="text">
+          <div class="col-md-4">
+            <label> Building Temp </label> </br>
+            <label> Site Water Temp </label> </br>
+            <label> Site Water Level </label> </br>
+            <label> Fire Pump Power </label> </br>
+            <label> Fire Pump Running </label> </br>
+            <label> Fire Pump Auto Position </label> </br>
+            <label> Pump Controlller Trouble </label> </br>
+            <label> Fire Pump Running </label> </br>
+            <label> Generator In Running Position </label> </br>
+            <label> Generator Controller Trouble </label> </br>
+            <label> Switch Transfer </label> </br>
+            <label> Generator Engine Running </label> </br>
+            <label> Other </label>
           </div>
-          <div>
-            <label></label>
-              <input type="text">
+          <div class="col-md-4">
+            <label> Quantity </label> </br>
+              <input type="text" ng-model="adc.inspectionForm.quantityBuildingTemp"> </br>
+              <input type="text" ng-model="adc.inspectionForm.quantityWaterTemp"> </br>
+              <input type="text" ng-model="adc.inspectionForm.quantityWaterLevel"> </br>
+              <input type="text" ng-model="adc.inspectionForm.quantityPumpPower"> </br>
+              <input type="text" ng-model="adc.inspectionForm.quantityPumpRunning"> </br>
+              <input type="text" ng-model="adc.inspectionForm.quantityPumpAutoPosition"> </br>
+              <input type="text" ng-model="adc.inspectionForm.quantityControllerTrouble"> </br>
+              <input type="text" ng-model="adc.inspectionForm.quantityPumpRunning"> </br>
+              <input type="text" ng-model="adc.inspectionForm.quantityGenRunningPosition"> </br>
+              <input type="text" ng-model="adc.inspectionForm.quantityGenControllerTrouble"> </br>
+              <input type="text" ng-model="adc.inspectionForm.quantitySwitchTransfer"> </br>
+              <input type="text" ng-model="adc.inspectionForm.quantityEngineRunning"> </br>
+              <input type="text" ng-model="adc.inspectionForm.quantityOther">
           </div>
-          <div>
-            <label></label>
-              <input type="text">
-          </div>
-          <div>
-            <label></label>
-              <input type="text">
+          <div class="col-md-4">
+            <label> Circuit Style </label> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
+              <textarea rows="8" cols="40" ng-model="adc.inspectionForm.circuitStyle"> </textarea>
           </div>
         </div>
 <!-- end of main container -->
