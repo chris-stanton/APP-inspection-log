@@ -23,31 +23,31 @@
           </div>
           <div>
             <label> Job Name: </label>
-              <input type="text">
+              <input type="text" ng-model="aic.inspectionLocation.jobName">
           </div>
           <div>
             <label> License Number: </label>
-              <input type="text">
+              <input type="text" ng-model="aic.inspectionLocation.licenseNumber">
           </div>
           <div>
             <label> Street Address: </label>
-              <input type="text">
+              <input type="text" ng-model="aic.inspectionLocation.streetAddress">
           </div>
           <div>
             <label> City: </label>
-              <input type="text">
+              <input type="text" ng-model="aic.inspectionLocation.city">
           </div>
           <div>
             <label> State: </label>
-              <input type="text">
+              <input type="text" ng-model="aic.inspectionLocation.state">
           </div>
           <div>
             <label> Zip Code: </label>
-              <input type="text">
+              <input type="text" ng-model="aic.inspectionLocation.zipCode">
           </div>
           <div>
             <label> Country: </label>
-              <input type="text">
+              <input type="text" ng-model="aic.inspectionLocation.country">
           </div>
         </div>
 
@@ -108,14 +108,14 @@
 <!-- battery type -->
           <div>
             <label> Battery Type: </label> </br>
-              <span> Dry Cell </span><input type="checkbox" ng-model="aic.inspectionForm.batTypeDryCell"> </br>
-              <span> Nickel-Cadmium </span><input type="checkbox" ng-model="aic.inspectionForm.batTypeNickelCadmium"> </br>
-              <span> Sealed Lead-Acid </span><input type="checkbox" ng-model="aic.inspectionForm.batTypeSealedLeadAcid"> </br>
-              <span> Lead-Acid </span><input type="checkbox" ng-model="aic.inspectionForm.batTypeLeadAcid">
+              <span> Dry Cell <input type="checkbox" ng-model="aic.inspectionForm.batTypeDryCell"></span> </br>
+              <span> Nickel-Cadmium <input type="checkbox" ng-model="aic.inspectionForm.batTypeNickelCadmium"></span> </br>
+              <span> Sealed Lead-Acid <input type="checkbox" ng-model="aic.inspectionForm.batTypeSealedLeadAcid"></span> </br>
+              <span> Lead-Acid <input type="checkbox" ng-model="aic.inspectionForm.batTypeLeadAcid"></span>
           </div>
 
 <!-- submit button container -->
-          <div>
+          <div id="inspectionLogSubmitDiv">
             <button type="button" ng-click="aic.addInspectionForm(aic.inspectionForm)"> Next </button>
           </div>
         </div>
