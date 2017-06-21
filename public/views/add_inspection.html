@@ -80,7 +80,7 @@
               <input type="text" ng-model="aic.inspectionForm.quantityPumpRunning"> </br>
               <input type="text" ng-model="aic.inspectionForm.quantityPumpAutoPosition"> </br>
               <input type="text" ng-model="aic.inspectionForm.quantityControllerTrouble"> </br>
-              <input type="text" ng-model="aic.inspectionForm.quantityPumpRunning"> </br>
+              <input type="text" ng-model="aic.inspectionForm.quantityFirePumpRunning"> </br>
               <input type="text" ng-model="aic.inspectionForm.quantityGenRunningPosition"> </br>
               <input type="text" ng-model="aic.inspectionForm.quantityGenControllerTrouble"> </br>
               <input type="text" ng-model="aic.inspectionForm.quantitySwitchTransfer"> </br>
@@ -96,7 +96,7 @@
               <input type="text" ng-model="aic.inspectionForm.circuitStylePumpRunning"> </br>
               <input type="text" ng-model="aic.inspectionForm.circuitStylePumpAutoPosition"> </br>
               <input type="text" ng-model="aic.inspectionForm.circuitStyleControllerTrouble"> </br>
-              <input type="text" ng-model="aic.inspectionForm.circuitStylePumpRunning"> </br>
+              <input type="text" ng-model="aic.inspectionForm.circuitStyleFirePumpRunning"> </br>
               <input type="text" ng-model="aic.inspectionForm.circuitStyleGenRunningPosition"> </br>
               <input type="text" ng-model="aic.inspectionForm.circuitStyleGenControllerTrouble"> </br>
               <input type="text" ng-model="aic.inspectionForm.circuitStyleSwitchTransfer"> </br>
@@ -111,7 +111,7 @@
               <span> Lead-Acid </span><input type="checkbox" ng-model="aic.inspectionForm.batTypeLeadAcid">
           </div>
           <div>
-            <button type="button" ng-click=""></button>
+            <button type="button" ng-click="aic.addInspectionForm(aic.inspectionForm)"> Next </button>
           </div>
         </div>
 <!-- end of main container -->
