@@ -75,7 +75,7 @@
               <input type="text" ng-model="aic.inspectionForm.quantityChimes"> </br>
               <input type="text" ng-model="aic.inspectionForm.quantityStrobes"> </br>
               <input type="text" ng-model="aic.inspectionForm.quantitySpeakers"> </br>
-              <input type="text" ng-model="aic.inspectionForm.quantityOtherSignalNote"> </br>
+              <input type="text" ng-model="aic.inspectionForm.quantityOtherSignalNote"> 
           </div>
           <div class="col-md-4">
             <label> Circuit Style: </label> </br>
@@ -99,7 +99,7 @@
               <label> Fire Pump Power </label> </br>
               <label> Fire Pump Running </label> </br>
               <label> Fire Pump Auto Position </label> </br>
-              <label> Pump Controlller Trouble </label> </br>
+              <label> Pump Controller Trouble </label> </br>
               <label> Fire Pump Running </label> </br>
               <label> Generator In Running Position </label> </br>
               <label> Generator Controller Trouble </label> </br>
@@ -152,7 +152,7 @@
 
 <!-- submit button container -->
           <div id="inspectionLogSubmitDiv">
-            <button type="button" ng-click="aic.addInspectionForm(aic.inspectionForm)"> Submit Inspection Form </button>
+            <button type="button" ng-click="aic.submitInspectionForm(aic.inspectionForm)"> Submit Inspection Form </button>
           </div>
 <!-- end of inspection log container -->
         </div>

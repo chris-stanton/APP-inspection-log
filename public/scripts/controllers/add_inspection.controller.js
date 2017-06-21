@@ -6,11 +6,12 @@ var self = this;
 self.message = 'angular sourced';
 
 
-self.addInspectionForm = function(inspectionForm) {
+self.submitInspectionForm = function(inspectionForm) {
   console.log(inspectionForm);
   self.inspectionForm = {};
-};
+}; //end of addInspectionForm
 
 
 
-}]);//end of myApp.controller
+
+}]); //end of myApp.controller
