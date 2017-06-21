@@ -57,22 +57,23 @@
             <label> Alarm Notificaion Appliances And Curcuit Info. </label>
           </div>
           <div class="col-md-4">
-            <label> Building Temp </label> </br>
-            <label> Site Water Temp </label> </br>
-            <label> Site Water Level </label> </br>
-            <label> Fire Pump Power </label> </br>
-            <label> Fire Pump Running </label> </br>
-            <label> Fire Pump Auto Position </label> </br>
-            <label> Pump Controlller Trouble </label> </br>
-            <label> Fire Pump Running </label> </br>
-            <label> Generator In Running Position </label> </br>
-            <label> Generator Controller Trouble </label> </br>
-            <label> Switch Transfer </label> </br>
-            <label> Generator Engine Running </label> </br>
-            <label> Other </label>
+            <label> Item Checklist: </label> </br>
+              <label> Building Temp </label> </br>
+              <label> Site Water Temp </label> </br>
+              <label> Site Water Level </label> </br>
+              <label> Fire Pump Power </label> </br>
+              <label> Fire Pump Running </label> </br>
+              <label> Fire Pump Auto Position </label> </br>
+              <label> Pump Controlller Trouble </label> </br>
+              <label> Fire Pump Running </label> </br>
+              <label> Generator In Running Position </label> </br>
+              <label> Generator Controller Trouble </label> </br>
+              <label> Switch Transfer </label> </br>
+              <label> Generator Engine Running </label> </br>
+              <label> Other </label>
           </div>
           <div class="col-md-4">
-            <label> Quantity </label> </br>
+            <label> Quantity: </label> </br>
               <input type="text" ng-model="aic.inspectionForm.quantityBuildingTemp"> </br>
               <input type="text" ng-model="aic.inspectionForm.quantityWaterTemp"> </br>
               <input type="text" ng-model="aic.inspectionForm.quantityWaterLevel"> </br>
@@ -88,7 +89,7 @@
               <input type="text" ng-model="aic.inspectionForm.quantityOther">
           </div>
           <div class="col-md-4">
-            <label> Circuit Style </label> </br>
+            <label> Circuit Style: </label> </br>
               <input type="text" ng-model="aic.inspectionForm.circuitStyleBuildingTemp"> </br>
               <input type="text" ng-model="aic.inspectionForm.circuitStyleWaterTemp"> </br>
               <input type="text" ng-model="aic.inspectionForm.circuitStyleWaterLevel"> </br>
@@ -106,7 +107,7 @@
 
 <!-- battery type -->
           <div>
-            <label> Battery Type </label> </br>
+            <label> Battery Type: </label> </br>
               <span> Dry Cell </span><input type="checkbox" ng-model="aic.inspectionForm.batTypeDryCell"> </br>
               <span> Nickel-Cadmium </span><input type="checkbox" ng-model="aic.inspectionForm.batTypeNickelCadmium"> </br>
               <span> Sealed Lead-Acid </span><input type="checkbox" ng-model="aic.inspectionForm.batTypeSealedLeadAcid"> </br>
@@ -118,8 +119,7 @@
             <button type="button" ng-click="aic.addInspectionForm(aic.inspectionForm)"> Next </button>
           </div>
         </div>
-<!-- end of main container -->
+<!-- end of main Input container -->
       </div>
-
-
+<!-- end of main container -->
   </div>
