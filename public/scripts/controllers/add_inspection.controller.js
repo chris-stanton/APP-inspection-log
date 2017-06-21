@@ -6,6 +6,10 @@ var self = this;
 self.message = 'angular sourced';
 
 
+self.addInspectionFprm = function() {
+  console.log();
+};
+
 
 
 }]);//end of myApp.controller
