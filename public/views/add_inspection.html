@@ -20,7 +20,7 @@
 <!-- job site info container -->
         <div>
           <div>
-            <label> Inspection Site Location </label>
+            <label class="col-md-12 inspectionLogMainHeadingDivs"> Inspection Site Location </label>
           </div>
           <div>
             <label> Job Name: </label>
@@ -61,12 +61,12 @@
           </div>
           <div class="col-md-4">
             <label> Item Checklist: </label> </br>
-              <label> Bells: </label> </br>
-              <label> Horns: </label> </br>
-              <label> Chimes: </label> </br>
-              <label> Strobes: </label> </br>
-              <label> Speakers: </label> </br>
-              <label> Other (Specify): </label>
+              <label> Bells </label> </br>
+              <label> Horns </label> </br>
+              <label> Chimes </label> </br>
+              <label> Strobes </label> </br>
+              <label> Speakers </label> </br>
+              <label> Other (Specify) </label>
           </div>
           <div class="col-md-4">
             <label> Quantity: </label> </br>
@@ -105,7 +105,7 @@
               <label> Generator Controller Trouble </label> </br>
               <label> Switch Transfer </label> </br>
               <label> Generator Engine Running </label> </br>
-              <label> Other </label>
+              <label> Other (Specify) </label>
           </div>
           <div class="col-md-4">
             <label> Quantity: </label> </br>
@@ -147,12 +147,12 @@
               <span> Nickel-Cadmium <input type="checkbox" ng-model="aic.inspectionForm.batTypeNickelCadmium"></span> </br>
               <span> Sealed Lead-Acid <input type="checkbox" ng-model="aic.inspectionForm.batTypeSealedLeadAcid"></span> </br>
               <span> Lead-Acid <input type="checkbox" ng-model="aic.inspectionForm.batTypeLeadAcid"></span> </br>
-              <span> Other (Specify) <input type="text" ng-model="aic.inspectionForm.batTypeOther"></textarea></span>
+              <span> Other (Specify) <input ng-model="aic.inspectionForm.batTypeOther"></span>
           </div>
 
 <!-- submit button container -->
           <div id="inspectionLogSubmitDiv">
-            <button type="button" ng-click="aic.addInspectionForm(aic.inspectionForm)"> Next </button>
+            <button type="button" ng-click="aic.addInspectionForm(aic.inspectionForm)"> Submit Inspection Form </button>
           </div>
 
         </div>
