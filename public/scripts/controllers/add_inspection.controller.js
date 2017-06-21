@@ -8,6 +8,7 @@ self.message = 'angular sourced';
 
 self.addInspectionForm = function(inspectionForm) {
   console.log(inspectionForm);
+  self.inspectionForm = {};
 };
 
 
