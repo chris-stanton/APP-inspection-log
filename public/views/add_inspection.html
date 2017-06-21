@@ -89,19 +89,26 @@
           </div>
           <div class="col-md-4">
             <label> Circuit Style </label> </br>
-              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
-              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
-              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
-              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
-              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
-              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
-              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
-              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
-              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
-              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
-              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
-              <input type="text" ng-model="adc.inspectionForm.circuitStyle"> </br>
-              <textarea rows="8" cols="40" ng-model="adc.inspectionForm.circuitStyle"> </textarea>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyleBuildingTemp"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyleWaterTemp"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyleWaterLevel"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStylePumpPower"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStylePumpRunning"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStylePumpAutoPosition"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyleControllerTrouble"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStylePumpRunning"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyleGenRunningPosition"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyleGenControllerTrouble"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyleSwitchTransfer"> </br>
+              <input type="text" ng-model="adc.inspectionForm.circuitStyleEngineRunning"> </br>
+              <textarea rows="8" cols="40" ng-model="adc.inspectionForm.circuitStyleOther"> </textarea>
+          </div>
+          <div>
+            <label> Battery Type </label> </br>
+              <span> Dry Cell </span><input type="checkbox" ng-model="adc.inspectionForm.batTypeDryCell"> </br>
+              <span> Nickel-Cadmium </span><input type="checkbox" ng-model="adc.inspectionForm.batTypeNickelCadmium"> </br>
+              <span> Sealed Lead-Acid </span><input type="checkbox" ng-model="adc.inspectionForm.batTypeSealedLeadAcid"> </br>
+              <span> Lead-Acid </span><input type="checkbox" ng-model="adc.inspectionForm.batTypeLeadAcid">
           </div>
         </div>
 <!-- end of main container -->
