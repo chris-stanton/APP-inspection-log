@@ -87,6 +87,7 @@
               <textarea rows="8" cols="40" ng-model="aic.inspectionForm.circuitStyleOtherSignalNote"></textarea>
           </div>
 
+
 <!-- supervisior signal inspection -->
           <div class="col-md-12 inspectionLogMainHeadingDivs">
             <label> Supervisory Signal-Initiating Devices And Circuit Information </label>
@@ -139,29 +140,213 @@
               <input type="text" ng-model="aic.inspectionForm.circuitStyleEngineRunning"> </br>
               <textarea rows="8" cols="40" ng-model="aic.inspectionForm.circuitStyleOtherInit"> </textarea>
           </div>
+          <h5> Signal Line Circuits </h5>
+            <p> Quantity and style (see NFPA 72,See Table 3-6) of signal line circuits connected to system </p>
+              <div>
+                <label> Qty. </label>
+                  <input type="text">
+              </div>
+              <div>
+                <label> styles </label>
+                  <input type="text">
+              </div>
+
+<!-- move code block up -->
+          <div class="col-md-12 inspectionLogMainHeadingDivs">
+            <label> Alarm Notification Appliances and Circuit Information </label>
+          </div>
+          <div class="col-md-4">
+            <label> Item Checklist: </label> </br>
+              <label> Bells </label> </br>
+              <label> Horns </label> </br>
+              <label> Chimes </label> </br>
+              <label> Strobes </label> </br>
+              <label> Speakers </label> </br>
+              <label> Other (specify) </label> </br>
+          </div>
+          <div class="col-md-4">
+            <label> Quantity: </label> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text">
+          </div>
+          <div class="col-md-4">
+            <label> Circuit Style: </label> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <input type="text"> </br>
+              <textarea rows="8" cols="40"> </textarea>
+          </div>
 
 <!-- battery type -->
           <div>
             <label> Battery Type: </label> </br>
-            <select class="" name="">
-              <option value=""> Dry Cell </option>
-              <option value=""> Nickel-Cadmium </option>
-              <option value=""> Sealed Lead-Acid </option>
-              <option value=""> Lead-Acid </option>
-              <option value=""> Other (Specify) </option>
+            <select ng-model="aic.inspectionForm.batType">
+              <option value="dry cell"> Dry Cell </option>
+              <option value="nickel calmium"> Nickel-Cadmium </option>
+              <option value=" sealed lead acid"> Sealed Lead-Acid </option>
+              <option value="lead acid"> Lead-Acid </option>
+              <option value="other"> Other (Specify) </option>
             </select>
-              <!-- <span> Dry Cell <input type="checkbox" ng-model="aic.inspectionForm.batTypeDryCell"></span> </br>
-              <span> Nickel-Cadmium <input type="checkbox" ng-model="aic.inspectionForm.batTypeNickelCadmium"></span> </br>
-              <span> Sealed Lead-Acid <input type="checkbox" ng-model="aic.inspectionForm.batTypeSealedLeadAcid"></span> </br>
-              <span> Lead-Acid <input type="checkbox" ng-model="aic.inspectionForm.batTypeLeadAcid"></span> </br>
-              <span> Other (Specify) <input ng-model="aic.inspectionForm.batTypeOther"></span> -->
           </div>
 
-          <div>
-        <!-- add content here -->
-            <!-- <label> new content </label> -->
 
-          </div>
+          <section>
+            <h1> Prior To Any Testing </h1>
+              <div>
+                <h3> Notifications Are Made </h3>
+                  <h5> Monitoring Entity </h5>
+                  <h5> Building Occupants </h5>
+                  <h5> Building Managment </h5>
+                  <h5> Other (specify)</h5>
+                  <h5> AHJ (notified) of Any Impairments </h5>
+              </div>
+              <div>
+                <label> Yes </label>
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+              </div>
+              <div>
+                <label> No </label>
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+              </div>
+              <div>
+                <label> Who </label>
+                  <input type="text">
+                  <input type="text">
+                  <input type="text">
+                  <input type="text">
+                  <input type="text">
+              </div>
+              <div>
+                <label> Time </label>
+                  <input type="text">
+                  <input type="text">
+                  <input type="text">
+                  <input type="text">
+                  <input type="text">
+              </div>
+          </section>
+
+          <section>
+            <h1> Systems tests and Inspections </h1>
+              <div>
+                <h3> Type </h3>
+                  <h5> Control Unit </h5>
+                  <h5> Interface Eq. </h5>
+                  <h5> Lamps / LED </h5>
+                  <h5> Fuses </h5>
+                  <h5> Primary Power Supply </h5>
+                  <h5> Trouble Signals </h5>
+                  <h5> Disconnect Switches </h5>
+                  <h5> Ground Fualt Monitoring </h5>
+              </div>
+              <div>
+                <label> Yes </label>
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+              </div>
+              <div>
+                <label> No </label>
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+              </div>
+              <div>
+                <label> Comments </label>
+                  <input type="text">
+                  <input type="text">
+                  <input type="text">
+                  <input type="text">
+                  <input type="text">
+                  <input type="text">
+                  <input type="text">
+                  <input type="text">
+              </div>
+              <h3> Secoundary Power </h3>
+              <div>
+                <label> Type </label>
+                  <h5> Battary Condition </h5>
+                  <h5> Load Voltage </h5>
+                  <h5> Discharge Test </h5>
+                  <h5> Charger Test </h5>
+                  <h5> Specify Gravity </h5>
+              </div>
+              <div>
+                <label> Visible </label>
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+              </div>
+              <div>
+                <label> Functional </label>
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+                  <input type="checkbox">
+              </div>
+              <div>
+                <label> Comments </label>
+                  <input type="text">
+                  <input type="text">
+                  <input type="text">
+                  <input type="text">
+                  <input type="text">
+              </div>
+
+          </section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- submit button container -->
