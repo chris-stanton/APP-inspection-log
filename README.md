@@ -1,14 +1,28 @@
 
-## Technologies Used
-  1. Express.js
-  2. Angular.js
-  3. Angular Route
-  4. Node.js
-  5. Body-Parser
-  6. PG
-  7. GIT / GitHub
-  8. Bootstrap
+# Inspection Log Records App
+###### Full MEAN stack application that uses Passport Authentication and Angular wire frame to create, maintain and save Fire and Gas Inspection logs that follow NFPA regulations and guidelines.
 
+---
+
+## Technologies Used
+  1. HTML5
+  2. CSS3
+  3. ES6 Compliant
+  4. Angular.js
+  5. Angular Route
+  6. Node.js
+  7. Express.js
+  8. Express Sessions
+  9. Body-Parser
+  10. Postgres SQL
+  11. Nodemailer
+  12. Sweat Alerts
+  13. Alertify
+  14. bcrypt js
+  15. Bootstrap 4
+  16. FlexBot
+
+---
 
 ## Install App
   1. Download zip file
