@@ -61,7 +61,6 @@ myApp.factory('FactoryFactory',['$http', '$location', function($http, $location)
   getAllCompanies : getAllCompanies,
 // all companies from DB for add user viewHeadings
   allCompanies : allCompanies
-
   }
 
 
