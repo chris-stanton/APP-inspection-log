@@ -45,6 +45,11 @@
   border-left: 1px solid white;
 }
 
+nav .logo {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
 
 
 
