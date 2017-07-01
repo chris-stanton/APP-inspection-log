@@ -24,6 +24,5 @@ CREATE TABLE companies (
 CREATE TABLE inspectionLogs (
 	id SERIAL PRIMARY KEY,
 	userInfo_id INT NOT NULL,
-
 	active boolean DEFAULT true
 );
