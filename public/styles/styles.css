@@ -35,14 +35,9 @@
   color: white;
 }
 
-.navAttr:hover {
-  text-decoration: none;
-  color: none;
-}
-
 #middleDiv {
-  border-right: 1px solid white;
-  border-left: 1px solid white;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
 }
 
 nav .logo {
