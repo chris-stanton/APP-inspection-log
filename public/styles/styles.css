@@ -46,9 +46,10 @@
 }
 
 nav .logo {
-  text-align: center;
+  text-align: left;
   font-size: 30px;
   color: white;
+  padding-left: 50px;
 }
 
 
