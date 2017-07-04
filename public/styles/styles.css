@@ -23,7 +23,7 @@
   text-align: center;
   height: 60px;
   padding: 8px 0px 0px 0px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000000;
 }
 
 #dashboard {
@@ -33,18 +33,18 @@
 
 .navAttr {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 }
 
 #middleDiv {
-  border-right: 2px solid white;
-  border-left: 2px solid white;
+  border-right: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
 }
 
 nav .logo {
   text-align: left;
   font-size: 30px;
-  color: white;
+  color: #ffffff;
   padding-left: 50px;
 }
 
@@ -62,7 +62,7 @@ nav .logo {
 
 #loginContainer {
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-radius: 20px;
   box-shadow: 15px 8px 15px grey;
   padding: 0px 0px 20px 0px;
@@ -91,7 +91,7 @@ nav .logo {
   width: 100px;
   height: 30px;
   background-color: #2272c4;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   outline: none;
@@ -102,7 +102,7 @@ nav .logo {
 }
 
 #dividerLine {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000000;
   padding: 20px 0px 20px 0px;
   text-align: center;
 }
@@ -123,7 +123,7 @@ nav .logo {
 #addUserContainer {
   margin: 40px 0px 40px 0px;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #ffffff;
   border-radius: 20px;
   box-shadow: 15px 8px 15px grey;
   padding: 0px 0px 20px 0px;
@@ -147,7 +147,7 @@ nav .logo {
 }
 
 #userDivider {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000000;
 }
 
 #addUserSelectDiv {
@@ -167,7 +167,7 @@ nav .logo {
   width: 100px;
   height: 30px;
   background-color: #2272c4;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   outline: none;
@@ -194,7 +194,7 @@ nav .logo {
 #addCompanyContainer {
   margin: 40px 0px 60px 0px;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-radius: 20px;
   box-shadow: 15px 8px 15px grey;
   padding: 0px 0px 20px 0px;
@@ -217,7 +217,7 @@ nav .logo {
   width: 100px;
   height: 30px;
   background-color: #2272c4;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   outline: none;
