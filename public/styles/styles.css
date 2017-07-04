@@ -231,3 +231,21 @@ nav .logo {
   text-align: right;
   margin: 0px 0px 70px 0px;
 }
+
+
+
+
+/*////////////////////////
+//         FOOTER       //
+////////////////////////*/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  text-align: center;
+  background-color: #737373;
+  color: white;
+}
