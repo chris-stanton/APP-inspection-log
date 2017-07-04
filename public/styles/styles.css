@@ -18,12 +18,19 @@
 //        NAV-BAR       //
 ////////////////////////*/
 
+nav {
+
+}
+
 #navBarContainer {
   background-color: #737373;
   text-align: center;
   height: 60px;
   padding: 8px 0px 0px 0px;
   border-bottom: 1px solid #000000;
+  overflow: hidden;
+  display: fixed;
+  top: 0;
 }
 
 #dashboard {
