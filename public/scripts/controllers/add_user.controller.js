@@ -20,5 +20,13 @@
       }
 
 
+// delete after testing
+      self.addNewInspectionForm = function() {
+          console.log("button click");
+      };
+
+
+
+
 
     }]); // end controller code block
