@@ -1,1 +1,32 @@
 
+<!-- alarm types inspection -->
+          <div class="col-md-12 inspectionLogMainHeadingDivs">
+            <label> Alarm Notification Appliances And Circuit Information </label>
+          </div>
+          <div class="col-md-4">
+            <label> Item Checklist: </label> </br>
+              <label> Bells </label> </br>
+              <label> Horns </label> </br>
+              <label> Chimes </label> </br>
+              <label> Strobes </label> </br>
+              <label> Speakers </label> </br>
+              <label> Other (Specify) </label>
+          </div>
+          <div class="col-md-4">
+            <label> Quantity: </label> </br>
+              <input type="text" ng-model="aic.inspectionForm.quantityBells"> </br>
+              <input type="text" ng-model="aic.inspectionForm.quantityHorns"> </br>
+              <input type="text" ng-model="aic.inspectionForm.quantityChimes"> </br>
+              <input type="text" ng-model="aic.inspectionForm.quantityStrobes"> </br>
+              <input type="text" ng-model="aic.inspectionForm.quantitySpeakers"> </br>
+              <input type="text" ng-model="aic.inspectionForm.quantityOtherSignalNote">
+          </div>
+          <div class="col-md-4">
+            <label> Circuit Style: </label> </br>
+              <input type="text" ng-model="aic.inspectionForm.circuitStyleBells"> </br>
+              <input type="text" ng-model="aic.inspectionForm.circuitStyleHorns"> </br>
+              <input type="text" ng-model="aic.inspectionForm.circuitStyleChimes"> </br>
+              <input type="text" ng-model="aic.inspectionForm.circuitStyleStrobes"> </br>
+              <input type="text" ng-model="aic.inspectionForm.circuitStyleSpeakers"> </br>
+              <textarea rows="8" cols="40" ng-model="aic.inspectionForm.circuitStyleOtherSignalNote"></textarea>
+          </div>
