@@ -131,7 +131,7 @@ nav .logo {
 #addUserContainer {
   margin: 40px 0px 40px 0px;
   text-align: center;
-  border: 1px solid #ffffff;
+  border: 1px solid #000000;
   border-radius: 20px;
   box-shadow: 15px 8px 15px grey;
   padding: 0px 0px 20px 0px;
@@ -234,6 +234,18 @@ nav .logo {
 
 #addCompanyButton:hover {
   box-shadow: 3px 3px 3px grey;
+}
+
+
+
+
+
+/*////////////////////////
+//    ADD_INSPECTION    //
+////////////////////////*/
+
+.dashboardContainer {
+  margin-top: 60px;
 }
 
 
