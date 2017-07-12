@@ -4,10 +4,10 @@
   <section class="rows">
     <h2 class="viewHeadings col-md-12"> New Inspection </h2>
 <!-- main input container -->
-      <div class="col-md-12">
+      <section class="col-md-12">
 
 <!-- job site inspection date and time -->
-        <div class="col-md-12">
+        <section class="col-md-12">
           <div class="col-md-9">
     <!-- div for spacing -->
           </div>
@@ -15,10 +15,10 @@
             <label> Inspection Date: </label>
               <input type="date" ng-model="aic.inspectionLocation.inspectionDate">
           </div>
-        </div>
+        </section>
 
 <!-- job site info container -->
-        <div>
+        <section>
           <div>
             <label class="col-md-12 inspectionLogMainHeadingDivs"> Inspection Site Location </label>
           </div>
@@ -50,13 +50,13 @@
             <label> Country: </label>
               <input type="text" ng-model="aic.inspectionLocation.country">
           </div>
-        </div>
+        </section>
 
 <!-- submit button container -->
         <div class="inspectionLogSubmitDiv">
           <button type="button" ng-click="aic.submitInspectionLocation(aic.inspectionLocation)"> Submit Inspection Form </button>
         </div>
 <!-- end of main Input container -->
-      </div>
+      </section>
 <!-- end of main container -->
   </section>
