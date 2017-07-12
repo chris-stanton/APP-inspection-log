@@ -29,4 +29,12 @@
 
 
 
+
+
+    self.addNewLog = function() {
+      console.log("this works!");
+    }
+
+
+
     }]); // end controller code block
