@@ -15,7 +15,7 @@ myApp.controller('LoginController', function() {
 // checks to see is user entered both username and password
     if (login.username == null) {
       console.log("enter username");
-        alertify.alert("Please Enter USERNAMETo Continue");
+        alertify.alert("Please Enter USERNAME To Continue");
     } else if (login.password == null) {
       console.log("enter password");
         alertify.alert("Please Enter PASSWORD To Continue");
