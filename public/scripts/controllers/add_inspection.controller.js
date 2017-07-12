@@ -12,11 +12,4 @@ self.submitInspectionForm = function(inspectionForm) {
 }; //end of addInspectionForm
 
 
-
-self.addNewLog = function() {
-  console.log("this works!");
-}
-
-
-
 }]); //end of myApp.controller
