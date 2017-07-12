@@ -241,7 +241,7 @@ nav .logo {
 
 
 /*////////////////////////
-//    ADD_INSPECTION    //
+//      DASHBOARD       //
 ////////////////////////*/
 
 .dashboardContainer {
@@ -276,6 +276,17 @@ nav .logo {
   margin: 0px 0px 70px 0px;
 }
 
+
+
+
+
+/*////////////////////////
+//  MANAGE INSPECTIONS  //
+////////////////////////*/
+
+.manageInspectionsContainer {
+  margin-top: 60px;
+}
 
 
 
