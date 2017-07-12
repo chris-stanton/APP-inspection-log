@@ -18,6 +18,13 @@
 //        NAV-BAR       //
 ////////////////////////*/
 
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
 #navBarContainer {
   background-color: #737373;
   text-align: center;
@@ -238,6 +245,10 @@ nav .logo {
 //    ADD_INSPECTION    //
 ////////////////////////*/
 
+.inspectionFormOne {
+  margin-top: 60px;
+}
+
 .inspectionLogMainHeadingDivs {
   text-align: center;
   font-size: 20px;
@@ -245,7 +256,7 @@ nav .logo {
 }
 
 .inspectionDateDiv {
-  
+
 }
 
 .inspectionLogSubmitDiv {
