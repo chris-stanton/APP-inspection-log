@@ -3,7 +3,7 @@ myApp.factory('FactoryFactory',['$http', '$location', function($http, $location)
   console.log('FactoryFactory running');
 
 
-// containers form DB results
+// containers form DB results queries
   var allCompanies = { list : [] };
 
 
@@ -20,7 +20,7 @@ myApp.factory('FactoryFactory',['$http', '$location', function($http, $location)
       alertify.alert("User could not be added to DB");
         console.log('error adding new user to DB', error);
     });
-  }; // addNewUser()
+  }; // end addNewUser()
 
 //adds company profile to DB
   function addNewCompany(newCompany) {
@@ -35,7 +35,7 @@ myApp.factory('FactoryFactory',['$http', '$location', function($http, $location)
       alertify.alert("Company profile could not be added to DB");
         console.log('error adding company profile to DB', error);
     });
-  }; // adds company profile to DB
+  }; // end addNewCompany()
 
 // calls DB on add user init for all companies
   function getAllCompanies() {
