@@ -24,7 +24,7 @@ myApp.controller('LoginController', function() {
         alertify.alert("Please Enter Username And Password To Continue");
     } else {
       self.login = {};
-    }
+    } // end of else if
 
   }; // end checkLogin()
 
