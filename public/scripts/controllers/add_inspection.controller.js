@@ -6,9 +6,9 @@ var self = this;
 self.message = 'angular sourced';
 
 
-self.submitInspectionForm = function(inspectionForm) {
-  console.log(inspectionForm);
-  self.inspectionForm = {};
+self.submitInspectionLocation = function(inspectionLocation) {
+  console.log(inspectionLocation);
+  self.inspectionLocation = {};
 }; //end of addInspectionForm
 
 
