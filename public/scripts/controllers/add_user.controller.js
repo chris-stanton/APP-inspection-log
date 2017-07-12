@@ -16,19 +16,19 @@
 
         if (newUser.firstName == null) {
           console.log("enter first name");
-            alertify.alert("Please Enter First Name To Continue");
+            alertify.alert("Please Enter FIRST NAME To Continue");
         } else if (newUser.lastName == null) {
           console.log("enter last name");
-            alertify.alert("Please Enter Last Name To Continue");
+            alertify.alert("Please Enter LAST NAME To Continue");
         } else if (newUser.username == null) {
           console.log("enter username");
-            alertify.alert("Please Enter Username To Continue");
+            alertify.alert("Please Enter USERNAME To Continue");
         } else if (newUser.password == null) {
           console.log("enter password");
-            alertify.alert("Please Enter Password To Continue");
+            alertify.alert("Please Enter PASSWORD To Continue");
         } else if (newUser.companyId == null) {
           console.log("select company");
-            alertify.alert("Please Select Your Company To Continue");
+            alertify.alert("Please Select YOUR COMPANY To Continue");
         } else {
           FactoryFactory.addNewUser(newUser);
           // empties inputs after submit
