@@ -1,19 +1,19 @@
 
 <nav ng-include="'views/templates/nav.html'"></nav>
 
-  <div class="rows">
+  <section class="rows">
     <h2 class="viewHeadings col-md-12"> New Inspection </h2>
 <!-- main input container -->
       <div class="col-md-12">
 
 <!-- job site inspection date and time -->
         <div class="col-md-12">
-          <div class="col-md-10">
+          <div class="col-md-9">
     <!-- div for spacing -->
           </div>
-          <div class="col-md-2">
+          <div class="col-md-3 inspectionDateDiv">
             <label> Inspection Date: </label>
-              <input type="date">
+              <input type="date" ng-model="aic.inspectionLocation.inspectionDate">
           </div>
         </div>
 
@@ -59,4 +59,4 @@
 <!-- end of main Input container -->
       </div>
 <!-- end of main container -->
-  </div>
+  </section>
