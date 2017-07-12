@@ -4,6 +4,7 @@
 
 
       var self = this;
+
 // calls DB on init for all companies
       FactoryFactory.getAllCompanies();
       self.allCompanies = FactoryFactory.allCompanies;
@@ -19,10 +20,5 @@
         self.password = '';
       }
 
-
-// delete after testing
-      self.addNewInspectionForm = function() {
-          console.log("button click");
-      };
 
     }]); // end controller code block
