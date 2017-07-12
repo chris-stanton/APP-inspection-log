@@ -1,62 +1,64 @@
 <!-- supervisior signal inspection -->
-          <div class="col-md-12 inspectionLogMainHeadingDivs">
-            <label> Supervisory Signal-Initiating Devices And Circuit Information </label>
-          </div>
-          <div class="col-md-4">
-            <label> Item Checklist: </label> </br>
-              <label> Building Temp </label> </br>
-              <label> Site Water Temp </label> </br>
-              <label> Site Water Level </label> </br>
-              <label> Fire Pump Power </label> </br>
-              <label> Fire Pump Running </label> </br>
-              <label> Fire Pump Auto Position </label> </br>
-              <label> Pump Controller Trouble </label> </br>
-              <label> Fire Pump Running </label> </br>
-              <label> Generator In Running Position </label> </br>
-              <label> Generator Controller Trouble </label> </br>
-              <label> Switch Transfer </label> </br>
-              <label> Generator Engine Running </label> </br>
-              <label> Other (Specify) </label>
-          </div>
-          <div class="col-md-4">
-            <label> Quantity: </label> </br>
-              <input type="text" ng-model="aic.inspectionForm.quantityBuildingTemp"> </br>
-              <input type="text" ng-model="aic.inspectionForm.quantityWaterTemp"> </br>
-              <input type="text" ng-model="aic.inspectionForm.quantityWaterLevel"> </br>
-              <input type="text" ng-model="aic.inspectionForm.quantityPumpPower"> </br>
-              <input type="text" ng-model="aic.inspectionForm.quantityPumpRunning"> </br>
-              <input type="text" ng-model="aic.inspectionForm.quantityPumpAutoPosition"> </br>
-              <input type="text" ng-model="aic.inspectionForm.quantityControllerTrouble"> </br>
-              <input type="text" ng-model="aic.inspectionForm.quantityFirePumpRunning"> </br>
-              <input type="text" ng-model="aic.inspectionForm.quantityGenRunningPosition"> </br>
-              <input type="text" ng-model="aic.inspectionForm.quantityGenControllerTrouble"> </br>
-              <input type="text" ng-model="aic.inspectionForm.quantitySwitchTransfer"> </br>
-              <input type="text" ng-model="aic.inspectionForm.quantityEngineRunning"> </br>
-              <input type="text" ng-model="aic.inspectionForm.quantityOtherInit">
-          </div>
-          <div class="col-md-4">
-            <label> Circuit Style: </label> </br>
-              <input type="text" ng-model="aic.inspectionForm.circuitStyleBuildingTemp"> </br>
-              <input type="text" ng-model="aic.inspectionForm.circuitStyleWaterTemp"> </br>
-              <input type="text" ng-model="aic.inspectionForm.circuitStyleWaterLevel"> </br>
-              <input type="text" ng-model="aic.inspectionForm.circuitStylePumpPower"> </br>
-              <input type="text" ng-model="aic.inspectionForm.circuitStylePumpRunning"> </br>
-              <input type="text" ng-model="aic.inspectionForm.circuitStylePumpAutoPosition"> </br>
-              <input type="text" ng-model="aic.inspectionForm.circuitStyleControllerTrouble"> </br>
-              <input type="text" ng-model="aic.inspectionForm.circuitStyleFirePumpRunning"> </br>
-              <input type="text" ng-model="aic.inspectionForm.circuitStyleGenRunningPosition"> </br>
-              <input type="text" ng-model="aic.inspectionForm.circuitStyleGenControllerTrouble"> </br>
-              <input type="text" ng-model="aic.inspectionForm.circuitStyleSwitchTransfer"> </br>
-              <input type="text" ng-model="aic.inspectionForm.circuitStyleEngineRunning"> </br>
-              <textarea rows="8" cols="40" ng-model="aic.inspectionForm.circuitStyleOtherInit"> </textarea>
-          </div>
-          <h5> Signal Line Circuits </h5>
-            <p> Quantity and style (see NFPA 72,See Table 3-6) of signal line circuits connected to system </p>
-              <div>
-                <label> Qty. </label>
-                  <input type="text">
-              </div>
-              <div>
-                <label> styles </label>
-                  <input type="text">
-              </div>
+  <section>
+    <div class="col-md-12 inspectionLogMainHeadingDivs">
+      <label> Supervisory Signal-Initiating Devices And Circuit Information </label>
+    </div>
+    <div class="col-md-4">
+      <label> Item Checklist: </label> </br>
+        <label> Building Temp </label> </br>
+        <label> Site Water Temp </label> </br>
+        <label> Site Water Level </label> </br>
+        <label> Fire Pump Power </label> </br>
+        <label> Fire Pump Running </label> </br>
+        <label> Fire Pump Auto Position </label> </br>
+        <label> Pump Controller Trouble </label> </br>
+        <label> Fire Pump Running </label> </br>
+        <label> Generator In Running Position </label> </br>
+        <label> Generator Controller Trouble </label> </br>
+        <label> Switch Transfer </label> </br>
+        <label> Generator Engine Running </label> </br>
+        <label> Other (Specify) </label>
+    </div>
+    <div class="col-md-4">
+      <label> Quantity: </label> </br>
+        <input type="text" ng-model="aic.inspectionForm.quantityBuildingTemp"> </br>
+        <input type="text" ng-model="aic.inspectionForm.quantityWaterTemp"> </br>
+        <input type="text" ng-model="aic.inspectionForm.quantityWaterLevel"> </br>
+        <input type="text" ng-model="aic.inspectionForm.quantityPumpPower"> </br>
+        <input type="text" ng-model="aic.inspectionForm.quantityPumpRunning"> </br>
+        <input type="text" ng-model="aic.inspectionForm.quantityPumpAutoPosition"> </br>
+        <input type="text" ng-model="aic.inspectionForm.quantityControllerTrouble"> </br>
+        <input type="text" ng-model="aic.inspectionForm.quantityFirePumpRunning"> </br>
+        <input type="text" ng-model="aic.inspectionForm.quantityGenRunningPosition"> </br>
+        <input type="text" ng-model="aic.inspectionForm.quantityGenControllerTrouble"> </br>
+        <input type="text" ng-model="aic.inspectionForm.quantitySwitchTransfer"> </br>
+        <input type="text" ng-model="aic.inspectionForm.quantityEngineRunning"> </br>
+        <input type="text" ng-model="aic.inspectionForm.quantityOtherInit">
+    </div>
+    <div class="col-md-4">
+      <label> Circuit Style: </label> </br>
+        <input type="text" ng-model="aic.inspectionForm.circuitStyleBuildingTemp"> </br>
+        <input type="text" ng-model="aic.inspectionForm.circuitStyleWaterTemp"> </br>
+        <input type="text" ng-model="aic.inspectionForm.circuitStyleWaterLevel"> </br>
+        <input type="text" ng-model="aic.inspectionForm.circuitStylePumpPower"> </br>
+        <input type="text" ng-model="aic.inspectionForm.circuitStylePumpRunning"> </br>
+        <input type="text" ng-model="aic.inspectionForm.circuitStylePumpAutoPosition"> </br>
+        <input type="text" ng-model="aic.inspectionForm.circuitStyleControllerTrouble"> </br>
+        <input type="text" ng-model="aic.inspectionForm.circuitStyleFirePumpRunning"> </br>
+        <input type="text" ng-model="aic.inspectionForm.circuitStyleGenRunningPosition"> </br>
+        <input type="text" ng-model="aic.inspectionForm.circuitStyleGenControllerTrouble"> </br>
+        <input type="text" ng-model="aic.inspectionForm.circuitStyleSwitchTransfer"> </br>
+        <input type="text" ng-model="aic.inspectionForm.circuitStyleEngineRunning"> </br>
+        <textarea rows="8" cols="40" ng-model="aic.inspectionForm.circuitStyleOtherInit"> </textarea>
+    </div>
+    <h5> Signal Line Circuits </h5>
+      <p> Quantity and style (see NFPA 72,See Table 3-6) of signal line circuits connected to system </p>
+        <div>
+          <label> Qty. </label>
+            <input type="text">
+        </div>
+        <div>
+          <label> styles </label>
+            <input type="text">
+        </div>
+  </section>
