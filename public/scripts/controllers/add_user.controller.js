@@ -13,7 +13,7 @@
 // button click to add new user to DB
       self.addNewUser = function(newUser) {
         console.log('New User', newUser);
-
+        // checks for all inputs to have data
         if (newUser.firstName == null) {
           console.log("enter first name");
             alertify.alert("Please Enter FIRST NAME To Continue");
