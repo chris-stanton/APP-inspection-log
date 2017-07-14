@@ -6,14 +6,15 @@
   "dependencies": {
     "angular": "*",
     "angular-route": "*",
+    "bcryptjs": "*",
     "body-parser": "*",
     "bootstrap": "*",
-    "pg": "*",
+    "chart.js": "^2.6.0",
     "express": "*",
     "express-session": "*",
     "passport": "*",
     "passport-local": "*",
-    "bcryptjs": "*"
+    "pg": "*"
   },
   "devDependencies": {},
   "scripts": {
