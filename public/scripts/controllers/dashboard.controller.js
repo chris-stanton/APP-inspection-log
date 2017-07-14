@@ -2,14 +2,10 @@
 myApp.controller('DashboardController', function() {
   console.log('DashboardController running');
 
+  self.message = 'angular sourced';
 
   var self = this;
   var ctx = document.getElementById("myChart");
-
-
-  self.message = 'angular sourced';
-
-
 
   var myChart = new Chart(ctx, {
     type: 'bar',
