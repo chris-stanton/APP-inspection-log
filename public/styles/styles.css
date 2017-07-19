@@ -250,7 +250,14 @@ nav .logo {
   margin-top: 60px;
 }
 
+.dashboardContainer h5 {
+  text-align: center;
+  font-size: 18px;
+}
 
+.lineGraph {
+  padding: 0px 20px 0px 20px;
+}
 
 
 
