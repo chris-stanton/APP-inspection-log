@@ -24,6 +24,11 @@ myApp.config(['$routeProvider', function($routeProvider) {
           controller: 'DashboardController',
           controllerAs: 'dbc'
         })
+        .when ('/manage_inspections', {
+            templateUrl: '/views/manage_inspections.html',
+            controller: 'Manage_inspectionsController',
+            controllerAs: 'mic'
+        })
         .when ('/add_inspection', {
             templateUrl: '/views/add_inspection.html',
             controller: 'Add_inspectionController',
@@ -58,11 +63,6 @@ myApp.config(['$routeProvider', function($routeProvider) {
             templateUrl: '/views/inspection_forms/page_seven.html',
             controller: 'Page_sevenController',
             controllerAs: 'seven'
-        })
-        .when ('/manage_inspections', {
-            templateUrl: '/views/manage_inspections.html',
-            controller: 'Manage_inspectionsController',
-            controllerAs: 'mic'
         })
         .otherwise ( {
             redirectTo: '/login'
