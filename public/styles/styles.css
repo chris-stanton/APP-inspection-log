@@ -40,7 +40,10 @@ body {
 }
 
 .flex-nav-container .flex-nav-logoContainer {
-  flex: 4;
+  flex: 5 1 25px;
+  flex-grow: ;
+  flex-shrink: ;
+  flex-basis: ;
   text-align: center;
 }
 
@@ -50,7 +53,7 @@ body {
 }
 
 .flex-nav-container .flex-nav-linksContainer {
-  flex: 2;
+  flex: 2 2 25px;
   width: 100%;
   color: #ffffff;
 }
@@ -288,7 +291,7 @@ body {
 ////////////////////////*/
 
 .dashboardContainer {
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 .dashboardContainer h5 {
@@ -308,7 +311,7 @@ body {
 ////////////////////////*/
 
 .inspectionFormOne {
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 .inspectionLogMainHeadingDivs {
