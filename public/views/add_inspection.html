@@ -1,17 +1,17 @@
 
 <nav ng-include="'views/templates/nav.html'"></nav>
 
-  <section class="rows inspectionFormOne">
-    <h2 class="viewHeadings col-md-12"> New Inspection </h2>
+  <section>
+    <h2> New Inspection Site </h2>
 <!-- main input container -->
-      <div class="col-md-12">
+      <div class="flex-inspectionSite-container">
 
 <!-- job site inspection date and time -->
-        <section class="col-md-12">
-          <div class="col-md-9">
+        <section>
+          <div>
     <!-- div for spacing -->
           </div>
-          <div class="col-md-3 inspectionDateDiv">
+          <div class="inspectionDateDiv">
             <label> Inspection Date: </label>
               <input type="date" ng-model="aic.inspectionLocation.inspectionDate">
           </div>
@@ -20,7 +20,7 @@
 <!-- job site info container -->
         <section>
           <div>
-            <label class="col-md-12 inspectionLogMainHeadingDivs"> Inspection Site Location </label>
+            <label class="inspectionLogMainHeadingDivs"> Inspection Site Location </label>
           </div>
           <div>
             <label> Job Name: </label>
