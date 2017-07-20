@@ -24,8 +24,8 @@ body {
 //        NAV-BAR       //
 ////////////////////////*/
 
-nav {
-  position: fixed;
+.nav-main {
+  /*position: fixed;*/
   top: 0;
   width: 100%;
   z-index: 100;
@@ -72,7 +72,27 @@ nav {
   width: 30px;
 }
 
+/*////////////////////////
+//  INSPECTION-NAV-BAR  //
+////////////////////////*/
 
+.flex-formsNav-container {
+  display: flex;
+  background-color: #737373;
+  color: #ffffff;
+  align-items: center;
+  list-style: none;
+  /*flex-direction: column;*/
+}
+
+.flex-formsNav-container li {
+  flex: 1;
+  width: 100%;
+}
+
+.flex-formsNav-container a {
+  color: #ffffff;
+}
 
 
 
