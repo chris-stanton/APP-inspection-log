@@ -299,12 +299,12 @@ body {
 //    ADD_INSPECTION    //
 ////////////////////////*/
 
-.flex-inspectionSite-container {
-  display: flex;
+.addInspectionHeading {
+  text-align: center;
 }
 
-.flex-inspectionSite-container h2 {
-  text-align: center;
+.flex-inspectionSite-container {
+  display: flex;
 }
 
 
