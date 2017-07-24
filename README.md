@@ -1,5 +1,9 @@
 
 # Inspection Log Records App
+
+---
+
+## Description:
 ###### Full MEAN stack application that uses Passport Authentication and Angular wire frame to create, maintain and save Fire and Gas Inspection logs that follow NFPA regulations and guidelines.
 
 ---
@@ -20,7 +24,6 @@
   13. Alertify
   14. bcrypt js
   15. Bootstrap 4
-  16. FlexBot
 
 ---
 
