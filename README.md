@@ -8,7 +8,7 @@
 
 ---
 
-## Technologies Used
+## Technologies Used:
   1. HTML5
   2. CSS3
   3. ES6 Compliant
@@ -27,7 +27,7 @@
 
 ---
 
-## Install App
+## Install App:
   1. Download zip file
   2. Open terminal and navigate into folder
   3. Configure / Create DB
