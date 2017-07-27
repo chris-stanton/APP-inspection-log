@@ -14,33 +14,36 @@
         </tr>
         <tr>
           <td><h4> Bells </h4></td>
-          <td><input type="text" ng-model="aic.inspectionForm.quantityBells"></td>
-          <td><input type="text" ng-model="aic.inspectionForm.circuitStyleBells"></td>
+          <td><input type="text" ng-model="two.inspectionForm.quantityBells"></td>
+          <td><input type="text" ng-model="two.inspectionForm.circuitStyleBells"></td>
         </tr>
         <tr>
           <td><h4> Horns </h4></td>
-          <td><input type="text" ng-model="aic.inspectionForm.quantityHorns"></td>
-          <td><input type="text" ng-model="aic.inspectionForm.circuitStyleHorns"></td>
+          <td><input type="text" ng-model="two.inspectionForm.quantityHorns"></td>
+          <td><input type="text" ng-model="two.inspectionForm.circuitStyleHorns"></td>
         </tr>
         <tr>
           <td><h4> Chimes </h4></td>
-          <td><input type="text" ng-model="aic.inspectionForm.quantityChimes"></td>
-          <td><input type="text" ng-model="aic.inspectionForm.circuitStyleChimes"></td>
+          <td><input type="text" ng-model="two.inspectionForm.quantityChimes"></td>
+          <td><input type="text" ng-model="two.inspectionForm.circuitStyleChimes"></td>
         </tr>
         <tr>
           <td><h4> Strobes </h4></td>
-          <td><input type="text" ng-model="aic.inspectionForm.quantityStrobes"></td>
-          <td><input type="text" ng-model="aic.inspectionForm.circuitStyleStrobes"></td>
+          <td><input type="text" ng-model="two.inspectionForm.quantityStrobes"></td>
+          <td><input type="text" ng-model="two.inspectionForm.circuitStyleStrobes"></td>
         </tr>
         <tr>
           <td><h4> Speakers </h4></td>
-          <td><input type="text" ng-model="aic.inspectionForm.quantitySpeakers"></td>
-          <td><input type="text" ng-model="aic.inspectionForm.circuitStyleSpeakers"></td>
+          <td><input type="text" ng-model="two.inspectionForm.quantitySpeakers"></td>
+          <td><input type="text" ng-model="two.inspectionForm.circuitStyleSpeakers"></td>
         </tr>
         <tr>
           <td><h4> Other (Specify) </h4></td>
-          <td><input type="text" ng-model="aic.inspectionForm.quantityOtherSignalNote"></td>
-          <td><textarea rows="8" cols="40" ng-model="aic.inspectionForm.circuitStyleOtherSignalNote"></textarea></td>
+          <td><input type="text" ng-model="two.inspectionForm.quantityOtherSignalNote"></td>
+          <td><textarea rows="8" cols="40" ng-model="two.inspectionForm.circuitStyleOtherSignalNote"></textarea></td>
         </tr>
       </table>
+    <div class="pages-button-container">
+      <button type="button" name="button" ng-click="two.submitPageOne(two.inspectionForm)"> Next => </button>
+    </div>
   </section>
