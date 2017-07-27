@@ -8,7 +8,7 @@ myApp.controller('Page_twoController',['FactoryFactory',function(FactoryFactory)
   self.message = 'angular sourced';
 
 // button click to submit data to DB
-  self.submitPageOne = function(inspectionFormTwo) {
+  self.submitPageTwo = function(inspectionFormTwo) {
     console.log(inspectionFormTwo);
   };
 
