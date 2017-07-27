@@ -7,6 +7,9 @@ myApp.controller('Page_threeController',['FactoryFactory',function(FactoryFactor
 
   self.message = 'angular sourced';
 
-
+// button click to submit data to DB
+  self.submitPageThree = function(inspectionFormThree){
+    console.log(inspectionFormThree);
+  }
 
 }]);//end of myApp.controller
