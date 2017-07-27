@@ -2,61 +2,61 @@
 <nav ng-include="'views/templates/nav.html'"></nav>
 <aside ng-include="'views/templates/inspection_forms_nav.html'"></aside>
 
-<section>
-  <div class="col-md-12 inspectionLogMainHeadingDivs">
-    <label> Alarm Notification Appliances and Circuit Information </label>
+<section class="flex-pages-container">
+  <div class="pages-header-container">
+    <h1> Alarm Notification Appliances and Circuit Information </h1>
   </div>
-  <div class="col-md-4">
-    <label> Item Checklist: </label> </br>
-      <label> Bells </label> </br>
-      <label> Horns </label> </br>
-      <label> Chimes </label> </br>
-      <label> Strobes </label> </br>
-      <label> Speakers </label> </br>
-      <label> Other (specify) </label> </br>
-  </div>
-  <div class="col-md-4">
-    <label> Quantity: </label> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text">
-  </div>
-  <div class="col-md-4">
-    <label> Circuit Style: </label> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <input type="text"> </br>
-      <textarea rows="8" cols="40"> </textarea>
-  </div>
-
-  <!-- battery type -->
-  <div>
-    <label> Battery Type: </label> </br>
-    <select ng-model="aic.inspectionForm.batType">
-      <option value="dry cell"> Dry Cell </option>
-      <option value="nickel calmium"> Nickel-Cadmium </option>
-      <option value=" sealed lead acid"> Sealed Lead-Acid </option>
-      <option value="lead acid"> Lead-Acid </option>
-      <option value="other"> Other (Specify) </option>
-    </select>
+  <table>
+    <tr>
+      <td> Item Checklist: </td>
+      <td> Quantity: </td>
+      <td> Circuit Style: </td>
+    </tr>
+    <tr>
+      <td><h4> Bells </h4></td>
+      <td><input type="number" ng-model="four.inspectionFormFour.quantityBuildingTemp"></td>
+      <td><input type="text" ng-model="four.inspectionFormFour.circuitStyleBuildingTemp"></td>
+    </tr>
+    <tr>
+      <td><h4> Horns </h4></td>
+      <td><input type="number" ng-model="four.inspectionFormFour.quantityBuildingTemp"></td>
+      <td><input type="text" ng-model="four.inspectionFormFour.circuitStyleBuildingTemp"></td>
+    </tr>
+    <tr>
+      <td><h4> Chimes </h4></td>
+      <td><input type="number" ng-model="four.inspectionFormFour.quantityBuildingTemp"></td>
+      <td><input type="text" ng-model="four.inspectionFormFour.circuitStyleBuildingTemp"></td>
+    </tr>
+    <tr>
+      <td><h4> Strobes </h4></td>
+      <td><input type="number" ng-model="four.inspectionFormFour.quantityBuildingTemp"></td>
+      <td><input type="text" ng-model="four.inspectionFormFour.circuitStyleBuildingTemp"></td>
+    </tr>
+    <tr>
+      <td><h4> Speakers </h4></td>
+      <td><input type="number" ng-model="four.inspectionFormFour.quantityBuildingTemp"></td>
+      <td><input type="text" ng-model="four.inspectionFormFour.circuitStyleBuildingTemp"></td>
+    </tr>
+    <tr>
+      <td><h4> Battery Type: </h4></td>
+      <td><input type="number"ng-model="four.inspectionFormFour.quantityBatType"></td>
+      <td>
+        <select ng-model="aic.inspectionForm.batType">
+          <option value="dry cell"> Dry Cell </option>
+          <option value="nickel calmium"> Nickel-Cadmium </option>
+          <option value=" sealed lead acid"> Sealed Lead-Acid </option>
+          <option value="lead acid"> Lead-Acid </option>
+          <option value="other"> Other (Specify) </option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><h4> Other (Specify) </h4></td>
+      <td><input type="number" ng-model="four.inspectionFormFour.quantityOtherInit"></td>
+      <td><textarea rows="8" cols="40" ng-model="four.inspectionFormFour.circuitStyleOtherInit"> </textarea></td>
+    </tr>
+  </table>
+  <div class="pages-button-container">
+    <button type="button" name="button" ng-click="four.submitPageFour(four.inspectionFormFour)"> Next => </button>
   </div>
 </section>

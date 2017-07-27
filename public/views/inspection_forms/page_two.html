@@ -38,6 +38,19 @@
           <td><input type="text" ng-model="two.inspectionFormTwo.circuitStyleSpeakers"></td>
         </tr>
         <tr>
+          <td><h4> Battery Type: </h4></td>
+          <td><input type="number"ng-model="two.inspectionFormTwo.quantityBatType"></td>
+          <td>
+            <select ng-model="two.inspectionFormTwo.batType">
+              <option value="dry cell"> Dry Cell </option>
+              <option value="nickel calmium"> Nickel-Cadmium </option>
+              <option value=" sealed lead acid"> Sealed Lead-Acid </option>
+              <option value="lead acid"> Lead-Acid </option>
+              <option value="other"> Other (Specify) </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
           <td><h4> Other (Specify) </h4></td>
           <td><input type="number" ng-model="two.inspectionFormTwo.quantityOtherSignalNote"></td>
           <td><textarea rows="8" cols="40" ng-model="two.inspectionFormTwo.circuitStyleOtherSignalNote"></textarea></td>
