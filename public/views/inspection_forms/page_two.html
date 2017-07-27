@@ -2,20 +2,59 @@
 <nav ng-include="'views/templates/nav.html'"></nav>
 <aside ng-include="'views/templates/inspection_forms_nav.html'"></aside>
 
-  <section>
-    <div class="col-md-12 inspectionLogMainHeadingDivs">
-      <label> Alarm Notification Appliances And Circuit Information </label>
+  <section class="flex-pages-container">
+    <div class="pages-header-container">
+      <h1> Alarm Notification Appliances And Circuit Information </h1>
     </div>
-    <div class="col-md-4">
-      <label> Item Checklist: </label> </br>
-        <label> Bells </label> </br>
-        <label> Horns </label> </br>
-        <label> Chimes </label> </br>
-        <label> Strobes </label> </br>
-        <label> Speakers </label> </br>
+
+      <table>
+        <tr>
+          <td> Item Checklist: </td>
+          <td> Quantity: </td>
+          <td> Circuit Style: </td>
+        </tr>
+        <tr>
+          <td><h4> Bells </h4></td>
+          <td><input type="text" ng-model="aic.inspectionForm.quantityBells"></td>
+          <td><input type="text" ng-model="aic.inspectionForm.circuitStyleBells"></td>
+        </tr>
+        <tr>
+          <td><h4> Horns </h4></td>
+          <td><input type="text" ng-model="aic.inspectionForm.quantityHorns"></td>
+          <td><input type="text" ng-model="aic.inspectionForm.circuitStyleHorns"></td>
+        </tr>
+        <tr>
+          <td><h4> Chimes </h4></td>
+          <td><input type="text" ng-model="aic.inspectionForm.quantityChimes"></td>
+          <td><input type="text" ng-model="aic.inspectionForm.circuitStyleChimes"></td>
+        </tr>
+        <tr>
+          <td><h4> Strobes </h4></td>
+          <td><input type="text" ng-model="aic.inspectionForm.quantityStrobes"></td>
+          <td><input type="text" ng-model="aic.inspectionForm.circuitStyleStrobes"></td>
+        </tr>
+        <tr>
+          <td><h4> Speakers </h4></td>
+          <td><input type="text" ng-model="aic.inspectionForm.quantitySpeakers"></td>
+          <td><input type="text" ng-model="aic.inspectionForm.circuitStyleSpeakers"></td>
+        </tr>
+        <tr>
+          <td><h4> Other (Specify) </h4></td>
+          <td><input type="text" ng-model="aic.inspectionForm.quantityOtherSignalNote"></td>
+          <td><textarea rows="8" cols="40" ng-model="aic.inspectionForm.circuitStyleOtherSignalNote"></textarea></td>
+        </tr>
+      </table>
+
+
+      <!-- <label> Item Checklist: </label>
+        <label> Bells </label>
+        <label> Horns </label>
+        <label> Chimes </label>
+        <label> Strobes </label>
+        <label> Speakers </label>
         <label> Other (Specify) </label>
     </div>
-    <div class="col-md-4">
+    <div>
       <label> Quantity: </label> </br>
         <input type="text" ng-model="aic.inspectionForm.quantityBells"> </br>
         <input type="text" ng-model="aic.inspectionForm.quantityHorns"> </br>
@@ -24,7 +63,7 @@
         <input type="text" ng-model="aic.inspectionForm.quantitySpeakers"> </br>
         <input type="text" ng-model="aic.inspectionForm.quantityOtherSignalNote">
     </div>
-    <div class="col-md-4">
+    <div>
       <label> Circuit Style: </label> </br>
         <input type="text" ng-model="aic.inspectionForm.circuitStyleBells"> </br>
         <input type="text" ng-model="aic.inspectionForm.circuitStyleHorns"> </br>
@@ -32,5 +71,5 @@
         <input type="text" ng-model="aic.inspectionForm.circuitStyleStrobes"> </br>
         <input type="text" ng-model="aic.inspectionForm.circuitStyleSpeakers"> </br>
         <textarea rows="8" cols="40" ng-model="aic.inspectionForm.circuitStyleOtherSignalNote"></textarea>
-    </div>
+    </div> -->
   </section>
