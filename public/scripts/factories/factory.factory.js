@@ -5,6 +5,7 @@ myApp.factory('FactoryFactory',['$http', '$location', function($http, $location)
 
 // containers form DB results queries
   var allCompanies = { list : [] };
+  var allEmployeeNames = { list : [] };
 
 
 // adds new user to DB
@@ -47,6 +48,18 @@ myApp.factory('FactoryFactory',['$http', '$location', function($http, $location)
     });
   }; // end getAllCompanies()
 
+// calls DB on add user init for all companies
+  function getAllEmployeeNames() {
+    $http({
+      method: 'GET',
+      url: '/init/getAllEmployeeNames'
+    }).then(function(response) {
+      allEmployeeNames.list = response.data;
+    });
+  }; // end getAllCompanies()
+
+
+
 
 
 
@@ -59,8 +72,12 @@ myApp.factory('FactoryFactory',['$http', '$location', function($http, $location)
   addNewCompany : addNewCompany,
 // calls DB on add user init for all companies
   getAllCompanies : getAllCompanies,
-// all companies from DB for add user viewHeadings
-  allCompanies : allCompanies
+// all companies from DB
+  allCompanies : allCompanies,
+// calls DB for all employees on init
+  getAllEmployeeNames : getAllEmployeeNames,
+//all employee names from DB
+  allEmployeeNames : allEmployeeNames
   }
 
 

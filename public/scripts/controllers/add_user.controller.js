@@ -8,6 +8,7 @@
       FactoryFactory.getAllCompanies();
 
       self.message = 'angular sourced';
+// all companies form db
       self.allCompanies = FactoryFactory.allCompanies;
 
 // button click to add new user to DB
