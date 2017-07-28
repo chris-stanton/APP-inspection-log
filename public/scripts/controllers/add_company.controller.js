@@ -31,7 +31,7 @@ myApp.controller('Add_companyController',['FactoryFactory',function(FactoryFacto
       console.log("enter contry");
         alertify.alert("Please Enter COUNTRY To Continue");
     } else {
-      // FactoryFactory.addNewCompany(newCompany);
+      FactoryFactory.addNewCompany(newCompany);
       self.newCompany = {};
     } // end else if
 
