@@ -64,6 +64,11 @@ myApp.config(['$routeProvider', function($routeProvider) {
             controller: 'File_uploadController',
             controllerAs: 'upload'
         })
+        .when ('/signature', {
+            templateUrl: '/views/inspection_forms/signature.html',
+            controller: 'SignatureController',
+            controllerAs: 'sig'
+        })
         .otherwise ({
             redirectTo: '/login'
         });
