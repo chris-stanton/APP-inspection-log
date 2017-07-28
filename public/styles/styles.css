@@ -369,19 +369,18 @@ body {
 //         FOOTER       //
 ////////////////////////*/
 
-/*footer {
+footer {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   height: 30px;
-  padding: 5px 0px 0px 0px;
+  padding: 3px 0px 0px 0px;
   text-align: center;
-  border-top: 1px solid #000000;
   background-color: #737373;
   color: #ffffff;
 }
-*/
+
 
 
 
@@ -389,10 +388,12 @@ body {
 
 
 @media(max-width: 568px){
+/*global*/
   body {
     background-size: auto;
   }
 
+/*main nav bar*/
   .flex-nav-container {
     flex-direction: column;
   }
@@ -401,6 +402,7 @@ body {
     font-size: 18px;
   }
 
+/*forms nav bar*/
   .flex-formsNav-container ul {
     flex: 1 1 25px;
     display: flex;
