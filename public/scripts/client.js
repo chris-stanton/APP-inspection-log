@@ -44,11 +44,6 @@ myApp.config(['$routeProvider', function($routeProvider) {
             controller: 'Page_threeController',
             controllerAs: 'three'
         })
-        .when ('/page_four', {
-            templateUrl: '/views/inspection_forms/page_four.html',
-            controller: 'Page_fourController',
-            controllerAs: 'four'
-        })
         .when ('/page_five', {
             templateUrl: '/views/inspection_forms/page_five.html',
             controller: 'Page_fiveController',
@@ -64,7 +59,12 @@ myApp.config(['$routeProvider', function($routeProvider) {
             controller: 'Page_sevenController',
             controllerAs: 'seven'
         })
-        .otherwise ( {
+        .when ('/file_upload', {
+            templateUrl: '/views/inspection_forms/file_upload.html',
+            controller: 'File_uploadController',
+            controllerAs: 'upload'
+        })
+        .otherwise ({
             redirectTo: '/login'
         });
 }]);
