@@ -2,113 +2,100 @@
 <nav ng-include="'views/templates/nav.html'"></nav>
 <aside ng-include="'views/templates/inspection_forms_nav.html'"></aside>
 
-<section>
-  <h1> Systems tests and Inspections </h1>
-    <div>
-      <h3> Type </h3>
-        <h5> Control Unit </h5>
-        <h5> Interface Eq. </h5>
-        <h5> Lamps / LED </h5>
-        <h5> Fuses </h5>
-        <h5> Primary Power Supply </h5>
-        <h5> Trouble Signals </h5>
-        <h5> Disconnect Switches </h5>
-        <h5> Ground Fault Monitoring </h5>
-    </div>
-    <div>
-      <label> Yes </label>
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-    </div>
-    <div>
-      <label> No </label>
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-    </div>
-    <div>
-      <label> Comments </label>
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-    </div>
+<section class="flex-pages-container">
+  <div class="pages-header-container">
+    <h1> Systems tests and Inspections </h1>
+  </div>
+  <table>
+    <tr>
+      <td> Type </td>
+      <td> Inspected (Yes/No) </td>
+      <td> Comments </td>
+    </tr>
+    <tr>
+      <td><h4> Control Unit </h4></td>
+      <td><input type="checkbox"></td>
+      <td><textarea rows="4" cols="40"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Interface Eq. </h4></td>
+      <td><input type="checkbox"></td>
+      <td><textarea rows="4" cols="40"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Lamps / LED </h4></td>
+      <td><input type="checkbox"></td>
+      <td><textarea rows="4" cols="40"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Fuses </h4></td>
+      <td><input type="checkbox"></td>
+      <td><textarea rows="4" cols="40"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Primary Power Supply </h4></td>
+      <td><input type="checkbox"></td>
+      <td><textarea rows="4" cols="40"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Trouble Signals </h4></td>
+      <td><input type="checkbox"></td>
+      <td><textarea rows="4" cols="40"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Disconnect Switches </h4></td>
+      <td><input type="checkbox"></td>
+      <td><textarea rows="4" cols="40"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Ground Fault Monitoring </h4></td>
+      <td><input type="checkbox"></td>
+      <td><textarea rows="4" cols="40"></textarea></td>
+    </tr>
+  </table>
 
-    <h3> Secoundary Power </h3>
-    <div>
-      <label> Type </label>
-        <h5> Battary Condition </h5>
-        <h5> Load Voltage </h5>
-        <h5> Discharge Test </h5>
-        <h5> Charger Test </h5>
-        <h5> Specify Gravity </h5>
-    </div>
-    <div>
-      <label> Visible </label>
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-    </div>
-    <div>
-      <label> Functional </label>
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-    </div>
-    <div>
-      <label> Comments </label>
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-    </div>
-
-    <div>
-      <label> Notification Appliances </label>
-        <h5> Audible </h5>
-        <h5> Visual </h5>
-        <h5> Speakers </h5>
-        <h5> Voice Clarity </h5>
-    </div>
-    <div>
-      <label> Visible </label>
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-    </div>
-    <div>
-      <label> Functional </label>
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-    </div>
-    <div>
-      <label> Comments </label>
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-    </div>
+  <div class="pages-subHeader-container">
+    <h2> Secoundary Power </h2>
+  </div>
+  <table>
+    <tr>
+      <td> Type </td>
+      <td> Visible (Yes/No) </td>
+      <td> Functional (Yes/No) </td>
+      <td> Comments </td>
+    </tr>
+    <tr>
+      <td><h4> Battary Condition </h4></td>
+      <td><input type="checkbox"></td>
+      <td><input type="checkbox"></td>
+      <td><textarea rows="4" cols="40"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Load Voltage </h4></td>
+      <td><input type="checkbox"></td>
+      <td><input type="checkbox"></td>
+      <td><textarea rows="4" cols="40"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Discharge Test </h4></td>
+      <td><input type="checkbox"></td>
+      <td><input type="checkbox"></td>
+      <td><textarea rows="4" cols="40"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Charger Test </h4></td>
+      <td><input type="checkbox"></td>
+      <td><input type="checkbox"></td>
+      <td><textarea rows="4" cols="40"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Specify Gravity </h4></td>
+      <td><input type="checkbox"></td>
+      <td><input type="checkbox"></td>
+      <td><textarea rows="4" cols="40"></textarea></td>
+    </tr>
+  </table>
+  <div class="pages-button-container">
+    <button type="button"> Next => </button>
+  </div>
 </section>
