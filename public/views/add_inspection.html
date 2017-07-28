@@ -1,61 +1,45 @@
 
 <nav ng-include="'views/templates/nav.html'"></nav>
 
-  <section>
-    <h2 class="addInspectionHeading"> New Inspection Site </h2>
-<!-- main input container -->
-      <div class="flex-inspectionSite-container">
-<!-- job site inspection date and time -->
-        <section>
-          <div>
-    <!-- div for spacing -->
-          </div>
-          <div class="inspectionDateDiv">
-            <label> Inspection Date: </label>
-              <input type="date" ng-model="aic.inspectionLocation.inspectionDate">
-          </div>
-        </section>
-
-<!-- job site info container -->
-        <section>
-          <div>
-            <label class="inspectionLogMainHeadingDivs"> Inspection Site Location </label>
-          </div>
-          <div>
-            <label> Job Name: </label>
-              <input type="text" ng-model="aic.inspectionLocation.jobName">
-          </div>
-          <div>
-            <label> License Number: </label>
-              <input type="text" ng-model="aic.inspectionLocation.licenseNumber">
-          </div>
-          <div>
-            <label> Street Address: </label>
-              <input type="text" ng-model="aic.inspectionLocation.streetAddress">
-          </div>
-          <div>
-            <label> City: </label>
-              <input type="text" ng-model="aic.inspectionLocation.city">
-          </div>
-          <div>
-            <label> State: </label>
-              <input type="text" ng-model="aic.inspectionLocation.state">
-          </div>
-          <div>
-            <label> Zip Code: </label>
-              <input type="text" ng-model="aic.inspectionLocation.zipCode">
-          </div>
-          <div>
-            <label> Country: </label>
-              <input type="text" ng-model="aic.inspectionLocation.country">
-          </div>
-        </section>
-
-<!-- submit button container -->
-        <div class="inspectionLogSubmitDiv">
-          <button type="button" ng-click="aic.submitInspectionLocation(aic.inspectionLocation)"> Submit </button>
-        </div>
-<!-- end of main Input container -->
-      </div>
-<!-- end of main container -->
+  <section class="flex-pages-container">
+    <div class="pages-header-container">
+      <h1> New Inspection Site </h1>
+    </div>
+    <table>
+      <tr>
+        <td><h4> Inspection Date: </h4></td>
+        <td> <input type="date" ng-model="aic.inspectionLocation.inspectionDate"> </td>
+      </tr>
+      <tr>
+        <td><h4> Job Name: </h4></td>
+        <td><input type="text" ng-model="aic.inspectionLocation.jobName"></td>
+      </tr>
+      <tr>
+        <td><h4> License Number: </h4></td>
+        <td><input type="text" ng-model="aic.inspectionLocation.licenseNumber"></td>
+      </tr>
+      <tr>
+        <td><h4> Street Address: </h4></td>
+        <td><input type="text" ng-model="aic.inspectionLocation.streetAddress"></td>
+      </tr>
+      <tr>
+        <td><h4> City: </h4></td>
+        <td><input type="text" ng-model="aic.inspectionLocation.city"></td>
+      </tr>
+      <tr>
+        <td><h4> State: </h4></td>
+        <td><input type="text" ng-model="aic.inspectionLocation.state"></td>
+      </tr>
+      <tr>
+        <td><h4> Zip Code: </h4></td>
+        <td><input type="text" ng-model="aic.inspectionLocation.zipCode"></td>
+      </tr>
+      <tr>
+        <td><h4> Country: </h4></td>
+        <td> <input type="text" ng-model="aic.inspectionLocation.country"> </td>
+      </tr>
+    </table>
+    <div class="pages-button-container">
+      <button type="button" ng-click="aic.submitInspectionLocation(aic.inspectionLocation)"> Submit </button>
+    </div>
   </section>

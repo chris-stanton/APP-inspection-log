@@ -307,22 +307,6 @@ body {
 
 
 
-/*////////////////////////
-//    ADD_INSPECTION    //
-////////////////////////*/
-
-.addInspectionHeading {
-  text-align: center;
-}
-
-.flex-inspectionSite-container {
-  display: flex;
-}
-
-
-
-
-
 
 
 /*////////////////////////
@@ -339,6 +323,7 @@ body {
 
 /*////////////////////////
 //         PAGES        //
+//    ADD INSPECTION    //
 ////////////////////////*/
 
 .flex-pages-container {
