@@ -2,47 +2,49 @@
 <nav ng-include="'views/templates/nav.html'"></nav>
 <aside ng-include="'views/templates/inspection_forms_nav.html'"></aside>
 
-<section>
-  <h1> Prior To Any Testing </h1>
-    <div>
-      {{five.message}}
-      <h3> Notifications Are Made </h3>
-        <h5> Monitoring Entity </h5>
-        <h5> Building Occupants </h5>
-        <h5> Building Managment </h5>
-        <h5> Other (specify)</h5>
-        <h5> AHJ (notified) of Any Impairments </h5>
-    </div>
-    <div>
-      <label> Yes </label>
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-    </div>
-    <div>
-      <label> No </label>
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-    </div>
-    <div>
-      <label> Who </label>
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-    </div>
-    <div>
-      <label> Time </label>
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-    </div>
+<section class="flex-pages-container">
+  <div class="pages-header-container">
+    <h1> Prior To Any Testing </h1>
+  </div>
+  <table>
+    <tr>
+      <td> Notifications Are Made </td>
+      <td> Inspected (Yes/No) </td>
+      <td> Inspector's Name </td>
+      <td> Inspecrion Time </td>
+    </tr>
+    <tr>
+      <td><h4> Monitoring Entity </h4></td>
+      <td><input type="checkbox"></td>
+      <td><input type="text"></td>
+      <td><input type="time"></td>
+    </tr>
+    <tr>
+      <td><h4> Building Occupants </h4></td>
+      <td><input type="checkbox"></td>
+      <td><input type="text"></td>
+      <td><input type="time"></td>
+    </tr>
+    <tr>
+      <td><h4> Building Managment </h4></td>
+      <td><input type="checkbox"></td>
+      <td><input type="text"></td>
+      <td><input type="time"></td>
+    </tr>
+    <tr>
+      <td><h4> AHJ (notified) of Any Impairments </h4></td>
+      <td><input type="checkbox"></td>
+      <td><input type="text"></td>
+      <td><input type="time"></td>
+    </tr>
+    <tr>
+      <td><h4> Other (specify) </h4></td>
+      <td><textarea type="checkbox"></textarea></td>
+      <td><input type="text"></td>
+      <td><input type="time"></td>
+    </tr>
+  </table>
+  <div class="pages-button-container">
+    <button type="button"> Next => </button>
+  </div>
 </section>
