@@ -23,6 +23,7 @@ CREATE TABLE companies (
 
 CREATE TABLE inspection_sites (
 	id SERIAL PRIMARY KEY,
+	companies_id INT NOT NULL,
 	contactName VARCHAR(100) NOT NULL,
 	companyName VARCHAR(100) NOT NULL,
 	licenseNumber VARCHAR(500),

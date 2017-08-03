@@ -6,6 +6,7 @@ myApp.factory('FactoryFactory',['$http', '$location', function($http, $location)
 // containers form DB results queries
   var allCompanies = { list : [] };
   var allEmployeeNames = { list : [] };
+  var allInspectionSites = { list : [] };
 
 
 // adds new user to DB
@@ -73,8 +74,18 @@ myApp.factory('FactoryFactory',['$http', '$location', function($http, $location)
     });
   }; // addInspectionSite()
 
-
-
+// gets all inspection sites
+  function getAllInspectionSites(inspectionSite_Id) {
+    $http({
+      method: 'GET',
+      url: '/init/getAllInspectionSites',
+      headers:{
+        inspectionSite_Id : inspectionSite_Id
+      }
+    }).then(function(response) {
+      allInspectionSites.list = response.data;
+    });
+  }; // end getAllCompanies()
 
 
 
@@ -91,12 +102,16 @@ myApp.factory('FactoryFactory',['$http', '$location', function($http, $location)
   getAllCompanies : getAllCompanies,
 // all companies from DB
   allCompanies : allCompanies,
-// calls DB for all employees on init
+// calls DB for all employees
   getAllEmployeeNames : getAllEmployeeNames,
-//all employee names from DB
+// all employee names from DB
   allEmployeeNames : allEmployeeNames,
 // adds new inspection site to DB
-  addInspectionSite : addInspectionSite
+  addInspectionSite : addInspectionSite,
+// gets all inspection sites from DB
+  getAllInspectionSites : getAllInspectionSites,
+// all inspections sites from DB to view
+  allInspectionSites : allInspectionSites
 
   }
 

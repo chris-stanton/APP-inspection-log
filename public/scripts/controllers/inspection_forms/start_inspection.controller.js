@@ -4,18 +4,14 @@ myApp.controller('Start_inspectionController',['FactoryFactory', '$location', '$
   console.log('Start_inspectionController');
 
   var self = this;
-
-// calls DB on init for all companies
-  FactoryFactory.getAllCompanies();//needs to be refactored to only company site names
-// calss DB on init for all employee names
-  FactoryFactory.getAllEmployeeNames();
+  var inspectionSite_Id = 1;
+// calls DB for all active inspection sites
+  FactoryFactory.getAllInspectionSites(inspectionSite_Id);
 
 
   self.message = 'angular sourced';
 // all companies for DB
-  self.allCompanies = FactoryFactory.allCompanies;
-// all employee names from DB
-  self.allEmployeeNames = FactoryFactory.allEmployeeNames;
+  self.allInspectionSites = FactoryFactory.allInspectionSites;
 
 // next button click listener
   self.nextPage = function(newInspection) {

@@ -11,7 +11,7 @@
       <td><h4> Inspection Site Location: </h4></td>
       <td>
         <select ng-model="sic.newInspection.inspectionSite" style="text-transform: capitalize">
-          <option ng-value="inspectionSites.id" ng-repeat="inspectionSites in sic.allCompanies.list"> {{inspectionSites.companyname}} - {{inspectionSites.city}}, {{inspectionSites.state}} </option>
+          <option ng-value="inspectionSites.id" ng-repeat="inspectionSites in sic.allInspectionSites.list"> {{inspectionSites.companyname}} - {{inspectionSites.city}}, {{inspectionSites.state}} </option>
         </select>
       </td>
     </tr>
