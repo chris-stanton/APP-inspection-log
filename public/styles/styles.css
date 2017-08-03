@@ -10,7 +10,6 @@ body {
 ////////////////////////*/
 
 .nav-main {
-  /*position: fixed;*/
   top: 0;
   width: 100%;
   z-index: 100;
@@ -18,10 +17,10 @@ body {
 
 .flex-nav-container {
   display: flex;
-  background-color: #737373;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
+  align-items: center;
+  background-color: #737373;
 }
 
 .flex-nav-container .flex-nav-logoContainer {
@@ -349,6 +348,26 @@ body {
   width: 100%;
 }
 
+.pages-table-container h3 {
+  text-decoration: underline;
+}
+
+.pages-table-container td {
+  padding: 0px 20px 0px 20px;
+}
+
+.pages-table-container .quantity-input {
+  height: 30px;
+  width: 50px;
+}
+
+.pages-table-container .text-input, .select-input {
+  height: 30px;
+  width: 300px;
+}
+
+
+
 .pages-button-container {
   margin: 100px 100px 75px 0px;
   text-align: right;
@@ -391,6 +410,7 @@ footer {
 /*main nav bar*/
   .flex-nav-container {
     flex-direction: column;
+    padding-bottom: 10px;
   }
 
   .flex-nav-logoContainer h5 {
@@ -404,13 +424,13 @@ footer {
     flex-direction: column;
   }
 
-  .pages-table-container td {
-    flex-direction: row;
-    display: inline;
+  .pages-table-container {
+    flex-direction: column;
   }
 
   footer {
     height: 20px;
     font-size: 10px;
+    padding-top: 3px;
   }
 }

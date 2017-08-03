@@ -8,40 +8,40 @@
     </div>
       <table class="pages-table-container">
         <tr>
-          <td><h5> Item Checklist: </h5></td>
-          <td><h5> Quantity: </h5></td>
-          <td><h5> Circuit Style: </h5></td>
+          <td><h3> Item Checklist </h3></td>
+          <td><h3> Quantity </h3></td>
+          <td><h3> Circuit Style </h3></td>
         </tr>
         <tr>
           <td><h4> Bells </h4></td>
-          <td><input type="number" ng-model="two.inspectionFormTwo.quantityBells"></td>
-          <td><input type="text" ng-model="two.inspectionFormTwo.circuitStyleBells"></td>
+          <td><input type="number" class="quantity-input" ng-model="two.inspectionFormTwo.quantityBells"></td>
+          <td><input type="text" class="text-input" ng-model="two.inspectionFormTwo.circuitStyleBells"></td>
         </tr>
         <tr>
           <td><h4> Horns </h4></td>
-          <td><input type="number" ng-model="two.inspectionFormTwo.quantityHorns"></td>
-          <td><input type="text" ng-model="two.inspectionFormTwo.circuitStyleHorns"></td>
+          <td><input type="number" class="quantity-input" ng-model="two.inspectionFormTwo.quantityHorns"></td>
+          <td><input type="text" class="text-input" ng-model="two.inspectionFormTwo.circuitStyleHorns"></td>
         </tr>
         <tr>
           <td><h4> Chimes </h4></td>
-          <td><input type="number" ng-model="two.inspectionFormTwo.quantityChimes"></td>
-          <td><input type="text" ng-model="two.inspectionFormTwo.circuitStyleChimes"></td>
+          <td><input type="number" class="quantity-input" ng-model="two.inspectionFormTwo.quantityChimes"></td>
+          <td><input type="text" class="text-input" ng-model="two.inspectionFormTwo.circuitStyleChimes"></td>
         </tr>
         <tr>
           <td><h4> Strobes </h4></td>
-          <td><input type="number" ng-model="two.inspectionFormTwo.quantityStrobes"></td>
-          <td><input type="text" ng-model="two.inspectionFormTwo.circuitStyleStrobes"></td>
+          <td><input type="number" class="quantity-input" ng-model="two.inspectionFormTwo.quantityStrobes"></td>
+          <td><input type="text" class="text-input" ng-model="two.inspectionFormTwo.circuitStyleStrobes"></td>
         </tr>
         <tr>
           <td><h4> Speakers </h4></td>
-          <td><input type="number" ng-model="two.inspectionFormTwo.quantitySpeakers"></td>
-          <td><input type="text" ng-model="two.inspectionFormTwo.circuitStyleSpeakers"></td>
+          <td><input type="number" class="quantity-input" ng-model="two.inspectionFormTwo.quantitySpeakers"></td>
+          <td><input type="text" class="text-input" ng-model="two.inspectionFormTwo.circuitStyleSpeakers"></td>
         </tr>
         <tr>
           <td><h4> Battery Type: </h4></td>
-          <td><input type="number"ng-model="two.inspectionFormTwo.quantityBatType"></td>
+          <td><input type="number" class="quantity-input" ng-model="two.inspectionFormTwo.quantityBatType"></td>
           <td>
-            <select ng-model="two.inspectionFormTwo.batType">
+            <select class="select-input" ng-model="two.inspectionFormTwo.batType">
               <option value="dry cell"> Dry Cell </option>
               <option value="nickel calmium"> Nickel-Cadmium </option>
               <option value=" sealed lead acid"> Sealed Lead-Acid </option>
@@ -52,7 +52,7 @@
         </tr>
         <tr>
           <td><h4> Other (Specify) </h4></td>
-          <td><input type="number" ng-model="two.inspectionFormTwo.quantityOtherSignalNote"></td>
+          <td><input type="number" class="quantity-input" ng-model="two.inspectionFormTwo.quantityOtherSignalNote"></td>
           <td><textarea rows="2" cols="40" ng-model="two.inspectionFormTwo.circuitStyleOtherSignalNote"></textarea></td>
         </tr>
       </table>
