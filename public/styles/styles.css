@@ -366,8 +366,6 @@ body {
   width: 300px;
 }
 
-
-
 .pages-button-container {
   margin: 100px 100px 75px 0px;
   text-align: right;
@@ -430,6 +428,11 @@ footer {
 
   .pages-table-container td {
     padding: 0px;
+  }
+
+  .pages-table-container .text-input, .select-input {
+    height: 30px;
+    width: 200px;
   }
 
   footer {
