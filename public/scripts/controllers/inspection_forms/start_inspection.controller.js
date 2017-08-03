@@ -4,9 +4,12 @@ myApp.controller('Start_inspectionController',['FactoryFactory', '$location', '$
   console.log('Start_inspectionController');
 
   var self = this;
-  var inspectionSite_Id = 1;
+// inspection site users companies_id value - hard coded needs to change from user to user
+  var company_Id = 1;
+
+
 // calls DB for all active inspection sites
-  FactoryFactory.getAllInspectionSites(inspectionSite_Id);
+  FactoryFactory.getAllInspectionSites(company_Id);
 
 
   self.message = 'angular sourced';
@@ -14,9 +17,10 @@ myApp.controller('Start_inspectionController',['FactoryFactory', '$location', '$
   self.allInspectionSites = FactoryFactory.allInspectionSites;
 
 // next button click listener
-  self.nextPage = function(newInspection) {
-    console.log(newInspection);
-    $location.path('/page_two');
+  self.nextPage = function(newInspectionId) {
+    console.log(newInspectionId.inspectionSiteId);
+    $routeParams.newInspectionSite_Id = newInspectionId.inspectionSiteId;
+    $location.path('/page_two/' + $routeParams.newInspectionSite_Id);
   };
 
 }]);//end of myApp.controller

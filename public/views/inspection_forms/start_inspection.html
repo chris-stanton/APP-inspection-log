@@ -10,13 +10,13 @@
       <!-- needs to be refactored for company site locations -->
       <td><h4> Inspection Site Location: </h4></td>
       <td>
-        <select ng-model="sic.newInspection.inspectionSite" style="text-transform: capitalize">
+        <select ng-model="sic.newInspectionId.inspectionSiteId" style="text-transform: capitalize">
           <option ng-value="inspectionSites.id" ng-repeat="inspectionSites in sic.allInspectionSites.list"> {{inspectionSites.companyname}} - {{inspectionSites.city}}, {{inspectionSites.state}} </option>
         </select>
       </td>
     </tr>
   </table>
   <div class="pages-button-container">
-    <span ng-click="sic.nextPage(sic.newInspection)" ><img src="./assets/images/icons/next-button.ico"></span>
+    <span ng-click="sic.nextPage(sic.newInspectionId)" ><img src="./assets/images/icons/next-button.ico"></span>
   </div>
 </section>

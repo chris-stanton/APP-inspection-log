@@ -74,13 +74,13 @@ myApp.factory('FactoryFactory',['$http', '$location', function($http, $location)
     });
   }; // addInspectionSite()
 
-// gets all inspection sites
-  function getAllInspectionSites(inspectionSite_Id) {
+// gets all inspection sites by companies_id and active true status
+  function getAllInspectionSites(company_Id) {
     $http({
       method: 'GET',
       url: '/init/getAllInspectionSites',
-      headers:{
-        inspectionSite_Id : inspectionSite_Id
+      headers: {
+        company_Id : company_Id
       }
     }).then(function(response) {
       allInspectionSites.list = response.data;

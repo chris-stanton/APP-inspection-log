@@ -36,14 +36,12 @@ var pool = require('../modules/database-config');
     });//end of .then
   });//end of router.get
 
-// gets all inspection sites by ID
+// gets all inspection sites by companies_id and active true status
   router.get('/getAllInspectionSites', function (req, res) {
-  var inspectionSite_Id = req.headers;
-  // var inspectionSite_Id = 1;
-  console.log(inspectionSite_Id);
+  var company_Id = req.headers;
   pool.connect()
     .then(function (client) {
-      client.query("SELECT * FROM inspection_sites WHERE companies_id=$1 AND active='true' ORDER BY id ASC",[inspectionSite_Id])
+      client.query("SELECT * FROM inspection_sites WHERE companies_id=$1 AND active='true' ORDER BY id ASC",[company_Id.company_id])
         .then(function (result) {
           client.release();
           res.send(result.rows);
