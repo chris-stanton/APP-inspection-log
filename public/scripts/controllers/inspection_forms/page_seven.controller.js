@@ -4,6 +4,9 @@ myApp.controller('Page_sevenController',['FactoryFactory', '$location', '$routeP
   console.log('Page_sevenController');
 
   var self = this;
+  // new inspection site ID
+  var newInspectionSite_Id = $routeParams;
+  console.log('page seven newInspectionSite_Id: ', newInspectionSite_Id.id);
 
   self.message = 'angular sourced';
 
