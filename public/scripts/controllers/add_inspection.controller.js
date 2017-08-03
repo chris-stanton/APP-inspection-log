@@ -7,9 +7,9 @@ myApp.controller('Add_inspectionController',['FactoryFactory',function(FactoryFa
   self.message = 'angular sourced';
 
 
-  self.submitInspectionLocation = function(inspectionLocation) {
-    console.log(inspectionLocation);
-    self.inspectionLocation = {};
+  self.addInspectionSite = function(inspectionSite) {
+    console.log('inspectionSite: ', inspectionSite);
+    FactoryFactory.addInspectionSite(inspectionSite);
   }; //end of addInspectionForm
 
 

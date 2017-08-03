@@ -5,41 +5,57 @@
     <div class="pages-header-container">
       <h1> Add Inspection Site </h1>
     </div>
-    <table>
+    <table class="pages-table-container">
       <tr>
-        <td><h4> Inspection Date: </h4></td>
-        <td> <input type="date" ng-model="aic.inspectionLocation.inspectionDate"> </td>
+        <td><h4> Schedualed Inspection Date: </h4></td>
+        <td> <input type="date" ng-model="aic.inspectionSite.schedualedDate"> </td>
       </tr>
       <tr>
-        <td><h4> Job Name: </h4></td>
-        <td><input type="text" ng-model="aic.inspectionLocation.jobName"></td>
+        <td><h4> Company Name: </h4></td>
+        <td><input type="text" ng-model="aic.inspectionSite.companyName"></td>
       </tr>
       <tr>
         <td><h4> License Number: </h4></td>
-        <td><input type="text" ng-model="aic.inspectionLocation.licenseNumber"></td>
+        <td><input type="text" ng-model="aic.inspectionSite.licenseNumber"></td>
+      </tr>
+      <tr>
+        <td><h4> Contact Name: </h4></td>
+        <td><input type="text" ng-model="aic.inspectionSite.contactName"></td>
       </tr>
       <tr>
         <td><h4> Street Address: </h4></td>
-        <td><input type="text" ng-model="aic.inspectionLocation.streetAddress"></td>
+        <td><input type="text" ng-model="aic.inspectionSite.streetAddress"></td>
       </tr>
       <tr>
         <td><h4> City: </h4></td>
-        <td><input type="text" ng-model="aic.inspectionLocation.city"></td>
+        <td><input type="text" ng-model="aic.inspectionSite.city"></td>
       </tr>
       <tr>
         <td><h4> State: </h4></td>
-        <td><input type="text" ng-model="aic.inspectionLocation.state"></td>
+        <td><input type="text" ng-model="aic.inspectionSite.state"></td>
       </tr>
       <tr>
         <td><h4> Zip Code: </h4></td>
-        <td><input type="text" ng-model="aic.inspectionLocation.zipCode"></td>
+        <td><input type="text" ng-model="aic.inspectionSite.zipCode"></td>
       </tr>
       <tr>
         <td><h4> Country: </h4></td>
-        <td> <input type="text" ng-model="aic.inspectionLocation.country"> </td>
+        <td> <input type="text" ng-model="aic.inspectionSite.country"> </td>
+      </tr>
+      <tr>
+        <td><h4> Phone: </h4></td>
+        <td> <input type="text" ng-model="aic.inspectionSite.phone"> </td>
+      </tr>
+      <tr>
+        <td><h4> Email: </h4></td>
+        <td> <input type="text" ng-model="aic.inspectionSite.email"> </td>
+      </tr>
+      <tr>
+        <td><h4> Fax: </h4></td>
+        <td> <input type="text" ng-model="aic.inspectionSite.fax"> </td>
       </tr>
     </table>
     <div class="pages-button-container">
-      <button type="button" ng-click="aic.submitInspectionLocation(aic.inspectionLocation)"> Submit </button>
+      <button type="button" ng-click="aic.addInspectionSite(aic.inspectionSite)"> Submit </button>
     </div>
   </section>

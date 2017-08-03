@@ -25,6 +25,7 @@ CREATE TABLE inspection_sites (
 	id SERIAL PRIMARY KEY,
 	contactName VARCHAR(100) NOT NULL,
 	companyName VARCHAR(100) NOT NULL,
+	licenseNumber VARCHAR(500),
 	streetAddress VARCHAR(500) NOT NULL,
 	city VARCHAR(100) NOT NULL,
 	state VARCHAR(100) NOT NULL,
@@ -33,6 +34,7 @@ CREATE TABLE inspection_sites (
 	phone INT NOT NULL,
 	email VARCHAR(100),
 	fax VARCHAR(100),
+	schedualedDate VARCHAR(100),
 	active boolean DEFAULT true
 );
 

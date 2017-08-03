@@ -58,6 +58,23 @@ myApp.factory('FactoryFactory',['$http', '$location', function($http, $location)
     });
   }; // end getAllCompanies()
 
+// adds new inspection to DB
+  function addInspectionSite(inspectionSite) {
+    $http({
+      method: 'POST',
+      url: '/inspection/addInspectionSite',
+      data: inspectionSite
+    }).then(function(response) {
+      alertify.success('Inspection location was added to DB');
+        $location.path('/dashboard');
+    }).catch(function(error) {
+      alertify.alert("Inspection location could not be added to DB");
+        console.log('error adding inspection site profile to DB', error);
+    });
+  }; // addInspectionSite()
+
+
+
 
 
 
@@ -77,7 +94,10 @@ myApp.factory('FactoryFactory',['$http', '$location', function($http, $location)
 // calls DB for all employees on init
   getAllEmployeeNames : getAllEmployeeNames,
 //all employee names from DB
-  allEmployeeNames : allEmployeeNames
+  allEmployeeNames : allEmployeeNames,
+// adds new inspection site to DB
+  addInspectionSite : addInspectionSite
+
   }
 
 
