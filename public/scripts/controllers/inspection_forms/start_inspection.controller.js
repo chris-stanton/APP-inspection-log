@@ -1,7 +1,7 @@
 
-myApp.controller('New_inspectionController',['FactoryFactory', '$location', '$routeParams',function(FactoryFactory, $location, $routeParams) {
+myApp.controller('Start_inspectionController',['FactoryFactory', '$location', '$routeParams',function(FactoryFactory, $location, $routeParams) {
 
-  console.log('New_inspectionController');
+  console.log('Start_inspectionController');
 
   var self = this;
 

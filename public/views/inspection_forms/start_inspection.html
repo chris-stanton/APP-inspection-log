@@ -1,0 +1,22 @@
+
+<nav ng-include="'views/templates/nav.html'"></nav>
+
+<section class="flex-pages-container">
+  <div class="pages-header-container">
+    <h1> Start Inspection </h1>
+  </div>
+  <table class="pages-table-container">
+    <tr>
+      <!-- needs to be refactored for company site locations -->
+      <td><h4> Inspection Site Location: </h4></td>
+      <td>
+        <select ng-model="sic.newInspection.inspectionSite" style="text-transform: capitalize">
+          <option ng-value="inspectionSites.id" ng-repeat="inspectionSites in sic.allCompanies.list"> {{inspectionSites.companyname}} - {{inspectionSites.city}}, {{inspectionSites.state}} </option>
+        </select>
+      </td>
+    </tr>
+  </table>
+  <div class="pages-button-container">
+    <span ng-click="sic.nextPage(sic.newInspection)" ><img src="./assets/images/icons/next-button.ico"></span>
+  </div>
+</section>

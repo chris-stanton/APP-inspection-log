@@ -34,10 +34,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
             controller: 'Add_inspectionController',
             controllerAs: 'aic'
         })
-        .when ('/new_inspection', {
-            templateUrl: '/views/inspection_forms/new_inspection.html',
-            controller: 'New_inspectionController',
-            controllerAs: 'nic'
+        .when ('/start_inspection', {
+            templateUrl: '/views/inspection_forms/start_inspection.html',
+            controller: 'Start_inspectionController',
+            controllerAs: 'sic'
         })
         .when ('/page_two', {
             templateUrl: '/views/inspection_forms/page_two.html',
