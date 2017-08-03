@@ -356,7 +356,7 @@ body {
   padding: 0px 20px 0px 20px;
 }
 
-.pages-table-container .quantity-input {
+.pages-table-container .number-input {
   height: 30px;
   width: 50px;
 }
@@ -426,6 +426,10 @@ footer {
 
   .pages-table-container {
     flex-direction: column;
+  }
+
+  .pages-table-container td {
+    padding: 0px;
   }
 
   footer {
