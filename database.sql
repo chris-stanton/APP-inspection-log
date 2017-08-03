@@ -38,6 +38,8 @@ CREATE TABLE inspection_sites (
 
 
 
+
+
 CREATE TABLE inspection_signatures (
 	id SERIAL PRIMARY KEY,
 	inspection_sites_id VARCHAR(100) NOT NULL,
