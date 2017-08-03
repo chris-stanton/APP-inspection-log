@@ -1,5 +1,5 @@
 
-myApp.controller('New_inspectionController',['FactoryFactory',function(FactoryFactory) {
+myApp.controller('New_inspectionController',['FactoryFactory', '$location', '$routeParams',function(FactoryFactory, $location, $routeParams) {
 
   console.log('New_inspectionController');
 
@@ -17,5 +17,10 @@ myApp.controller('New_inspectionController',['FactoryFactory',function(FactoryFa
 // all employee names from DB
   self.allEmployeeNames = FactoryFactory.allEmployeeNames;
 
+// next button click listener
+  self.nextPage = function(newInspection) {
+    console.log(newInspection);
+    $location.path('/page_two');
+  };
 
 }]);//end of myApp.controller

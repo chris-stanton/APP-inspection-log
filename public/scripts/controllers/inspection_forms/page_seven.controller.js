@@ -1,5 +1,5 @@
 
-myApp.controller('Page_sevenController',['FactoryFactory',function(FactoryFactory) {
+myApp.controller('Page_sevenController',['FactoryFactory', '$location', '$routeParams',function(FactoryFactory, $location, $routeParams) {
 
   console.log('Page_sevenController');
 
@@ -7,6 +7,10 @@ myApp.controller('Page_sevenController',['FactoryFactory',function(FactoryFactor
 
   self.message = 'angular sourced';
 
-
+// next button click listener
+  self.nextPage = function() {
+    console.log();
+    $location.path('/file_upload');
+  };
 
 }]);//end of myApp.controller

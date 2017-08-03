@@ -1,5 +1,5 @@
 
-myApp.controller('SignatureController',['FactoryFactory',function(FactoryFactory) {
+myApp.controller('SignatureController',['FactoryFactory', '$location', '$routeParams',function(FactoryFactory, $location, $routeParams) {
 
   console.log('SignatureController');
 

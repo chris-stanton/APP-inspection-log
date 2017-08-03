@@ -1,5 +1,5 @@
 
-myApp.controller('Page_threeController',['FactoryFactory',function(FactoryFactory) {
+myApp.controller('Page_threeController',['FactoryFactory', '$location', '$routeParams',function(FactoryFactory, $location, $routeParams) {
 
   console.log('Page_threeController');
 
@@ -8,8 +8,9 @@ myApp.controller('Page_threeController',['FactoryFactory',function(FactoryFactor
   self.message = 'angular sourced';
 
 // button click to submit data to DB
-  self.submitPageThree = function(inspectionFormThree){
+  self.nextPage = function(inspectionFormThree){
     console.log(inspectionFormThree);
+    $location.path('/page_five');
   }
 
 }]);//end of myApp.controller

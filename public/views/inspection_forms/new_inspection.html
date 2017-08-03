@@ -8,12 +8,12 @@
   <table class="pages-table-container">
     <tr>
       <td><h4> Date: </h4></td>
-      <td><input type="date"></td>
+      <td><input type="date" ng-model="nic.newInspection.inspectionDate"></td>
     </tr>
     <tr>
       <td><h4> Inspector Name: </h4></td>
       <td>
-        <select ng-model="nic.newInspection.employeeName" style="text-transform: capitalize">
+        <select ng-model="nic.newInspection.inspectorName" style="text-transform: capitalize">
           <option ng-value="employeeName.lastname" ng-repeat="employeeName in nic.allEmployeeNames.list"> {{employeeName.lastname}}, {{employeeName.firstname}} </option>
         </select>
       </td>
@@ -29,6 +29,6 @@
     </tr>
   </table>
   <div class="pages-button-container">
-    <span type="button"><img src="./assets/images/icons/next-button.ico"></span>
+    <span ng-click="nic.nextPage(nic.newInspection)" ><img src="./assets/images/icons/next-button.ico"></span>
   </div>
 </section>
