@@ -329,18 +329,30 @@ body {
 .flex-pages-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 
-.flex-pages-container table {
+.pages-header-container {
+  flex-direction: row;
+  margin: 20px auto;
+}
+
+.pages-header-container h1 {
+  font-size: 30px;
+}
+
+.pages-table-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
 }
 
 .pages-button-container {
-  margin: 60px 60px 0px 0px;
+  margin: 100px 100px 75px 0px;
   text-align: right;
   background-color: #ffffff;
-  bottom: 0;
 }
 
 .pages-button-container img {
@@ -362,7 +374,7 @@ footer {
   left: 0;
   right: 0;
   height: 30px;
-  padding: 3px 0px 0px 0px;
+  padding: 4px 0px 0px 0px;
   text-align: center;
   background-color: #737373;
   color: #ffffff;
@@ -375,10 +387,6 @@ footer {
 
 
 @media(max-width: 568px){
-/*global*/
-  body {
-    background-size: auto;
-  }
 
 /*main nav bar*/
   .flex-nav-container {
@@ -396,4 +404,13 @@ footer {
     flex-direction: column;
   }
 
+  .pages-table-container td {
+    flex-direction: row;
+    display: inline;
+  }
+
+  footer {
+    height: 20px;
+    font-size: 10px;
+  }
 }
