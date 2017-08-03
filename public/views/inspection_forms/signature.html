@@ -10,22 +10,18 @@
   <table class="pages-table-container">
     <tr>
       <td><h4> Date </h4></td>
-      <td><input type="date"></td>
-    </tr>
-    <tr>
-      <td><h4> Time </h4></td>
-      <td><input type="time"></td>
-    </tr>
-    <tr>
-      <td><h4> Name Of Inspector </h4></td>
-      <td><input type="text"></td>
+      <td><input type="date" ng-model="sig.signature.date"></td>
     </tr>
     <tr>
       <td><h4> Signature Of Inspector </h4></td>
-      <td><input type="text"></td>
+      <td>
+        <select ng-model="sig.signature.signature">
+          <option ng-value="19"> chris stanton </option>
+        </select>
+      </td>
     </tr>
   </table>
   <div class="pages-button-container">
-    <button type="button"> Submit Inspection </button>
+    <button type="submit" ng-click="sig.completeInspection(sig.signature)"> Submit Inspection </button>
   </div>
 </section>

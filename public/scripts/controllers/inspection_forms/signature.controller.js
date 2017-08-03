@@ -7,6 +7,9 @@ myApp.controller('SignatureController',['FactoryFactory', '$location', '$routePa
 
   self.message = 'angular sourced';
 
-
+  self.completeInspection = function(signature) {
+    console.log(signature);
+     $location.path('/dashboard')
+  }
 
 }]);//end of myApp.controller
