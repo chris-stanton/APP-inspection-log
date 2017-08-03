@@ -36,10 +36,11 @@ CREATE TABLE inspection_sites (
 	active boolean DEFAULT true
 );
 
+
+
 CREATE TABLE inspection_signatures (
 	id SERIAL PRIMARY KEY,
 	inspection_sites_id VARCHAR(100) NOT NULL,
 	users_id VARCHAR(100) NOT NULL,
-	date VARCHAR(100) NOT NULL,
-	time VARCHAR(100) NOT NULL
+	date VARCHAR(100) NOT NULL
 );

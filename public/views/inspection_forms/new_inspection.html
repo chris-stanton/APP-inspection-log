@@ -7,23 +7,11 @@
   </div>
   <table class="pages-table-container">
     <tr>
-      <td><h4> Date: </h4></td>
-      <td><input type="date" ng-model="nic.newInspection.inspectionDate"></td>
-    </tr>
-    <tr>
-      <td><h4> Inspector Name: </h4></td>
-      <td>
-        <select ng-model="nic.newInspection.inspectorName" style="text-transform: capitalize">
-          <option ng-value="employeeName.lastname" ng-repeat="employeeName in nic.allEmployeeNames.list"> {{employeeName.lastname}}, {{employeeName.firstname}} </option>
-        </select>
-      </td>
-    </tr>
-    <tr>
       <!-- needs to be refactored for company site locations -->
       <td><h4> Inspection Site Location: </h4></td>
       <td>
         <select ng-model="nic.newInspection.inspectionSite" style="text-transform: capitalize">
-          <option ng-value="company.companyname" ng-repeat="company in nic.allCompanies.list"> {{company.companyname}} - {{company.city}}, {{company.state}} </option>
+          <option ng-value="inspectionSites.companyname" ng-repeat="inspectionSites in nic.allCompanies.list"> {{inspectionSites.companyname}} - {{inspectionSites.city}}, {{inspectionSites.state}} </option>
         </select>
       </td>
     </tr>
