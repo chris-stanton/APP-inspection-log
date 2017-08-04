@@ -11,9 +11,18 @@ myApp.controller('Page_sevenController',['FactoryFactory', '$location', '$routeP
   self.message = 'angular sourced';
 
 // next button click listener
-  self.nextPage = function() {
-    console.log();
-    $location.path('/file_upload');
+  self.nextPage = function(pageSeven) {
+    var pageSeven = {
+      inspection_site_id : Number(newInspectionSite_Id.id),
+      phoneSetVisual : pageSeven.phoneSetVisual,
+      phoneSetFunctional : pageSeven.phoneSetFunctional,
+      phoneSetComments : pageSeven.phoneSetComments,
+      phoneJacksVisual : pageSeven.phoneJacksVisual,
+      phoneJacksFunctional : pageSeven.phoneJacksFunctional,
+      phoneJacksComments : pageSeven.phoneJacksComments
+    }
+    console.log('pageSeven: ', pageSeven);
+    FactoryFactory.postPageSeven(pageSeven);
   };
 
 }]);//end of myApp.controller

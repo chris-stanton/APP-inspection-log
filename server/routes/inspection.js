@@ -89,6 +89,39 @@ router.post('/postPageSix', function(req, res){
     });// end of .then
 });// end router.put
 
+// post page seven to db
+router.post('/postPageSeven', function(req, res){
+  var pageSeven = req.body;
+  pool.connect()
+    .then(function (client) {
+      client.query('INSERT INTO page_seven (phoneSetVisual, phoneSetFunctional, phoneSetComments, phoneJacksVisual, phoneJacksFunctional, phoneJacksComments, inspection_site_id) VALUES ($1, $2, $3, $4, $5, $6, $7)',
+        [pageSeven.phoneSetVisual, pageSeven.phoneSetFunctional, pageSeven.phoneSetComments, pageSeven.phoneJacksVisual, pageSeven.phoneJacksFunctional, pageSeven.phoneJacksComments, pageSeven.inspection_site_id])
+        .then(function (result) {
+          client.release();
+            res.sendStatus(200);
+        }).catch(function (err) {
+          console.log('error updating user database:', err);
+            res.sendStatus(500);
+        });
+    });// end of .then
+});// end router.put
+
+// adds file upload to db
+router.post('/postPageFileUpload', function(req, res){
+  var fileUpload = req.body;
+  pool.connect()
+    .then(function (client) {
+      client.query('INSERT INTO file_upload (inspection_site_id) VALUES ($1)',
+        [fileUpload.inspection_site_id])
+        .then(function (result) {
+          client.release();
+            res.sendStatus(200);
+        }).catch(function (err) {
+          console.log('error updating user database:', err);
+            res.sendStatus(500);
+        });
+    });// end of .then
+});// end router.put
 
 
 

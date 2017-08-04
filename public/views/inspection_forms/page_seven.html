@@ -15,15 +15,15 @@
     </tr>
     <tr>
       <td><h4> Phone Set </h4></td>
-      <td><input type="checkbox" class="pages-checkbox"></td>
-      <td><input type="checkbox" class="pages-checkbox"></td>
-      <td><textarea rows="2" cols="40"></textarea></td>
+      <td><input type="checkbox" ng-model="seven.pageSeven.phoneSetVisual" class="pages-checkbox"></td>
+      <td><input type="checkbox" ng-model="seven.pageSeven.phoneSetFunctional" class="pages-checkbox"></td>
+      <td><textarea rows="2" cols="40" ng-model="seven.pageSeven.phoneSetComments"></textarea></td>
     </tr>
     <tr>
       <td><h4> Phone Jacks </h4></td>
-      <td><input type="checkbox" class="pages-checkbox"></td>
-      <td><input type="checkbox" class="pages-checkbox"></td>
-      <td><textarea rows="2" cols="40"></textarea></td>
+      <td><input type="checkbox" ng-model="seven.pageSeven.phoneJacksVisual" class="pages-checkbox"></td>
+      <td><input type="checkbox" ng-model="seven.pageSeven.phoneJacksFunctional" class="pages-checkbox"></td>
+      <td><textarea rows="2" cols="40" ng-model="seven.pageSeven.phoneJacksComments"></textarea></td>
     </tr>
     <tr>
       <td><h4> Off-Hook Indicator </h4></td>
@@ -99,7 +99,7 @@
     </tr>
   </table>
   <div class="pages-button-container">
-    <span ng-click="seven.nextPage()"><img src="./assets/images/icons/next-button.ico"></span>
+    <span ng-click="seven.nextPage(seven.pageSeven)"><img src="./assets/images/icons/next-button.ico"></span>
   </div>
 </section>
 

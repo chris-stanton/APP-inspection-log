@@ -135,8 +135,9 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
       alertify.alert("Page five could not be added to DB");
         console.log('error adding page five to DB', error);
     });
-  }; // postPageThree()
+  }; // postPageFive()
 
+// adds page six to db
   function postPageSix(pageSix) {
     $http({
       method: 'POST',
@@ -150,7 +151,38 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
       alertify.alert("Page six could not be added to DB");
         console.log('error adding page six to DB', error);
     });
-  }; // postPageThree()
+  }; // postPageSix()
+
+// adds page seven to db
+  function postPageSeven(pageSeven) {
+    $http({
+      method: 'POST',
+      url: '/inspection/postPageSeven',
+      data: pageSeven
+    }).then(function(response) {
+      alertify.success('Page seven was added to DB');
+        $routeParams.newInspectionSite_Id = newInspectionSite_Id.id;
+        $location.path('/file_upload/' + $routeParams.newInspectionSite_Id);
+    }).catch(function(error) {
+      alertify.alert("Page seven could not be added to DB");
+        console.log('error adding page seven to DB', error);
+    });
+  }; // postPageSeven()
+
+  function postPageFileUpload(fileUpload) {
+    $http({
+      method: 'POST',
+      url: '/inspection/postPageFileUpload',
+      data: fileUpload
+    }).then(function(response) {
+      alertify.success('File Upload was added to DB');
+        $routeParams.newInspectionSite_Id = newInspectionSite_Id.id;
+        $location.path('/signature/' + $routeParams.newInspectionSite_Id);
+    }).catch(function(error) {
+      alertify.alert("File Upload could not be added to DB");
+        console.log('error adding file upload to DB', error);
+    });
+  }; // postFileUpload
 
 
 
@@ -184,8 +216,11 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
 // post page five to db
   postPageFive : postPageFive,
 // post page six to db
-  postPageSix : postPageSix
-
+  postPageSix : postPageSix,
+// posts page seven to db
+  postPageSeven : postPageSeven,
+// post file uploads to db
+  postPageFileUpload : postPageFileUpload
   }
 
 

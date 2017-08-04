@@ -77,8 +77,21 @@ CREATE TABLE page_six (
 	interfaceEqComments VARCHAR(5000)
 );
 
+CREATE TABLE page_seven (
+	id SERIAL PRIMARY KEY,
+	inspection_site_id VARCHAR(100) NOT NULL,
+	phoneSetVisual VARCHAR(100),
+	phoneSetFunctional VARCHAR(100),
+	phoneSetComments VARCHAR(5000),
+	phoneJacksVisual VARCHAR(100),
+	phoneJacksFunctional VARCHAR(100),
+	phoneJacksComments VARCHAR(5000)
+);
 
-
+CREATE TABLE file_upload (
+	id SERIAL PRIMARY KEY,
+	inspection_site_id VARCHAR(100) NOT NULL
+);
 
 CREATE TABLE inspection_signatures (
 	id SERIAL PRIMARY KEY,

@@ -64,12 +64,12 @@ myApp.config(['$routeProvider', function($routeProvider) {
             controller: 'Page_sevenController',
             controllerAs: 'seven'
         })
-        .when ('/file_upload', {
+        .when ('/file_upload/:id?', {
             templateUrl: '/views/inspection_forms/file_upload.html',
             controller: 'File_uploadController',
             controllerAs: 'upload'
         })
-        .when ('/signature', {
+        .when ('/signature/:id?', {
             templateUrl: '/views/inspection_forms/signature.html',
             controller: 'SignatureController',
             controllerAs: 'sig'
