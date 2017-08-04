@@ -48,6 +48,26 @@ CREATE TABLE page_two (
 	circuitStyleHorns VARCHAR(100)
 );
 
+CREATE TABLE page_three (
+	id SERIAL PRIMARY KEY,
+	inspection_site_id VARCHAR(100) NOT NULL,
+	quantityBuildingTemp INT,
+	circuitStyleBuildingTemp VARCHAR(100),
+	quantityWaterTemp INT,
+	circuitStyleWaterTemp VARCHAR(100)
+);
+
+CREATE TABLE page_five (
+	id SERIAL PRIMARY KEY,
+	inspection_site_id VARCHAR(100) NOT NULL,
+	monitoringEntityInspected VARCHAR(100),
+	monitoringEntityInspector VARCHAR(100),
+	monitoringEntityTime VARCHAR(100),
+	buildingOccupantsInspected VARCHAR(100),
+	buildingOccupantsInspector VARCHAR(100),
+	buildingOccupantsTime VARCHAR(100)
+);
+
 
 
 

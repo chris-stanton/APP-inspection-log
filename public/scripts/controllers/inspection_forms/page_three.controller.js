@@ -12,7 +12,15 @@ myApp.controller('Page_threeController',['FactoryFactory', '$location', '$routeP
 
 // button click to submit data to DB
   self.nextPage = function(pageThree){
-    FactoryFactory.postPageThree(pageThree)
+    var pageThree = {
+      inspection_site_id : Number(newInspectionSite_Id.id),
+      quantityBuildingTemp : pageThree.quantityBuildingTemp,
+      circuitStyleBuildingTemp : pageThree.circuitStyleBuildingTemp,
+      quantityWaterTemp : pageThree.quantityWaterTemp,
+      circuitStyleWaterTemp : pageThree.circuitStyleWaterTemp
+    }
+    console.log('pageThree: ', pageThree);
+    FactoryFactory.postPageThree(pageThree);
   }
 
 }]);//end of myApp.controller

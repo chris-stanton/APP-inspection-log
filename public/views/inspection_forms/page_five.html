@@ -15,15 +15,15 @@
     </tr>
     <tr>
       <td><h4> Monitoring Entity </h4></td>
-      <td><input type="checkbox"></td>
-      <td><input type="text" class="text-input"></td>
-      <td><input type="time"></td>
+      <td><input type="checkbox" ng-model="five.pageFive.monitoringEntityInspected"></td>
+      <td><input type="text" ng-model="five.pageFive.monitoringEntityInspector" class="text-input"></td>
+      <td><input type="time" ng-model="five.pageFive.monitoringEntityTime"></td>
     </tr>
     <tr>
       <td><h4> Building Occupants </h4></td>
-      <td><input type="checkbox"></td>
-      <td><input type="text" class="text-input"></td>
-      <td><input type="time"></td>
+      <td><input type="checkbox" ng-model="five.pageFive.buildingOccupantsInspected"></td>
+      <td><input type="text" ng-model="five.pageFive.buildingOccupantsInspector" class="text-input"></td>
+      <td><input type="time" ng-model="five.pageFive.buildingOccupantsTime"></td>
     </tr>
     <tr>
       <td><h4> Building Managment </h4></td>
@@ -45,6 +45,6 @@
     </tr>
   </table>
   <div class="pages-button-container">
-    <span ng-click="five.nextPage()"><img src="./assets/images/icons/next-button.ico"></span>
+    <span ng-click="five.nextPage(five.pageFive)"><img src="./assets/images/icons/next-button.ico"></span>
   </div>
 </section>

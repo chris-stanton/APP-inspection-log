@@ -11,9 +11,18 @@ myApp.controller('Page_fiveController',['FactoryFactory', '$location', '$routePa
   self.message = 'angular sourced';
 
 // next button click listener
-  self.nextPage = function() {
-    $routeParams.newInspectionSite_Id = newInspectionSite_Id.id;
-    $location.path('/page_six/' + $routeParams.newInspectionSite_Id);
+  self.nextPage = function(pageFive) {
+    var pageFive = {
+      inspection_site_id : Number(newInspectionSite_Id.id),
+      monitoringEntityInspected : pageFive.monitoringEntityInspected,
+      monitoringEntityInspector : pageFive.monitoringEntityInspector,
+      monitoringEntityTime : pageFive.monitoringEntityTime,
+      buildingOccupantsInspected : pageFive.buildingOccupantsInspected,
+      buildingOccupantsInspector : pageFive.buildingOccupantsInspector,
+      buildingOccupantsTime : pageFive.buildingOccupantsTime
+    }
+    console.log('pageFive: ', pageFive);
+    FactoryFactory.postPageFive(pageFive);
   };
 
 }]);//end of myApp.controller
