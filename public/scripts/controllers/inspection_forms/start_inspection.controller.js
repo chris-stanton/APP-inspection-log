@@ -4,11 +4,9 @@ myApp.controller('Start_inspectionController',['FactoryFactory', '$location', '$
   console.log('Start_inspectionController');
 
   var self = this;
-// inspection site users companies_id value - hard coded needs to change from user to user
+// inspection site users companies_id value - hard coded
   var company_Id = 1;
-
-
-// calls DB for all active inspection sites
+// calls DB for all active inspection sites - hard coded value
   FactoryFactory.getAllInspectionSites(company_Id);
 
 
