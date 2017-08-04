@@ -11,9 +11,8 @@ myApp.controller('Page_threeController',['FactoryFactory', '$location', '$routeP
   self.message = 'angular sourced';
 
 // button click to submit data to DB
-  self.nextPage = function(inspectionFormThree){
-    $routeParams.newInspectionSite_Id = newInspectionSite_Id.id;
-    $location.path('/page_five/' + $routeParams.newInspectionSite_Id);
+  self.nextPage = function(pageThree){
+    FactoryFactory.postPageThree(pageThree)
   }
 
 }]);//end of myApp.controller

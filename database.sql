@@ -39,13 +39,21 @@ CREATE TABLE inspection_sites (
 	active boolean DEFAULT true
 );
 
+CREATE TABLE page_two (
+	id SERIAL PRIMARY KEY,
+	inspection_site_id VARCHAR(100) NOT NULL,
+	quantityBells INT,
+	circuitStyleBells VARCHAR(100),
+	quantityHorns INT,
+	circuitStyleHorns VARCHAR(100)
+);
 
 
 
 
 CREATE TABLE inspection_signatures (
 	id SERIAL PRIMARY KEY,
-	inspection_sites_id VARCHAR(100) NOT NULL,
+	inspection_site_id VARCHAR(100) NOT NULL,
 	users_id VARCHAR(100) NOT NULL,
 	date VARCHAR(100) NOT NULL
 );

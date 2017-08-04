@@ -39,27 +39,27 @@ myApp.config(['$routeProvider', function($routeProvider) {
             controller: 'Start_inspectionController',
             controllerAs: 'sic'
         })
-        .when ('/page_two/:id', {
+        .when ('/page_two/:id?', {
             templateUrl: '/views/inspection_forms/page_two.html',
             controller: 'Page_twoController',
             controllerAs: 'two'
         })
-        .when ('/page_three/:id', {
+        .when ('/page_three/:id?', {
             templateUrl: '/views/inspection_forms/page_three.html',
             controller: 'Page_threeController',
             controllerAs: 'three'
         })
-        .when ('/page_five/:id', {
+        .when ('/page_five/:id?', {
             templateUrl: '/views/inspection_forms/page_five.html',
             controller: 'Page_fiveController',
             controllerAs: 'five'
         })
-        .when ('/page_six/:id', {
+        .when ('/page_six/:id?', {
             templateUrl: '/views/inspection_forms/page_six.html',
             controller: 'Page_sixController',
             controllerAs: 'six'
         })
-        .when ('/page_seven/:id', {
+        .when ('/page_seven/:id?', {
             templateUrl: '/views/inspection_forms/page_seven.html',
             controller: 'Page_sevenController',
             controllerAs: 'seven'

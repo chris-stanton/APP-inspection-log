@@ -1,7 +1,9 @@
 
-myApp.factory('FactoryFactory',['$http', '$location', function($http, $location) {
+myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($http, $location, $routeParams) {
   console.log('FactoryFactory running');
 
+// new inspection site ID
+  var newInspectionSite_Id = $routeParams;
 
 // containers form DB results queries
   var allCompanies = { list : [] };
@@ -87,6 +89,38 @@ myApp.factory('FactoryFactory',['$http', '$location', function($http, $location)
     });
   }; // end getAllCompanies()
 
+// post page two to db
+  function postPageTwo(pageTwo) {
+    $http({
+      method: 'POST',
+      url: '/inspection/postPageTwo',
+      data: pageTwo
+    }).then(function(response) {
+      alertify.success('Page Two was added to DB');
+        $routeParams.newInspectionSite_Id = newInspectionSite_Id.id;
+        $location.path('/page_three/' + $routeParams.newInspectionSite_Id);
+    }).catch(function(error) {
+      alertify.alert("Page two could not be added to DB");
+        console.log('error adding page two to DB', error);
+    });
+  }; // postPageTwo()
+
+// post page three to db
+  function postPageThree(pageThree) {
+    $http({
+      method: 'POST',
+      url: '/inspection/postPageThree',
+      data: pageThree
+    }).then(function(response) {
+      alertify.success('Page Three was added to DB');
+        $routeParams.newInspectionSite_Id = newInspectionSite_Id.id;
+        $location.path('/page_five/' + $routeParams.newInspectionSite_Id);
+    }).catch(function(error) {
+      alertify.alert("Page three could not be added to DB");
+        console.log('error adding page three to DB', error);
+    });
+  }; // postPageThree()
+
 
 
 
@@ -111,7 +145,11 @@ myApp.factory('FactoryFactory',['$http', '$location', function($http, $location)
 // gets all inspection sites from DB
   getAllInspectionSites : getAllInspectionSites,
 // all inspections sites from DB to view
-  allInspectionSites : allInspectionSites
+  allInspectionSites : allInspectionSites,
+// post page two to db
+  postPageTwo : postPageTwo,
+// post page three to db
+  postPageThree : postPageThree
 
   }
 

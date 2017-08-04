@@ -21,6 +21,22 @@ router.post('/addInspectionSite', function(req, res){
     });// end of .then
 });// end router.put
 
+// adds page two site to DB
+router.post('/postPageTwo', function(req, res){
+  var pageTwo = req.body;
+  pool.connect()
+    .then(function (client) {
+      client.query('INSERT INTO page_two (quantityBells, circuitStyleBells, quantityHorns, circuitStyleHorns, inspection_site_id) VALUES ($1, $2, $3, $4, $5)',
+        [pageTwo.quantityBells, pageTwo.circuitStyleBells, pageTwo.quantityHorns, pageTwo.circuitStyleHorns, pageTwo.inspection_site_id])
+        .then(function (result) {
+          client.release();
+            res.sendStatus(200);
+        }).catch(function (err) {
+          console.log('error updating user database:', err);
+            res.sendStatus(500);
+        });
+    });// end of .then
+});// end router.put
 
 
 
