@@ -72,6 +72,23 @@ router.post('/postPageFive', function(req, res){
     });// end of .then
 });// end router.put
 
+// adds page six to DB
+router.post('/postPageSix', function(req, res){
+  var pageSix = req.body;
+  pool.connect()
+    .then(function (client) {
+      client.query('INSERT INTO page_six (controlUnitInspected, controlUnitComments, interfaceEqInspected, interfaceEqComments, inspection_site_id) VALUES ($1, $2, $3, $4, $5)',
+        [pageSix.controlUnitInspected, pageSix.controlUnitComments, pageSix.interfaceEqInspected, pageSix.interfaceEqComments, pageSix.inspection_site_id])
+        .then(function (result) {
+          client.release();
+            res.sendStatus(200);
+        }).catch(function (err) {
+          console.log('error updating user database:', err);
+            res.sendStatus(500);
+        });
+    });// end of .then
+});// end router.put
+
 
 
 

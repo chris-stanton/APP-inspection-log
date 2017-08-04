@@ -11,9 +11,16 @@ myApp.controller('Page_sixController',['FactoryFactory', '$location', '$routePar
   self.message = 'angular sourced';
 
 // next button click listener
-  self.nextPage = function() {
-    $routeParams.newInspectionSite_Id = newInspectionSite_Id.id;
-    $location.path('/page_seven/' + $routeParams.newInspectionSite_Id);
-  };
+  self.nextPage = function(pageSix) {
+    var pageSix = {
+      inspection_site_id : Number(newInspectionSite_Id.id),
+      controlUnitInspected : pageSix.controlUnitInspected,
+      controlUnitComments : pageSix.controlUnitComments,
+      interfaceEqInspected : pageSix.interfaceEqInspected,
+      interfaceEqComments : pageSix.interfaceEqComments
+    }
+    console.log('pageSix: ', pageSix);
+    FactoryFactory.postPageSix(pageSix);
+    };
 
 }]);//end of myApp.controller

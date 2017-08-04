@@ -14,13 +14,13 @@
     </tr>
     <tr>
       <td><h4> Control Unit </h4></td>
-      <td><input type="checkbox"></td>
-      <td><textarea rows="2" cols="40"></textarea></td>
+      <td><input type="checkbox" ng-model="six.pageSix.controlUnitInspected"></td>
+      <td><textarea rows="2" cols="40" ng-model="six.pageSix.controlUnitComments"></textarea></td>
     </tr>
     <tr>
       <td><h4> Interface Eq. </h4></td>
-      <td><input type="checkbox"></td>
-      <td><textarea rows="2" cols="40"></textarea></td>
+      <td><input type="checkbox" ng-model="six.pageSix.interfaceEqInspected"></td>
+      <td><textarea rows="2" cols="40" ng-model="six.pageSix.interfaceEqComments"></textarea></td>
     </tr>
     <tr>
       <td><h4> Lamps / LED </h4></td>
@@ -96,6 +96,6 @@
     </tr>
   </table>
   <div class="pages-button-container">
-    <span ng-click="six.nextPage()"><img src="./assets/images/icons/next-button.ico"></span>
+    <span ng-click="six.nextPage(six.pageSix)"><img src="./assets/images/icons/next-button.ico"></span>
   </div>
 </section>

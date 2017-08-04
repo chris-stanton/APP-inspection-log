@@ -121,6 +121,7 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
     });
   }; // postPageThree()
 
+// posts pade five to db
   function postPageFive(pageFive) {
     $http({
       method: 'POST',
@@ -133,6 +134,21 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
     }).catch(function(error) {
       alertify.alert("Page five could not be added to DB");
         console.log('error adding page five to DB', error);
+    });
+  }; // postPageThree()
+
+  function postPageSix(pageSix) {
+    $http({
+      method: 'POST',
+      url: '/inspection/postPageSix',
+      data: pageSix
+    }).then(function(response) {
+      alertify.success('Page six was added to DB');
+        $routeParams.newInspectionSite_Id = newInspectionSite_Id.id;
+        $location.path('/page_seven/' + $routeParams.newInspectionSite_Id);
+    }).catch(function(error) {
+      alertify.alert("Page six could not be added to DB");
+        console.log('error adding page six to DB', error);
     });
   }; // postPageThree()
 
@@ -166,7 +182,9 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
 // post page three to db
   postPageThree : postPageThree,
 // post page five to db
-  postPageFive : postPageFive
+  postPageFive : postPageFive,
+// post page six to db
+  postPageSix : postPageSix
 
   }
 

@@ -68,6 +68,15 @@ CREATE TABLE page_five (
 	buildingOccupantsTime VARCHAR(100)
 );
 
+CREATE TABLE page_six (
+	id SERIAL PRIMARY KEY,
+	inspection_site_id VARCHAR(100) NOT NULL,
+	controlUnitInspected VARCHAR(100),
+	controlUnitComments VARCHAR(5000),
+	interfaceEqInspected VARCHAR(100),
+	interfaceEqComments VARCHAR(5000)
+);
+
 
 
 
