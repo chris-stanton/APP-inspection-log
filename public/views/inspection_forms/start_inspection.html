@@ -7,7 +7,14 @@
   </div>
   <table class="pages-table-container">
     <tr>
-      <!-- needs to be refactored for company site locations -->
+      <td><h4> Inspection Company Name: </h4></td>
+      <td>
+        <select ng-model="sic.newInspectionId.company_id" ng-change="sic.getInspectionSites(sic.newInspectionId)" style="text-transform: capitalize">
+          <option ng-value="company.id" ng-repeat="company in sic.allCompanies.list"> {{company.companyname}} - {{company.city}}, {{company.state}} </option>
+        </select>
+      </td>
+    </tr>
+    <tr>
       <td><h4> Inspection Site Location: </h4></td>
       <td>
         <select ng-model="sic.newInspectionId.inspectionSiteId" style="text-transform: capitalize">

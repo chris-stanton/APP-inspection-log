@@ -4,13 +4,17 @@ myApp.controller('Add_inspectionController',['FactoryFactory',function(FactoryFa
 
   var self = this;
 
-  self.message = 'angular sourced';
+// gets all companys on init
+  FactoryFactory.getAllCompanies();
 
+  self.message = 'angular sourced';
+// return of all companies from db
+  self.allCompanies = FactoryFactory.allCompanies;
 
   self.addInspectionSite = function(inspectionSite) {
     var inspectionSite = {
       users_id : "null",
-      companies_id : inspectionSite.companies_id,// dont have
+      companies_id : inspectionSite.companies_id,
       contactName : inspectionSite.contactName,
       companyName : inspectionSite.companyName,
       licenseNumber : inspectionSite.licenseNumber,
@@ -26,7 +30,7 @@ myApp.controller('Add_inspectionController',['FactoryFactory',function(FactoryFa
       inspectedDate : "null"
     }
     console.log('inspectionSite: ', inspectionSite);
-    // FactoryFactory.addInspectionSite(inspectionSite);
+    FactoryFactory.addInspectionSite(inspectionSite);
   }; //end of addInspectionForm
 
 

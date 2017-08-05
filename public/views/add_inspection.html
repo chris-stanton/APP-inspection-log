@@ -13,7 +13,11 @@
 
       <tr>
         <td><h4> Inspecting Company Name: </h4></td>
-        <td> <input type="date" ng-model="aic.inspectionSite.companies_id"> </td>
+        <td>
+          <select ng-model="aic.inspectionSite.companies_id">
+            <option ng-value="company.id" ng-repeat="company in aic.allCompanies.list"> {{company.companyname}} </option>
+          </select>
+        </td>
       </tr>
 
       <tr>

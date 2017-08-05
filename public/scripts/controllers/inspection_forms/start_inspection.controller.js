@@ -4,10 +4,20 @@ myApp.controller('Start_inspectionController',['FactoryFactory', '$location', '$
   console.log('Start_inspectionController');
 
   var self = this;
-// inspection site users companies_id value - hard coded
-  var company_Id = 1;
-// calls DB for all active inspection sites - hard coded value
-  FactoryFactory.getAllInspectionSites(company_Id);
+
+// gets all companies on init
+  FactoryFactory.getAllCompanies();
+// return of all companies on init
+  self.allCompanies = FactoryFactory.allCompanies;
+
+  self.getInspectionSites = function(company) {
+    // inspection site users companies_id value
+    var company_Id = company.company_id;
+    console.log('company_Id: ', company_Id);
+    // calls DB for all active inspection sites
+    FactoryFactory.getAllInspectionSites(company_Id);
+
+}
 
 
   self.message = 'angular sourced';

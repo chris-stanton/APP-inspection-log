@@ -9,8 +9,8 @@ router.post('/addInspectionSite', function(req, res){
   var inspectionSite = req.body;
   pool.connect()
     .then(function (client) {
-      client.query('INSERT INTO inspection_sites (users_id, contactName, companyName, licenseNumber, streetAddress, city, state, zipCode, country, phone, email, fax, schedualedDate, inspectedDate) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)',
-        [inspectionSite.users_id, inspectionSite.contactName, inspectionSite.companyName, inspectionSite.licenseNumber, inspectionSite.streetAddress, inspectionSite.city, inspectionSite.state, inspectionSite.zipCode, inspectionSite.country, inspectionSite.phone, inspectionSite.email, inspectionSite.fax, inspectionSite.schedualedDate, inspectionSite.inspectedDate])
+      client.query('INSERT INTO inspection_sites (users_id, companies_id, contactName, companyName, licenseNumber, streetAddress, city, state, zipCode, country, phone, email, fax, schedualedDate, inspectedDate) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15)',
+        [inspectionSite.users_id, inspectionSite.contactName, inspectionSite.companies_id, inspectionSite.companyName, inspectionSite.licenseNumber, inspectionSite.streetAddress, inspectionSite.city, inspectionSite.state, inspectionSite.zipCode, inspectionSite.country, inspectionSite.phone, inspectionSite.email, inspectionSite.fax, inspectionSite.schedualedDate, inspectionSite.inspectedDate])
         .then(function (result) {
           client.release();
             res.sendStatus(200);
