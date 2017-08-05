@@ -9,15 +9,17 @@ myApp.controller('SignatureController',['FactoryFactory', '$location', '$routePa
 // new inspection site ID
   var newInspectionSite_Id = $routeParams;
     console.log('signature newInspectionSite_Id: ', newInspectionSite_Id.id);
+      var newInspectionSite_Id = newInspectionSite_Id.id;
 
 // inspector's company ID
   var company_id = $routeParams;
     console.log('signature company_id: ', company_id.company_id);
       var company_id = company_id.company_id;
 
+// gets all users that match company_id
   FactoryFactory.getUserByCompanyId(company_id);
+// return of all users that match company_id
   self.company = FactoryFactory.company;
-
 
 
   self.completeInspection = function(signature) {
