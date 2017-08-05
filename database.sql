@@ -23,6 +23,7 @@ CREATE TABLE companies (
 
 CREATE TABLE inspection_sites (
 	id SERIAL PRIMARY KEY,
+	users_id VARCHAR(1000),
 	companies_id INT NOT NULL,
 	contactName VARCHAR(100) NOT NULL,
 	companyName VARCHAR(100) NOT NULL,
@@ -36,6 +37,7 @@ CREATE TABLE inspection_sites (
 	email VARCHAR(100),
 	fax VARCHAR(100),
 	schedualedDate VARCHAR(100),
+	inspectedDate VARCHAR(100),
 	active boolean DEFAULT true
 );
 
@@ -91,11 +93,4 @@ CREATE TABLE page_seven (
 CREATE TABLE file_upload (
 	id SERIAL PRIMARY KEY,
 	inspection_site_id VARCHAR(100) NOT NULL
-);
-
-CREATE TABLE inspection_signatures (
-	id SERIAL PRIMARY KEY,
-	inspection_site_id VARCHAR(100) NOT NULL,
-	users_id VARCHAR(100) NOT NULL,
-	date VARCHAR(100) NOT NULL
 );
