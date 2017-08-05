@@ -43,7 +43,8 @@ CREATE TABLE inspection_sites (
 
 CREATE TABLE page_two (
 	id SERIAL PRIMARY KEY,
-	inspection_site_id VARCHAR(100) NOT NULL,
+	inspection_site_id VARCHAR(1000) NOT NULL,
+	company_id VARCHAR(1000) NOT NULL,
 	quantityBells INT,
 	circuitStyleBells VARCHAR(100),
 	quantityHorns INT,
@@ -52,7 +53,8 @@ CREATE TABLE page_two (
 
 CREATE TABLE page_three (
 	id SERIAL PRIMARY KEY,
-	inspection_site_id VARCHAR(100) NOT NULL,
+	inspection_site_id VARCHAR(1000) NOT NULL,
+	company_id VARCHAR(1000) NOT NULL,
 	quantityBuildingTemp INT,
 	circuitStyleBuildingTemp VARCHAR(100),
 	quantityWaterTemp INT,
@@ -61,7 +63,8 @@ CREATE TABLE page_three (
 
 CREATE TABLE page_five (
 	id SERIAL PRIMARY KEY,
-	inspection_site_id VARCHAR(100) NOT NULL,
+	inspection_site_id VARCHAR(1000) NOT NULL,
+	company_id VARCHAR(1000) NOT NULL,
 	monitoringEntityInspected VARCHAR(100),
 	monitoringEntityInspector VARCHAR(100),
 	monitoringEntityTime VARCHAR(100),
@@ -72,7 +75,8 @@ CREATE TABLE page_five (
 
 CREATE TABLE page_six (
 	id SERIAL PRIMARY KEY,
-	inspection_site_id VARCHAR(100) NOT NULL,
+	inspection_site_id VARCHAR(1000) NOT NULL,
+	company_id VARCHAR(1000) NOT NULL,
 	controlUnitInspected VARCHAR(100),
 	controlUnitComments VARCHAR(5000),
 	interfaceEqInspected VARCHAR(100),
@@ -81,7 +85,8 @@ CREATE TABLE page_six (
 
 CREATE TABLE page_seven (
 	id SERIAL PRIMARY KEY,
-	inspection_site_id VARCHAR(100) NOT NULL,
+	inspection_site_id VARCHAR(1000) NOT NULL,
+	company_id VARCHAR(1000) NOT NULL,
 	phoneSetVisual VARCHAR(100),
 	phoneSetFunctional VARCHAR(100),
 	phoneSetComments VARCHAR(5000),
@@ -92,5 +97,6 @@ CREATE TABLE page_seven (
 
 CREATE TABLE file_upload (
 	id SERIAL PRIMARY KEY,
-	inspection_site_id VARCHAR(100) NOT NULL
+	inspection_site_id VARCHAR(100) NOT NULL,
+	company_id VARCHAR(1000) NOT NULL
 );

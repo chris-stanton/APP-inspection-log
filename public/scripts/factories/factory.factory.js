@@ -4,11 +4,13 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
 
 // new inspection site ID
   var newInspectionSite_Id = $routeParams;
+  var company_id = $routeParams;
 
 // containers form DB results queries
   var allCompanies = { list : [] };
   var allEmployeeNames = { list : [] };
   var allInspectionSites = { list : [] };
+  var company = { list : [] };
 
 
 // adds new user to DB
@@ -98,7 +100,8 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
     }).then(function(response) {
       alertify.success('Page Two was added to DB');
         $routeParams.newInspectionSite_Id = newInspectionSite_Id.id;
-        $location.path('/page_three/' + $routeParams.newInspectionSite_Id);
+        $routeParams.company_id = company_id.company_id;
+        $location.path('/page_three/' + $routeParams.newInspectionSite_Id + '/' + $routeParams.company_id);
     }).catch(function(error) {
       alertify.alert("Page two could not be added to DB");
         console.log('error adding page two to DB', error);
@@ -114,7 +117,8 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
     }).then(function(response) {
       alertify.success('Page Three was added to DB');
         $routeParams.newInspectionSite_Id = newInspectionSite_Id.id;
-        $location.path('/page_five/' + $routeParams.newInspectionSite_Id);
+        $routeParams.company_id = company_id.company_id;
+        $location.path('/page_five/' + $routeParams.newInspectionSite_Id + '/' + $routeParams.company_id);
     }).catch(function(error) {
       alertify.alert("Page three could not be added to DB");
         console.log('error adding page three to DB', error);
@@ -130,7 +134,8 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
     }).then(function(response) {
       alertify.success('Page five was added to DB');
         $routeParams.newInspectionSite_Id = newInspectionSite_Id.id;
-        $location.path('/page_six/' + $routeParams.newInspectionSite_Id);
+        $routeParams.company_id = company_id.company_id;
+        $location.path('/page_six/' + $routeParams.newInspectionSite_Id + '/' + $routeParams.company_id);
     }).catch(function(error) {
       alertify.alert("Page five could not be added to DB");
         console.log('error adding page five to DB', error);
@@ -146,7 +151,8 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
     }).then(function(response) {
       alertify.success('Page six was added to DB');
         $routeParams.newInspectionSite_Id = newInspectionSite_Id.id;
-        $location.path('/page_seven/' + $routeParams.newInspectionSite_Id);
+        $routeParams.company_id = company_id.company_id;
+        $location.path('/page_seven/' + $routeParams.newInspectionSite_Id + '/' + $routeParams.company_id);
     }).catch(function(error) {
       alertify.alert("Page six could not be added to DB");
         console.log('error adding page six to DB', error);
@@ -162,7 +168,8 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
     }).then(function(response) {
       alertify.success('Page seven was added to DB');
         $routeParams.newInspectionSite_Id = newInspectionSite_Id.id;
-        $location.path('/file_upload/' + $routeParams.newInspectionSite_Id);
+        $routeParams.company_id = company_id.company_id;
+        $location.path('/file_upload/' + $routeParams.newInspectionSite_Id + '/' + $routeParams.company_id);
     }).catch(function(error) {
       alertify.alert("Page seven could not be added to DB");
         console.log('error adding page seven to DB', error);
@@ -177,13 +184,26 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
     }).then(function(response) {
       alertify.success('File Upload was added to DB');
         $routeParams.newInspectionSite_Id = newInspectionSite_Id.id;
-        $location.path('/signature/' + $routeParams.newInspectionSite_Id);
+        $routeParams.company_id = company_id.company_id;
+        $location.path('/signature/' + $routeParams.newInspectionSite_Id + '/' + $routeParams.company_id);
     }).catch(function(error) {
       alertify.alert("File Upload could not be added to DB");
         console.log('error adding file upload to DB', error);
     });
   }; // postFileUpload
 
+// gets all users from company_id
+  function getUserByCompanyId(company_id) {
+    $http({
+      method: 'GET',
+      url: '/init/getUserByCompanyId',
+      headers: {
+        company_id : company_id
+      }
+    }).then(function(response) {
+      company.list = response.data;
+    });
+  }; // end getUserByCompanyId()
 
 
 
@@ -220,7 +240,12 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
 // posts page seven to db
   postPageSeven : postPageSeven,
 // post file uploads to db
-  postPageFileUpload : postPageFileUpload
+  postPageFileUpload : postPageFileUpload,
+// gets specific company id for signature view
+  getUserByCompanyId : getUserByCompanyId,
+// return of specific company id for signature view
+  company : company
+
   }
 
 

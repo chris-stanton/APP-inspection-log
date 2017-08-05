@@ -39,37 +39,37 @@ myApp.config(['$routeProvider', function($routeProvider) {
             controller: 'Start_inspectionController',
             controllerAs: 'sic'
         })
-        .when ('/page_two/:id?', {
+        .when ('/page_two/:id?/:company_id?', {
             templateUrl: '/views/inspection_forms/page_two.html',
             controller: 'Page_twoController',
             controllerAs: 'two'
         })
-        .when ('/page_three/:id?', {
+        .when ('/page_three/:id?/:company_id?', {
             templateUrl: '/views/inspection_forms/page_three.html',
             controller: 'Page_threeController',
             controllerAs: 'three'
         })
-        .when ('/page_five/:id?', {
+        .when ('/page_five/:id?/:company_id?', {
             templateUrl: '/views/inspection_forms/page_five.html',
             controller: 'Page_fiveController',
             controllerAs: 'five'
         })
-        .when ('/page_six/:id?', {
+        .when ('/page_six/:id?/:company_id?', {
             templateUrl: '/views/inspection_forms/page_six.html',
             controller: 'Page_sixController',
             controllerAs: 'six'
         })
-        .when ('/page_seven/:id?', {
+        .when ('/page_seven/:id?/:company_id?', {
             templateUrl: '/views/inspection_forms/page_seven.html',
             controller: 'Page_sevenController',
             controllerAs: 'seven'
         })
-        .when ('/file_upload/:id?', {
+        .when ('/file_upload/:id?/:company_id?', {
             templateUrl: '/views/inspection_forms/file_upload.html',
             controller: 'File_uploadController',
             controllerAs: 'upload'
         })
-        .when ('/signature/:id?', {
+        .when ('/signature/:id?/:company_id?', {
             templateUrl: '/views/inspection_forms/signature.html',
             controller: 'SignatureController',
             controllerAs: 'sig'

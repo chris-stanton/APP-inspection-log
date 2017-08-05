@@ -16,7 +16,7 @@
       <td><h4> Signature Of Inspector </h4></td>
       <td>
         <select ng-model="sig.signature.signature">
-          <option ng-value="19"> chris stanton (hard coded) </option>
+          <option ng-value="user.id" ng-repeat="user in sig.company.list"> {{user.lastname}}, {{user.firstname}} </option>
         </select>
       </td>
     </tr>

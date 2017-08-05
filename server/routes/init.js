@@ -53,6 +53,39 @@ var pool = require('../modules/database-config');
     });//end of .then
   });//end of router.get
 
+// gets user by company id
+  router.get('/getAllInspectionSites', function (req, res) {
+  var company_Id = req.headers;
+  pool.connect()
+    .then(function (client) {
+      client.query("SELECT * FROM inspection_sites WHERE companies_id=$1 AND active='true' ORDER BY id ASC",[company_Id.company_id])
+        .then(function (result) {
+          client.release();
+          res.send(result.rows);
+        })
+        .catch(function (err) {
+          console.log('error on SELECT', err);
+          res.sendStatus(500);
+        });
+    });//end of .then
+  });//end of router.get
+
+// gets all users by company_id
+  router.get('/getUserByCompanyId', function (req, res) {
+  var company_Id = req.headers;
+  pool.connect()
+    .then(function (client) {
+      client.query("SELECT * FROM users WHERE companies_id=$1 AND active='true' ORDER BY id ASC",[company_Id.company_id])
+        .then(function (result) {
+          client.release();
+          res.send(result.rows);
+        })
+        .catch(function (err) {
+          console.log('error on SELECT', err);
+          res.sendStatus(500);
+        });
+    });//end of .then
+  });//end of router.get
 
 
 

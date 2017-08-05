@@ -26,9 +26,10 @@ myApp.controller('Start_inspectionController',['FactoryFactory', '$location', '$
 
 // next button click listener
   self.nextPage = function(newInspectionId) {
-    console.log(newInspectionId.inspectionSiteId);
+    console.log('newInspectionId: ', newInspectionId);
     $routeParams.newInspectionSite_Id = newInspectionId.inspectionSiteId;
-    $location.path('/page_two/' + $routeParams.newInspectionSite_Id);
+    $routeParams.company_id = newInspectionId.company_id;
+    $location.path('/page_two/' + $routeParams.newInspectionSite_Id + '/' + $routeParams.company_id);
   };
 
 }]);//end of myApp.controller

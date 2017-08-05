@@ -4,9 +4,12 @@ myApp.controller('Page_sixController',['FactoryFactory', '$location', '$routePar
   console.log('Page_sixController');
 
   var self = this;
-  // new inspection site ID
+// new inspection site ID
   var newInspectionSite_Id = $routeParams;
-  console.log('page six newInspectionSite_Id: ', newInspectionSite_Id.id);
+    console.log('page six newInspectionSite_Id: ', newInspectionSite_Id.id);
+// inspector's company ID
+  var company_id = $routeParams;
+    console.log('page six company_id: ', company_id.company_id);
 
   self.message = 'angular sourced';
 
@@ -14,6 +17,7 @@ myApp.controller('Page_sixController',['FactoryFactory', '$location', '$routePar
   self.nextPage = function(pageSix) {
     var pageSix = {
       inspection_site_id : Number(newInspectionSite_Id.id),
+      company_id : Number(company_id.company_id),
       controlUnitInspected : pageSix.controlUnitInspected,
       controlUnitComments : pageSix.controlUnitComments,
       interfaceEqInspected : pageSix.interfaceEqInspected,
