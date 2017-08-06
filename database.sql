@@ -10,6 +10,11 @@ CREATE TABLE users (
 	active boolean DEFAULT true
 );
 
+INSERT INTO users (username, password, firstName, lastName, companies_id)
+VALUES ('usernameOne', 123, 'chris', 'stanton', 1),
+        ('usernameTwo', 123, 'gavin', 'stanton', 2),
+        ('usernameThree', 123, 'steph', 'stanton', 3);
+
 CREATE TABLE companies (
 	id SERIAL PRIMARY KEY,
 	companyName VARCHAR(100) NOT NULL,
