@@ -26,6 +26,11 @@ CREATE TABLE companies (
 	active boolean DEFAULT true
 );
 
+INSERT INTO companies (companyName, streetAddress, city, state, zipCode, country)
+VALUES ('det-tronics', '1234 Industrial blvd.', 'anchorage', 'ak', 12345, 'usa'),
+        ('kidde-fenwall', '1234 ammericain blvd.' , 'anchorage', 'ak', 12345, 'usa'),
+        ('honeywell', '1234 minnesota rd.', 'minneapolis', 'mn', '55124', 'usa');
+
 CREATE TABLE inspection_sites (
 	id SERIAL PRIMARY KEY,
 	users_id VARCHAR(1000),
