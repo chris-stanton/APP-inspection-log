@@ -110,3 +110,8 @@ CREATE TABLE file_upload (
 	inspection_site_id VARCHAR(100) NOT NULL,
 	company_id VARCHAR(1000) NOT NULL
 );
+
+INSERT INTO file_upload (inspection_site_id, company_id)
+VALUES (1, 1),
+        (2, 2),
+        (3, 3);
