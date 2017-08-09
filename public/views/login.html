@@ -1,22 +1,23 @@
 
-  <!-- <section class="rows">
+  <section class="rows">
 
     <div class="col-md-12" id="loginMainContainer">
-      <div class="col-md-4"> -->
+      <div class="col-md-4">
 <!-- empty container for spacing -->
-      <!-- </div>
+      </div>
       <div class="col-md-4" id="loginContainer">
         <div class=" col-md-12">
           <h2 class="viewHeadings"> Login </h2>
+          <h1 class=""> {{lc.message}} </h1>
         </div>
         <div class="col-md-12">
-          <span><img class="loginInputIcons" src="/assets/images/icons/black-user.ico"><input ng-model="lc.login.username" class="loginInputs" type="text" placeholder="Username"></span>
+          <span><img class="loginInputIcons" src="/assets/images/icons/black-user.ico"><input ng-model="lc.user.username" class="loginInputs" type="text" placeholder="Username"></span>
         </div>
         <div class="col-md-12">
-          <span><img class="loginInputIcons" src="/assets/images/icons/black-password.ico"><input ng-model="lc.login.password" class="loginInputs" type="text" placeholder="Password"></span>
+          <span><img class="loginInputIcons" src="/assets/images/icons/black-password.ico"><input ng-model="lc.user.password" class="loginInputs" type="text" placeholder="Password"></span>
         </div>
         <div class="col-md-12 loginButtonDivs">
-          <button ng-click="lc.checkLogin(lc.login)" type="button" id="loginButton"> Login </button>
+          <button ng-click="lc.login(lc.user)" type="button" id="loginButton"> Login </button>
         </div>
 
         <div class="col-md-12">
@@ -25,29 +26,12 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4"> -->
+      <div class="col-md-4">
 <!-- empty container for spacing -->
-      <!-- </div>
+      </div>
     </div>
 
-  </section> -->
+  </section>
 
 
-  <div class="container">
-    <h1 class="lead">Login</h1>
-      <h1 class="lead alert alert-danger" role="alert" ng-if="lc.message != ''">{{lc.message}}</h2>
-      <form ng-submit="lc.login()">
-        <div>
-            <label for="username">Username:</label>
-            <input type="text" ng-model="lc.user.username" />
-        </div>
-        <div>
-            <label for="password">Password:</label>
-            <input type="password" ng-model="lc.user.password" />
-        </div>
-        <div>
-            <input class="btn btn-default" type="submit" name="submit" value="Log In" />
-            <a href="#register">Register</a>
-        </div>
-      </form>
-  </div>
+  
