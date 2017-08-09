@@ -2,7 +2,6 @@
 var router = require('express').Router();
 var passport = require('passport');
 var path = require('path');
-var pg = require('pg');
 var pool = require('../modules/database-config');
 
 

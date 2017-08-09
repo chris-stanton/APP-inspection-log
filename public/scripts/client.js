@@ -1,11 +1,18 @@
 var myApp = angular.module('myApp', ['ngRoute']);
 
-myApp.config(['$routeProvider', function($routeProvider) {
+myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+
+  // $locationProvider.hashPrefix('');
 
   //routes
     $routeProvider
         .when ('/login', {
             templateUrl: '/views/login.html',
+            controller: 'LoginController',
+            controllerAs: 'lc'
+        })
+        .when ('/register', {
+            templateUrl: '/views/templates/register.html',
             controller: 'LoginController',
             controllerAs: 'lc'
         })
@@ -22,57 +29,112 @@ myApp.config(['$routeProvider', function($routeProvider) {
         .when ('/dashboard', {
           templateUrl: '/views/dashboard.html',
           controller: 'DashboardController',
-          controllerAs: 'dbc'
+          controllerAs: 'dbc',
+          resolve: {
+              getuser : function(UserService){
+              return UserService.getuser();
+            }
+          }
         })
         .when ('/manage_inspections', {
             templateUrl: '/views/manage_inspections.html',
             controller: 'Manage_inspectionsController',
-            controllerAs: 'mic'
+            controllerAs: 'mic',
+            resolve: {
+                getuser : function(UserService){
+                return UserService.getuser();
+              }
+            }
         })
         .when ('/add_inspection', {
             templateUrl: '/views/add_inspection.html',
             controller: 'Add_inspectionController',
-            controllerAs: 'aic'
+            controllerAs: 'aic',
+            resolve: {
+                getuser : function(UserService){
+                return UserService.getuser();
+              }
+            }
         })
         .when ('/start_inspection', {
             templateUrl: '/views/inspection_forms/start_inspection.html',
             controller: 'Start_inspectionController',
-            controllerAs: 'sic'
+            controllerAs: 'sic',
+            resolve: {
+                getuser : function(UserService){
+                return UserService.getuser();
+              }
+            }
         })
         .when ('/page_two/:id?/:company_id?', {
             templateUrl: '/views/inspection_forms/page_two.html',
             controller: 'Page_twoController',
-            controllerAs: 'two'
+            controllerAs: 'two',
+            resolve: {
+                getuser : function(UserService){
+                return UserService.getuser();
+              }
+            }
         })
         .when ('/page_three/:id?/:company_id?', {
             templateUrl: '/views/inspection_forms/page_three.html',
             controller: 'Page_threeController',
-            controllerAs: 'three'
+            controllerAs: 'three',
+            resolve: {
+                getuser : function(UserService){
+                return UserService.getuser();
+              }
+            }
         })
         .when ('/page_five/:id?/:company_id?', {
             templateUrl: '/views/inspection_forms/page_five.html',
             controller: 'Page_fiveController',
-            controllerAs: 'five'
+            controllerAs: 'five',
+            resolve: {
+                getuser : function(UserService){
+                return UserService.getuser();
+              }
+            }
         })
         .when ('/page_six/:id?/:company_id?', {
             templateUrl: '/views/inspection_forms/page_six.html',
             controller: 'Page_sixController',
-            controllerAs: 'six'
+            controllerAs: 'six',
+            resolve: {
+                getuser : function(UserService){
+                return UserService.getuser();
+              }
+            }
         })
         .when ('/page_seven/:id?/:company_id?', {
             templateUrl: '/views/inspection_forms/page_seven.html',
             controller: 'Page_sevenController',
-            controllerAs: 'seven'
+            controllerAs: 'seven',
+            resolve: {
+                getuser : function(UserService){
+                return UserService.getuser();
+              }
+            }
         })
         .when ('/file_upload/:id?/:company_id?', {
             templateUrl: '/views/inspection_forms/file_upload.html',
             controller: 'File_uploadController',
-            controllerAs: 'upload'
+            controllerAs: 'upload',
+            resolve: {
+                getuser : function(UserService){
+                return UserService.getuser();
+              }
+            }
         })
         .when ('/signature/:id?/:company_id?', {
             templateUrl: '/views/inspection_forms/signature.html',
             controller: 'SignatureController',
-            controllerAs: 'sig'
+            controllerAs: 'sig',
+            resolve: {
+                getuser : function(UserService){
+                return UserService.getuser();
+              }
+            }
         })
         .otherwise ({
             redirectTo: '/login'

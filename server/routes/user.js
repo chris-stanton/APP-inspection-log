@@ -1,5 +1,8 @@
+
 var router = require('express').Router();
 var pg = require('pg');
+var passport = require('passport');
+var path = require('path');
 var pool = require('../modules/database-config');
 
 
@@ -17,7 +20,7 @@ router.get('/', function(req, res) {
   } else {
     // failure best handled on the server. do redirect here.
     console.log('not logged in');
-    // should probably be res.sendStatus(403) and handled client-side, esp if this is an AJAX request 
+    // should probably be res.sendStatus(403) and handled client-side, esp if this is an AJAX request
     res.send(false);
   }
 });
