@@ -12,6 +12,7 @@ var session = require('express-session');
 var login = require('./server/routes/login.js');
 var init = require('./server/routes/init.js');
 var inspection = require('./server/routes/inspection.js');
+var userRouter = require('./server/routes/user.js');
 var indexRouter = require('./server/routes/index_route.js');
 
 //Serve back static middleware files
@@ -41,6 +42,7 @@ app.use(passport.session());
 app.use('/login', login); // route for all login views
 app.use('/init', init); // route for all views on init that does not need auth
 app.use('/inspection', inspection);
+app.use('/user', userRouter);
 
 // Catch all bucket, must be last!
 app.use('/', indexRouter);
