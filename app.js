@@ -6,10 +6,13 @@ var bodyParser = require('body-parser');
 var passport = require('./server/strategies/user_sql.js');
 var session = require('express-session');
 
+
+
 // defining route variables
 var login = require('./server/routes/login.js');
 var init = require('./server/routes/init.js');
 var inspection = require('./server/routes/inspection.js');
+var indexRouter = require('./server/routes/index_route.js');
 
 //Serve back static middleware files
 app.use(express.static(path.join(__dirname, './public')));
@@ -38,6 +41,9 @@ app.use(passport.session());
 app.use('/login', login); // route for all login views
 app.use('/init', init); // route for all views on init that does not need auth
 app.use('/inspection', inspection);
+
+// Catch all bucket, must be last!
+app.use('/', indexRouter);
 
 // port listening
 app.set('port', process.env.PORT || 5000);
