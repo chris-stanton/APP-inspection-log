@@ -1,5 +1,5 @@
 
-var bcrypt = require('bcryptjs');
+var bcrypt = require('bcrypt');
 var SALT_WORK_FACTOR = 10;
 
 var publicAPI = {
