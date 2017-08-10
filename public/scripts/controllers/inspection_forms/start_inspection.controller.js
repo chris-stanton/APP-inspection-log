@@ -1,34 +1,23 @@
 
-myApp.controller('Start_inspectionController',['FactoryFactory', '$location', '$routeParams',function(FactoryFactory, $location, $routeParams) {
+myApp.controller('Start_inspectionController',['FactoryFactory', 'UserService', '$location', '$routeParams',function(FactoryFactory, UserService, $location, $routeParams) {
 
   console.log('Start_inspectionController');
 
   var self = this;
-
-// gets all companies on init
-  FactoryFactory.getAllCompanies();
-// return of all companies on init
-  self.allCompanies = FactoryFactory.allCompanies;
-
-  self.getInspectionSites = function(company) {
-    // inspection site users companies_id value
-    var company_Id = company.company_id;
-    console.log('company_Id: ', company_Id);
-    // calls DB for all active inspection sites
-    FactoryFactory.getAllInspectionSites(company_Id);
-
-}
-
+  var user = UserService.userObject;
+  var companies_id = user.companies_id;
 
   self.message = 'angular sourced';
+
+// gest all active inspection sites by companies_id
+  FactoryFactory.getAllInspectionSites(companies_id);
 // all companies for DB
   self.allInspectionSites = FactoryFactory.allInspectionSites;
 
 // next button click listener
   self.nextPage = function(newInspectionId) {
-    console.log('newInspectionId: ', newInspectionId);
     $routeParams.newInspectionSite_Id = newInspectionId.inspectionSiteId;
-    $routeParams.company_id = newInspectionId.company_id;
+    $routeParams.company_id = companies_id;
     $location.path('/page_two/' + $routeParams.newInspectionSite_Id + '/' + $routeParams.company_id);
   };
 

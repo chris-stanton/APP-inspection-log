@@ -9,7 +9,7 @@ myApp.controller('Page_twoController',['FactoryFactory', '$location', '$routePar
     console.log('page two newInspectionSite_Id: ', newInspectionSite_Id.id);
 // inspector's company ID
   var company_id = $routeParams;
-    console.log('page two company_id: ', company_id.company_id);
+    console.log('page two company_id: ', company_id);
 
   self.message = 'angular sourced';
 
@@ -22,7 +22,6 @@ myApp.controller('Page_twoController',['FactoryFactory', '$location', '$routePar
       circuitStyleBells : pageTwo.circuitStyleBells,
       quantityHorns : pageTwo.quantityHorns,
       circuitStyleHorns : pageTwo.circuitStyleHorns
-
     }
     console.log('pageTwo: ', pageTwo);
     FactoryFactory.postPageTwo(pageTwo);
