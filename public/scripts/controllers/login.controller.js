@@ -1,7 +1,8 @@
 
-myApp.controller('LoginController', function($http, $location, UserService) {
+myApp.controller('LoginController',['$http', '$location', 'UserService',function($http, $location, UserService) {
 
-console.log('LoginController Working...');
+  console.log('LoginController Working...');
+
     var self = this;
     self.user = {
       username: '',
@@ -49,4 +50,4 @@ console.log('LoginController Working...');
     }
 
 
-}); // end app.controller
+}]); // end app.controller
