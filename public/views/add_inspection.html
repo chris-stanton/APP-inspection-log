@@ -1,9 +1,71 @@
 
 <nav ng-include="'views/templates/nav.html'"></nav>
 
-  <div class="rows">
-    <h2 class="viewHeadings col-md-12"> Create New Inspection </h2>
+  <section class="flex-pages-container">
+    <div class="pages-header-container">
+      <h1> Add Inspection Site </h1>
+    </div>
+    <table class="pages-table-container">
+      <tr>
+        <td><h4> Schedualed Inspection Date: </h4></td>
+        <td> <input type="date" ng-model="aic.inspectionSite.schedualedDate"> </td>
+      </tr>
 
-      
+      <tr>
+        <td><h4> Inspecting Company Name: </h4></td>
+        <td>
+          <select ng-model="aic.inspectionSite.companies_id">
+            <option ng-value="company.id" ng-repeat="company in aic.allCompanies.list"> {{company.companyname}} </option>
+          </select>
+        </td>
+      </tr>
 
-  </div>
+      <tr>
+        <td><h4> Company Name: </h4></td>
+        <td><input type="text" ng-model="aic.inspectionSite.companyName"></td>
+      </tr>
+      <tr>
+        <td><h4> License Number: </h4></td>
+        <td><input type="text" ng-model="aic.inspectionSite.licenseNumber"></td>
+      </tr>
+      <tr>
+        <td><h4> Contact Name: </h4></td>
+        <td><input type="text" ng-model="aic.inspectionSite.contactName"></td>
+      </tr>
+      <tr>
+        <td><h4> Street Address: </h4></td>
+        <td><input type="text" ng-model="aic.inspectionSite.streetAddress"></td>
+      </tr>
+      <tr>
+        <td><h4> City: </h4></td>
+        <td><input type="text" ng-model="aic.inspectionSite.city"></td>
+      </tr>
+      <tr>
+        <td><h4> State: </h4></td>
+        <td><input type="text" ng-model="aic.inspectionSite.state"></td>
+      </tr>
+      <tr>
+        <td><h4> Zip Code: </h4></td>
+        <td><input type="text" ng-model="aic.inspectionSite.zipCode"></td>
+      </tr>
+      <tr>
+        <td><h4> Country: </h4></td>
+        <td> <input type="text" ng-model="aic.inspectionSite.country"> </td>
+      </tr>
+      <tr>
+        <td><h4> Phone: </h4></td>
+        <td> <input type="text" ng-model="aic.inspectionSite.phone"> </td>
+      </tr>
+      <tr>
+        <td><h4> Email: </h4></td>
+        <td> <input type="text" ng-model="aic.inspectionSite.email"> </td>
+      </tr>
+      <tr>
+        <td><h4> Fax: </h4></td>
+        <td> <input type="text" ng-model="aic.inspectionSite.fax"> </td>
+      </tr>
+    </table>
+    <div class="pages-button-container">
+      <button type="button" ng-click="aic.addInspectionSite(aic.inspectionSite)"> Submit </button>
+    </div>
+  </section>

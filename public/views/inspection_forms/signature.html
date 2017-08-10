@@ -1,0 +1,27 @@
+
+<nav ng-include="'views/templates/nav.html'"></nav>
+<aside ng-include="'views/templates/inspection_forms_nav.html'"></aside>
+
+<section class="flex-pages-container">
+  <div class="pages-header-container">
+    <h1> Signature </h1>
+    <p> *NOTE: This Testing Was Performed In Accordance With Application NFPA Standards </p>
+  </div>
+  <table class="pages-table-container">
+    <tr>
+      <td><h4> Date </h4></td>
+      <td><input type="date" ng-model="sig.signature.date"></td>
+    </tr>
+    <tr>
+      <td><h4> Signature Of Inspector </h4></td>
+      <td>
+        <select ng-model="sig.signature.signature">
+          <option ng-value="user.id" ng-repeat="user in sig.company.list"> {{user.lastname}}, {{user.firstname}} </option>
+        </select>
+      </td>
+    </tr>
+  </table>
+  <div class="pages-button-container">
+    <button type="submit" ng-click="sig.completeInspection(sig.signature)"> Submit Inspection </button>
+  </div>
+</section>

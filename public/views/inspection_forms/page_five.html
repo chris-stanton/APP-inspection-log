@@ -1,0 +1,50 @@
+
+<nav ng-include="'views/templates/nav.html'"></nav>
+<aside ng-include="'views/templates/inspection_forms_nav.html'"></aside>
+
+<section class="flex-pages-container">
+  <div class="pages-header-container">
+    <h1> Prior To Any Testing </h1>
+  </div>
+  <table class="pages-table-container">
+    <tr>
+      <td><h3> Notifications Are Made </h3></td>
+      <td><h3> Inspected </h3></td>
+      <td><h3> Inspector's Name </h3></td>
+      <td><h3> Inspection Time </h3></td>
+    </tr>
+    <tr>
+      <td><h4> Monitoring Entity </h4></td>
+      <td><input type="checkbox" ng-model="five.pageFive.monitoringEntityInspected"></td>
+      <td><input type="text" ng-model="five.pageFive.monitoringEntityInspector" class="text-input"></td>
+      <td><input type="time" ng-model="five.pageFive.monitoringEntityTime"></td>
+    </tr>
+    <tr>
+      <td><h4> Building Occupants </h4></td>
+      <td><input type="checkbox" ng-model="five.pageFive.buildingOccupantsInspected"></td>
+      <td><input type="text" ng-model="five.pageFive.buildingOccupantsInspector" class="text-input"></td>
+      <td><input type="time" ng-model="five.pageFive.buildingOccupantsTime"></td>
+    </tr>
+    <tr>
+      <td><h4> Building Managment </h4></td>
+      <td><input type="checkbox"></td>
+      <td><input type="text" class="text-input"></td>
+      <td><input type="time"></td>
+    </tr>
+    <tr>
+      <td><h4> AHJ (notified) of Any Impairments </h4></td>
+      <td><input type="checkbox"></td>
+      <td><input type="text" class="text-input"></td>
+      <td><input type="time"></td>
+    </tr>
+    <tr>
+      <td><h4> Other (specify) </h4></td>
+      <td><textarea type="checkbox" rows="2" cols="40"></textarea></td>
+      <td><input type="text" class="text-input"></td>
+      <td><input type="time"></td>
+    </tr>
+  </table>
+  <div class="pages-button-container">
+    <span ng-click="five.nextPage(five.pageFive)"><img src="./assets/images/icons/next-button.ico"></span>
+  </div>
+</section>

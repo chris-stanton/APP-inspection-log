@@ -1,47 +1,102 @@
 
-/*////////////////////////
-//        GLOBAL        //
-////////////////////////*/
-
-.viewHeadings {
-  text-align: center;
-  padding: 40px 0px 20px 0px;
+body {
+  margin: 0px;
+  padding: 0px;
 }
-
-
-
-
 
 
 /*////////////////////////
 //        NAV-BAR       //
 ////////////////////////*/
 
-#navBarContainer {
+.nav-main {
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.flex-nav-container {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
   background-color: #737373;
+}
+
+.flex-nav-container .flex-nav-logoContainer {
+  flex: 5 1 25px;
+  flex-grow: ;
+  flex-shrink: ;
+  flex-basis: ;
   text-align: center;
-  height: 60px;
-  padding: 8px 0px 0px 0px;
 }
 
-#dashboard {
-  height: 40px;
-  width: 40px;
+.flex-nav-logoContainer h5 {
+  color: #ffffff;
+  font-size: 25px;
 }
 
-.navAttr {
+.flex-nav-container .flex-nav-linksContainer {
+  flex: 2 2 25px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.flex-nav-linksContainer a {
+  color: #ffffff;
   text-decoration: none;
-  color: white;
+  padding: 5px 10px 5px 10px;
 }
 
-.navAttr:hover {
+.flex-nav-linksContainer .border {
+  border-right: 1px solid #ffffff;
+}
+.flex-nav-linksContainer .border:hover {
+  color: #ffffff;
   text-decoration: none;
-  color: none;;
 }
 
-#middleDiv {
-  border-right: 1px solid white;
-  border-left: 1px solid white;
+.flex-nav-linksContainer img {
+  width: 30px;
+}
+
+
+
+/*////////////////////////
+//  INSPECTION-NAV-BAR  //
+////////////////////////*/
+
+
+.flex-formsNav-container {
+  display: flex;
+  border-bottom: 1px solid #737373;
+  width: 100%;
+}
+
+.flex-formsNav-container ul {
+  flex: 1 1 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-formsNav-container li {
+  flex: 1 1 25px;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.flex-formsNav-container a {
+  color: #000000;
+}
+
+.flex-formsNav-container a:hover {
+  text-decoration: none;
+}
+
+.flex-formsNav-container img{
+  height: 20px;
+  width: 20px;
 }
 
 
@@ -58,15 +113,10 @@
 
 #loginContainer {
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-radius: 20px;
   box-shadow: 15px 8px 15px grey;
-  padding: 20px 0px 20px 0px;
-}
-
-#loginHeading {
-  text-align: center;
-  padding: 0px 0px 30px 0px;
+  padding: 0px 0px 20px 0px;
 }
 
 .loginInputIcons {
@@ -92,7 +142,7 @@
   width: 100px;
   height: 30px;
   background-color: #2272c4;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   outline: none;
@@ -103,9 +153,8 @@
 }
 
 #dividerLine {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000000;
   padding: 20px 0px 20px 0px;
-  /*width: 70%;*/
   text-align: center;
 }
 
@@ -116,16 +165,20 @@
 
 
 
+
+
+
 /*////////////////////////
 //        ADD_USER      //
 ////////////////////////*/
 
 #addUserContainer {
+  margin: 40px 0px 40px 0px;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-radius: 20px;
   box-shadow: 15px 8px 15px grey;
-  padding: 20px 0px 20px 0px;
+  padding: 0px 0px 20px 0px;
 }
 
 .addUserInputs {
@@ -146,7 +199,7 @@
 }
 
 #userDivider {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000000;
 }
 
 #addUserSelectDiv {
@@ -166,7 +219,7 @@
   width: 100px;
   height: 30px;
   background-color: #2272c4;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   outline: none;
@@ -178,4 +231,213 @@
 
 #addUserRegisterDiv {
   padding: 20px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+/*////////////////////////
+//       ADD_COMPANY    //
+////////////////////////*/
+
+#addCompanyContainer {
+  margin: 40px 0px 60px 0px;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  box-shadow: 15px 8px 15px grey;
+  padding: 0px 0px 20px 0px;
+}
+
+.addCompanyInputs {
+  width: 90%;
+  height: 35px;
+  font-size: 17px;
+  outline: none;
+  margin: 0px 0px 20px 0px;
+}
+
+.addCompanyButtonDivs {
+  text-align: right;
+  padding: 10px 35px 10px 0px;
+}
+
+#addCompanyButton {
+  width: 100px;
+  height: 30px;
+  background-color: #2272c4;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+#addCompanyButton:hover {
+  box-shadow: 3px 3px 3px grey;
+}
+
+
+
+
+
+
+
+/*////////////////////////
+//      DASHBOARD       //
+////////////////////////*/
+
+.dashboardContainer {
+  margin-top: 10px;
+}
+
+.dashboardContainer h5 {
+  text-align: center;
+  font-size: 18px;
+}
+
+.lineGraph {
+  padding: 0px 20px 0px 20px;
+}
+
+
+
+
+
+
+/*////////////////////////
+//  MANAGE INSPECTIONS  //
+////////////////////////*/
+
+.manageInspectionsContainer {
+  margin-top: 60px;
+}
+
+
+
+
+
+/*////////////////////////
+//         PAGES        //
+//    ADD INSPECTION    //
+////////////////////////*/
+
+.flex-pages-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.pages-header-container {
+  flex-direction: row;
+  margin: 20px auto;
+}
+
+.pages-header-container h1 {
+  font-size: 30px;
+}
+
+.pages-table-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.pages-table-container h3 {
+  text-decoration: underline;
+}
+
+.pages-table-container td {
+  padding: 0px 20px 0px 20px;
+}
+
+.pages-table-container .number-input {
+  height: 30px;
+  width: 50px;
+}
+
+.pages-table-container .text-input, .select-input {
+  height: 30px;
+  width: 300px;
+}
+
+.pages-button-container {
+  margin: 100px 100px 75px 0px;
+  text-align: right;
+  background-color: #ffffff;
+}
+
+.pages-button-container img {
+  height: 50px;
+  cursor: pointer;
+}
+
+
+
+
+
+/*////////////////////////
+//         FOOTER       //
+////////////////////////*/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  padding: 4px 0px 0px 0px;
+  text-align: center;
+  background-color: #737373;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+@media(max-width: 568px){
+
+/*main nav bar*/
+  .flex-nav-container {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  .flex-nav-logoContainer h5 {
+    font-size: 18px;
+  }
+
+/*forms nav bar*/
+  .flex-formsNav-container ul {
+    flex: 1 1 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pages-table-container {
+    flex-direction: column;
+  }
+
+  .pages-table-container td {
+    padding: 0px;
+  }
+
+  .pages-table-container .text-input, .select-input {
+    height: 30px;
+    width: 200px;
+  }
+
+  footer {
+    height: 20px;
+    font-size: 10px;
+    padding-top: 3px;
+  }
 }

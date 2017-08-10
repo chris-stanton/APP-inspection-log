@@ -1,0 +1,84 @@
+
+<nav ng-include="'views/templates/nav.html'"></nav>
+<aside ng-include="'views/templates/inspection_forms_nav.html'"></aside>
+
+  <section class="flex-pages-container">
+    <div class="pages-header-container">
+      <h1> Supervisory Signal-Initiating Devices And Circuit Information </h1>
+    </div>
+    <table class="pages-table-container">
+      <tr>
+        <td><h3> Checklist </h3></td>
+        <td><h3> Quantity </h3></td>
+        <td><h3> Circuit Style </h3></td>
+      </tr>
+      <tr>
+        <td><h4> Building Temp </h4></td>
+        <td><input type="number" class="number-input" ng-model="three.pageThree.quantityBuildingTemp"></td>
+        <td><input type="text" class="text-input" ng-model="three.pageThree.circuitStyleBuildingTemp"></td>
+      </tr>
+      <tr>
+        <td><h4> Site Water Temp </h4></td>
+        <td><input type="number" class="number-input" ng-model="three.pageThree.quantityWaterTemp"></td>
+        <td><input type="text" class="text-input" ng-model="three.pageThree.circuitStyleWaterTemp"></td>
+      </tr>
+      <tr>
+        <td><h4> Site Water Level </h4></td>
+        <td><input type="number" class="number-input" ng-model="three.pageThree.quantityWaterLevel"></td>
+        <td><input type="text" class="text-input" ng-model="three.pageThree.circuitStyleWaterLevel"></td>
+      </tr>
+      <tr>
+        <td><h4> Fire Pump Power </h4></td>
+        <td><input type="number" class="number-input" ng-model="three.pageThree.quantityPumpPower"></td>
+        <td><input type="text" class="text-input" ng-model="three.pageThree.circuitStylePumpPower"></td>
+      </tr>
+      <tr>
+        <td><h4> Fire Pump Running </h4></td>
+        <td><input type="number" class="number-input" ng-model="three.pageThree.quantityPumpRunning"></td>
+        <td><input type="text" class="text-input" ng-model="three.pageThree.circuitStylePumpRunning"></td>
+      </tr>
+      <tr>
+        <td><h4> Fire Pump Auto Position </h4></td>
+        <td><input type="number" class="number-input" ng-model="three.pageThree.quantityPumpAutoPosition"></td>
+        <td><input type="text" class="text-input" ng-model="three.pageThree.circuitStylePumpAutoPosition"></td>
+      </tr>
+      <tr>
+        <td><h4> Pump Controller Trouble </h4></td>
+        <td><input type="number" class="number-input" ng-model="three.pageThree.quantityControllerTrouble"></td>
+        <td><input type="text" class="text-input" ng-model="three.pageThree.circuitStyleControllerTrouble"></td>
+      </tr>
+      <tr>
+        <td><h4> Fire Pump Running </h4></td>
+        <td><input type="number" class="number-input" ng-model="three.pageThree.quantityFirePumpRunning"></td>
+        <td><input type="text" class="text-input" ng-model="three.pageThree.circuitStyleFirePumpRunning"></td>
+      </tr>
+      <tr>
+        <td><h4> Generator In Running Position </h4></td>
+        <td><input type="number" class="number-input" ng-model="three.pageThree.quantityGenRunningPosition"></td>
+        <td><input type="text" class="text-input" ng-model="three.pageThree.circuitStyleGenRunningPosition"></td>
+      </tr>
+      <tr>
+        <td><h4> Generator Controller Trouble </h4></td>
+        <td><input type="number" class="number-input" ng-model="three.pageThree.quantityGenControllerTrouble"></td>
+        <td><input type="text" class="text-input" ng-model="three.pageThree.circuitStyleGenControllerTrouble"></td>
+      </tr>
+      <tr>
+        <td><h4> Switch Transfer </h4></td>
+        <td><input type="number" class="number-input" ng-model="three.pageThree.quantitySwitchTransfer"></td>
+        <td><input type="text" class="text-input" ng-model="three.pageThree.circuitStyleSwitchTransfer"></td>
+      </tr>
+      <tr>
+        <td><h4> Generator Engine Running </h4></td>
+        <td><input type="number" class="number-input" ng-model="three.pageThree.quantityEngineRunning"></td>
+        <td><input type="text" class="text-input" ng-model="three.pageThree.circuitStyleEngineRunning"></td>
+      </tr>
+      <tr>
+        <td><h4> Other (Specify) </h4></td>
+        <td><input type="number" class="number-input" ng-model="three.pageThree.quantityOtherInit"></td>
+        <td><textarea rows="2" cols="40" ng-model="three.pageThree.circuitStyleOtherInit"> </textarea></td>
+      </tr>
+    </table>
+    <div class="pages-button-container">
+      <span ng-click="three.nextPage(three.pageThree)"><img src="./assets/images/icons/next-button.ico"></span>
+    </div>
+  </section>

@@ -1,0 +1,214 @@
+
+<nav ng-include="'views/templates/nav.html'"></nav>
+<aside ng-include="'views/templates/inspection_forms_nav.html'"></aside>
+
+<section class="flex-pages-container">
+  <div class="pages-header-container">
+    <h1> Emergeny Communication Equipment </h1>
+  </div>
+  <table class="pages-table-container">
+    <tr>
+      <td><h3> Action Item </h3></td>
+      <td><h3> Visual </h3></td>
+      <td><h3> Functional </h3></td>
+      <td><h3> Comments </h3></td>
+    </tr>
+    <tr>
+      <td><h4> Phone Set </h4></td>
+      <td><input type="checkbox" ng-model="seven.pageSeven.phoneSetVisual" class="pages-checkbox"></td>
+      <td><input type="checkbox" ng-model="seven.pageSeven.phoneSetFunctional" class="pages-checkbox"></td>
+      <td><textarea rows="2" cols="40" ng-model="seven.pageSeven.phoneSetComments"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Phone Jacks </h4></td>
+      <td><input type="checkbox" ng-model="seven.pageSeven.phoneJacksVisual" class="pages-checkbox"></td>
+      <td><input type="checkbox" ng-model="seven.pageSeven.phoneJacksFunctional" class="pages-checkbox"></td>
+      <td><textarea rows="2" cols="40" ng-model="seven.pageSeven.phoneJacksComments"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Off-Hook Indicator </h4></td>
+      <td><input type="checkbox" class="pages-checkbox"></td>
+      <td><input type="checkbox" class="pages-checkbox"></td>
+      <td><textarea rows="2" cols="40"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Amplifier(s) </h4></td>
+      <td><input type="checkbox" class="pages-checkbox"></td>
+      <td><input type="checkbox" class="pages-checkbox"></td>
+      <td><textarea rows="2" cols="40"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Tone Generator(s) </h4></td>
+      <td><input type="checkbox" class="pages-checkbox"></td>
+      <td><input type="checkbox" class="pages-checkbox"></td>
+      <td><textarea rows="2" cols="40"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Call-ins Signal </h4></td>
+      <td><input type="checkbox" class="pages-checkbox"></td>
+      <td><input type="checkbox" class="pages-checkbox"></td>
+      <td><textarea rows="2" cols="40"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> System Performance </h4></td>
+      <td><input type="checkbox" class="pages-checkbox"></td>
+      <td><input type="checkbox" class="pages-checkbox"></td>
+      <td><textarea rows="2" cols="40"></textarea></td>
+    </tr>
+  </table>
+
+  <div class="pages-subHeader-container">
+    <h2> Supervising Station Monitoring </h2>
+  </div>
+  <table class="pages-table-container">
+    <tr>
+      <td><h3> Action Items </h3></td>
+      <td><h3> Yes/No </h3></td>
+      <td><h3> Time </h3></td>
+      <td><h3> Comments </h3></td>
+    </tr>
+    <tr>
+      <td><h4> Alarm Signal </h4></td>
+      <td><input type="checkbox" class="pages-checkbox"></td>
+      <td><input type="time"></td>
+      <td><textarea name="name" rows="2" cols="40"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Alarm Restoration </h4></td>
+      <td><input type="checkbox" class="pages-checkbox"></td>
+      <td><input type="time"></td>
+      <td><textarea name="name" rows="2" cols="40"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Trouble Signal </h4></td>
+      <td><input type="checkbox" class="pages-checkbox"></td>
+      <td><input type="time"></td>
+      <td><textarea name="name" rows="2" cols="40"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Supervisiory Signal </h4></td>
+      <td><input type="checkbox" class="pages-checkbox"></td>
+      <td><input type="time"></td>
+      <td><textarea name="name" rows="2" cols="40"></textarea></td>
+    </tr>
+    <tr>
+      <td><h4> Supervisiory Restoration </h4></td>
+      <td><input type="checkbox" class="pages-checkbox"></td>
+      <td><input type="time"></td>
+      <td><textarea name="name" rows="2" cols="40"></textarea></td>
+    </tr>
+  </table>
+  <div class="pages-button-container">
+    <span ng-click="seven.nextPage(seven.pageSeven)"><img src="./assets/images/icons/next-button.ico"></span>
+  </div>
+</section>
+
+
+
+
+
+    <!--
+  <div>
+    <div>
+      <label> Notification That Testing Is Complete </label>
+        <h5> Building Managment </h5>
+        <h5> Monitoring Agency </h5>
+        <h5> Building Occupants </h5>
+        <h5> Other (specify) </h5>
+    </div>
+    <div>
+      <label> Yes </label>
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+    </div>
+    <div>
+      <label> No </label>
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+    </div>
+    <div>
+      <label> Who </label>
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </div>
+    <div>
+      <label> Time </label>
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </div>
+
+
+    <div>
+      <h5> The following did not operate correctly: </h5>
+        <textarea name="name" rows="8" cols="40"></textarea>
+    </div>
+
+    <div>
+      <h5> System restored to normal operation: </h5>
+      <div>
+        <label> Date: </label>
+          <input type="text">
+      </div>
+      <div>
+        <label> Time: </label>
+          <input type="text">
+      </div>
+    </div>
+
+  </div>
+</section> -->
+
+
+<!-- <div>
+  <div>
+    <h1> Interferance Equipment </h1>
+      <div>
+        <label> (Specify) </label>
+          <input type="text">
+      </div>
+      <div>
+        <label> (Specify) </label>
+          <input type="text">
+      </div>
+      <div>
+        <label> (Specify) </label>
+          <input type="text">
+      </div>
+  </div>
+  <div>
+    <label> Visual </label>
+      <input type="checkbox">
+      <input type="checkbox">
+      <input type="checkbox">
+  </div>
+  <div>
+    <label> Device Operations </label>
+      <input type="checkbox">
+      <input type="checkbox">
+      <input type="checkbox">
+  </div>
+  <div>
+    <label> Simulated Operations </label>
+      <input type="checkbox">
+      <input type="checkbox">
+      <input type="checkbox">
+  </div>
+</div>
+<div>
+  <div>
+    <h5> Special Procedures: </h5>
+      <textarea name="name" rows="8" cols="40"></textarea>
+  </div>
+  <div>
+    <h5> Comments: </h5>
+      <textarea name="name" rows="8" cols="40"></textarea>
+  </div>
+</div> -->
