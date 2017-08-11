@@ -1,37 +1,29 @@
 
-  <section class="rows">
-
-    <div class="col-md-12" id="loginMainContainer">
-      <div class="col-md-4">
-<!-- empty container for spacing -->
-      </div>
-      <div class="col-md-4" id="loginContainer">
-        <div class=" col-md-12">
-          <h2 class="viewHeadings"> Login </h2>
-          <h1 class=""> {{lc.message}} </h1>
-        </div>
-        <div class="col-md-12">
-          <span><img class="loginInputIcons" src="/assets/images/icons/black-user.ico"><input ng-model="lc.user.username" class="loginInputs" type="text" placeholder="Username"></span>
-        </div>
-        <div class="col-md-12">
-          <span><img class="loginInputIcons" src="/assets/images/icons/black-password.ico"><input ng-model="lc.user.password" class="loginInputs" type="text" placeholder="Password"></span>
-        </div>
-        <div class="col-md-12 loginButtonDivs">
+  <div class="flex-login-container">
+    <section class="flex-login-subContainer">
+        <section class="flex-login-headingContainer">
+          <h2> Login </h2>
+        </section>
+        <section class="flex-login-inputsContainer">
+          <div>
+            <img src="/assets/images/icons/black-user.ico"><br>
+              <input ng-model="lc.user.username" type="text" placeholder="Username">
+          </div>
+          <div>
+            <img class="loginInputIcons" src="/assets/images/icons/black-password.ico"><br>
+              <input ng-model="lc.user.password" type="password" placeholder="Password">
+          </div>
+        </section>
+        <section class="flex-login-buttonContainer">
           <button ng-click="lc.login(lc.user)" type="button" id="loginButton"> Login </button>
-        </div>
-
-        <div class="col-md-12">
-          <div id="loginRegisterDiv">
+        </section>
+        <section class="flex-login-createContainer">
+          <div>
             <h6><a href="#!add_user"> Create New User Account </a></h6>
           </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-<!-- empty container for spacing -->
-      </div>
-    </div>
-
-  </section>
-
-
-  
+        </section>
+        <section class="flex-login-errorContainer">
+          <h1> {{lc.message}} </h1>
+        </section>
+    </section>
+  </div>
