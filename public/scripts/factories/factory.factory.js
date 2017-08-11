@@ -21,7 +21,7 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
       data: newCompany
     }).then(function(response){
       alertify.success('Company profile was added to DB');
-        $location.path('/add_user');
+        $location.path('/dashboard');
     }).catch(function(error) {
       alertify.alert("Company profile could not be added to DB");
         console.log('error adding company profile to DB', error);

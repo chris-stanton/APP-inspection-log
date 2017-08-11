@@ -178,22 +178,22 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-image: url('../assets/images/background-user.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /*background-image: url('../assets/images/background-user.png');*/
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
 }
 
 .flex-addUser-container h2 {
-  color: #ffffff;
+  /*color: #ffffff;*/
 }
 
 .flex-addUser-container h4 {
-  color: #ffffff;
+  /*color: #ffffff;*/
 }
 
 .flex-addUser-subContainer {
-  margin: 30px 0px 10px 0px;
+  margin: 30px 0px 60px 0px;
 }
 
 .flex-addUser-headingContainer img {
