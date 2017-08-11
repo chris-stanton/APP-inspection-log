@@ -32,22 +32,4 @@ myApp.controller('LoginController',['$http', '$location', 'UserService',function
     }
 
 
-// move to add_user view
-    // self.registerUser = function() {
-    //   console.log('LoginController -- registerUser');
-    //   if(self.user.username === '' || self.user.password === '') {
-    //     self.message = "Choose a username and password!";
-    //   } else {
-    //     console.log('LoginController -- registerUser -- sending to server...', self.user);
-    //     $http.post('/register', self.user).then(function(response) {
-    //       console.log('LoginController -- registerUser -- success');
-    //       $location.path('/dashboard');
-    //     }).catch(function(response) {
-    //       console.log('LoginController -- registerUser -- error');
-    //       self.message = "Please try again."
-    //     })
-    //   }
-    // }
-
-
 }]); // end app.controller

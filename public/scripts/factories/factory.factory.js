@@ -13,21 +13,6 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
   var company = { list : [] };
 
 
-// adds new user to DB
-  function addNewUser(newUser) {
-    $http({
-      method: 'POST',
-      url: '/login/addNewUser',
-      data: newUser
-    }).then(function(response){
-      alertify.success('User was added to DB');
-        $location.path('/dashboard');
-    }).catch(function(error) {
-      alertify.alert("User could not be added to DB");
-        console.log('error adding new user to DB', error);
-    });
-  }; // end addNewUser()
-
 //adds company profile to DB
   function addNewCompany(newCompany) {
     $http({
@@ -211,8 +196,6 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
 
 //public API
   return {
-// adds new user to DB
-  addNewUser : addNewUser,
 // adds new company profile to DB
   addNewCompany : addNewCompany,
 // calls DB on add user init for all companies

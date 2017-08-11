@@ -26,13 +26,6 @@
             self.message = "Please try again."
           })
         }
-
-          // FactoryFactory.addNewUser(newUser);
-          // empties inputs after submit
-          // self.newUser = {};
-          // self.password = '';
-        // }
-
       }; // end addNewUser()
 
 
