@@ -1,29 +1,26 @@
 
   <div class="flex-login-container">
     <section class="flex-login-subContainer">
-        <section class="flex-login-headingContainer">
-          <h2> Login </h2>
-        </section>
-        <section class="flex-login-inputsContainer">
-          <div>
-            <img src="/assets/images/icons/black-user.ico"><br>
-              <input ng-model="lc.user.username" type="text" placeholder="Username">
-          </div>
-          <div>
-            <img class="loginInputIcons" src="/assets/images/icons/black-password.ico"><br>
-              <input ng-model="lc.user.password" type="password" placeholder="Password">
-          </div>
-        </section>
-        <section class="flex-login-buttonContainer">
-          <button ng-click="lc.login(lc.user)" type="button" id="loginButton"> Login </button>
-        </section>
-        <section class="flex-login-createContainer">
-          <div>
-            <h6><a href="#!add_user"> Create New User Account </a></h6>
-          </div>
-        </section>
-        <section class="flex-login-errorContainer">
-          <h1> {{lc.message}} </h1>
-        </section>
+      <section class="flex-login-errorContainer">
+        <h1> {{lc.message}} </h1>
+      </section>
+      <section class="flex-login-inputsContainer">
+        <div>
+          <img src="/assets/images/icons/black-user.ico"><br>
+            <input ng-model="lc.user.username" type="text" placeholder="Username">
+        </div>
+        <div>
+          <img class="loginInputIcons" src="/assets/images/icons/black-password.ico"><br>
+            <input ng-model="lc.user.password" type="password" placeholder="Password">
+        </div>
+      </section>
+      <section class="flex-login-buttonContainer">
+        <button ng-click="lc.login(lc.user)" type="button" id="loginButton"> Login </button>
+      </section>
+      <section class="flex-login-createContainer">
+        <div>
+          <h6><a href="#!add_user"> Create New User Account </a></h6>
+        </div>
+      </section>
     </section>
   </div>

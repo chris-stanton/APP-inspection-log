@@ -112,9 +112,6 @@ body {
 }
 
 
-
-
-
 /*////////////////////////
 //         LOGIN        //
 ////////////////////////*/
@@ -124,24 +121,50 @@ body {
   flex-direction: column;
   text-align: center;
   background-image: url('../assets/images/background.png');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .flex-login-subContainer {
-  margin: 100px 0px 200px 0px;
+  margin: 30px 0px 120px 0px;
 }
 
-.flex-login-headingContainer h2 {
-  font-size: 40px;
+.flex-login-errorContainer {
+  height: 40px;
+  color: #ff0606;
+  text-shadow: 2px 2px 2px #ffffff;
+}
+
+.flex-login-inputsContainer div {
+  margin: 30px 0px 30px 0px;
 }
 
 .flex-login-inputsContainer img {
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
+  margin: 10px;
 }
 
+.flex-login-inputsContainer input {
+  outline-style: none;
+  opacity: 0.6;
+  border-radius: 5px;
+  height: 40px;
+  width: 300px;
+  color: #000000;
+  font-size: 25px;
+}
 
+.flex-login-buttonContainer button {
+  background-color: #345da2;
+  outline-style: none;
+  color: #ffffff;
+  border-radius: 5px;
+  height: 45px;
+  width: 300px;
+  margin: 30px 0px 30px 0px;
+}
 
 
 
@@ -151,71 +174,79 @@ body {
 //        ADD_USER      //
 ////////////////////////*/
 
-#addUserContainer {
-  margin: 40px 0px 40px 0px;
+.flex-addUser-container {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  border: 1px solid #000000;
-  border-radius: 20px;
-  box-shadow: 15px 8px 15px grey;
-  padding: 0px 0px 20px 0px;
+  background-image: url('../assets/images/background-user.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.addUserInputs {
-  width: 90%;
-  height: 35px;
-  font-size: 17px;
-  outline: none;
-  margin: 0px 0px 20px 0px;
-}
-
-.checkmarks {
-  height: 18px;
-  width: 18px;
-}
-
-#userDividerContainer {
-  padding: 20px 0px 30px 0px;
-}
-
-#userDivider {
-  border-bottom: 1px solid #000000;
-}
-
-#addUserSelectDiv {
-  padding: 0px 0px 20px 0px;
-}
-
-#addUserSelect {
-  width: 250px;
-}
-
-#addUserRegisterButtonDiv {
-  text-align: right;
-  padding: 10px 33px 10px 0px;
-}
-
-#addUserRegisterButton {
-  width: 100px;
-  height: 30px;
-  background-color: #2272c4;
+.flex-addUser-container h2 {
   color: #ffffff;
-  border: none;
+}
+
+.flex-addUser-container h4 {
+  color: #ffffff;
+}
+
+.flex-addUser-subContainer {
+  margin: 30px 0px 10px 0px;
+}
+
+.flex-addUser-headingContainer img {
+  height: 140px;
+  width: 140px;
+  margin-bottom: 20px;
+}
+
+.flex-addUser-nameContainer input {
+  outline-style: none;
+  /*opacity: 0.6;*/
   border-radius: 5px;
-  outline: none;
+  height: 40px;
+  width: 300px;
+  font-size: 25px;
 }
 
-#addUserRegisterButton:hover {
-  box-shadow: 3px 3px 3px grey;
+.flex-addUser-loginCredContainer input {
+  outline-style: none;
+  /*opacity: 0.6;*/
+  border-radius: 5px;
+  height: 40px;
+  width: 300px;
+  font-size: 25px;
 }
 
-#addUserRegisterDiv {
-  padding: 20px 0px 0px 0px;
+.flex-addUser-password-icons {
+
 }
 
+.flex-addUser-password-icons img {
+  height: 30px;
+  width: 30px;
+}
 
+.flex-addUser-companyContainer select {
+  outline-style: none;
+  /*opacity: 0.6;*/
+  border-radius: 5px;
+  height: 30px;
+  width: 300px;
+  font-size: 18px;
+}
 
-
-
+.flex-addUser-buttonContainer button {
+  background-color: #345da2;
+  outline-style: none;
+  color: #ffffff;
+  border-radius: 5px;
+  height: 45px;
+  width: 300px;
+  margin: 30px 0px 30px 0px;
+}
 
 
 
@@ -373,6 +404,7 @@ footer {
   padding: 4px 0px 0px 0px;
   text-align: center;
   background-color: #737373;
+  /*opacity: 0.7;*/
   color: #ffffff;
 }
 
@@ -418,6 +450,6 @@ footer {
   footer {
     height: 20px;
     font-size: 10px;
-    padding-top: 3px;
+    padding-top: 2px;
   }
 }
