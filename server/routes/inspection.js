@@ -123,7 +123,23 @@ router.post('/postPageFileUpload', function(req, res){
     });// end of .then
 });// end router.put
 
-
+router.put('/completeInspection/:id', function(req,res){
+  console.log("req.body : ", req.body);
+  var newInspectionSite_Id = req.body.newInspectionSite_Id;
+  var users_id = req.body.users_id;
+  var inspected_date = req.body.inspected_date;
+  pool.connect( function (err, client, done) {
+    client.query('UPDATE inspection_sites SET users_id=$1, inspecteddate=$2, active=false WHERE id=$3;',[users_id, inspected_date, newInspectionSite_Id], function(err, result){
+      done();
+      if(err){
+        console.log('Error adding inspection site completion', err);
+        res.sendStatus(501);
+      } else {
+        res.send(result.rows);
+      }
+    });
+  })
+});
 
 
 module.exports = router;

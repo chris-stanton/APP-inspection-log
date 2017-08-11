@@ -192,13 +192,9 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
 
   function completeInspection(signature) {
     $http({
-      method: 'GET',
-      url: '/inspection/completeInspection',
-      headers: {
-        newInspectionSite_Id : signature.newInspectionSite_Id,
-        users_id : signature.users_id,
-        inspected_date : signature.inspected_date
-      }
+      method: 'PUT',
+      url: '/inspection/completeInspection/' + signature.newInspectionSite_Id,
+      data: signature
     }).then(function(response) {
       alertify.success('Inspection was added to DB');
         $location.path('/dashboard')

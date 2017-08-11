@@ -24,7 +24,7 @@ myApp.controller('SignatureController',['FactoryFactory', '$location', '$routePa
 
   self.completeInspection = function(signature) {
     var signature = {
-      newInspectionSite_Id : newInspectionSite_Id,
+      newInspectionSite_Id : Number(newInspectionSite_Id),
       users_id : signature.users_id,
       inspected_date : signature.inspected_date
     }
