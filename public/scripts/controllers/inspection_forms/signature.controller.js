@@ -24,6 +24,7 @@ myApp.controller('SignatureController',['FactoryFactory', '$location', '$routePa
 
   self.completeInspection = function(signature) {
     console.log(signature);
+    // send to factory to update inspection site info
      $location.path('/dashboard')
   }
 

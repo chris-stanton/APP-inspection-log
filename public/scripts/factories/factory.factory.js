@@ -46,7 +46,7 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
 //     }).then(function(response) {
 //       allEmployeeNames.list = response.data;
 //     });
-//   }; // end getAllCompanies()
+//   }; // getAllEmployeeNames()
 
 // adds new inspection to DB
   function addInspectionSite(inspectionSite) {

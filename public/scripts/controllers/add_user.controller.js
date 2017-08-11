@@ -20,6 +20,7 @@
           console.log('LoginController -- registerUser -- sending to server...', self.user);
           $http.post('/register', self.user).then(function(response) {
             console.log('LoginController -- registerUser -- success');
+            alertify.success('User profile was added to DB');
             $location.path('/dashboard');
           }).catch(function(response) {
             console.log('LoginController -- registerUser -- error');

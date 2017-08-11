@@ -8,7 +8,7 @@ var pool = require('../modules/database-config');
   router.get('/getAllCompanies', function (req, res) {
   pool.connect()
     .then(function (client) {
-      client.query("SELECT id, companyname, city, state FROM companies ORDER BY companyname ASC")
+      client.query("SELECT id, companyname, city, state FROM companies WHERE active='true' ORDER BY companyname ASC")
         .then(function (result) {
           client.release();
           res.send(result.rows);
@@ -20,11 +20,11 @@ var pool = require('../modules/database-config');
     });//end of .then
   });//end of router.get
 
-// gets all employees names
+// gets all Active employees names
   router.get('/getAllEmployeeNames', function (req, res) {
   pool.connect()
     .then(function (client) {
-      client.query("SELECT id, firstname, lastname FROM users ORDER BY lastname ASC")
+      client.query("SELECT id, firstname, lastname FROM users WHERE active='true' ORDER BY lastname ASC")
         .then(function (result) {
           client.release();
           res.send(result.rows);
