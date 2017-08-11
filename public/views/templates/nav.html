@@ -1,9 +1,11 @@
 
-  <!-- <nav class="nav-main"> -->
+
     <ul class="flex-nav-container" ng-controller="NavController as nav">
-      <li>
-        <button type="button" ng-click="nav.logout()"> Logout </button>
-        <h5> Username: <i>{{nav.userName}}</i> </h5>
+      <li class="flex-nav-authContainer">
+        <div>
+          <img ng-click="nav.logout()" src="./assets/images/icons/white-logout.ico">
+          Username: {{nav.userName}}
+        </div>
       </li>
       <li class="flex-nav-logoContainer">
         <div>
@@ -16,4 +18,3 @@
         <a href="#!dashboard"><img src="/assets/images/icons/white-dashboard.ico"></a>
       </li>
     </ul>
-  <!-- </nav> -->
