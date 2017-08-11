@@ -38,15 +38,15 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
     });
   }; // end getAllCompanies()
 
-// calls DB on add user init for all companies
-  function getAllEmployeeNames() {
-    $http({
-      method: 'GET',
-      url: '/init/getAllEmployeeNames'
-    }).then(function(response) {
-      allEmployeeNames.list = response.data;
-    });
-  }; // end getAllCompanies()
+// // calls DB on add user init for all companies
+//   function getAllEmployeeNames() {
+//     $http({
+//       method: 'GET',
+//       url: '/init/getAllEmployeeNames'
+//     }).then(function(response) {
+//       allEmployeeNames.list = response.data;
+//     });
+//   }; // end getAllCompanies()
 
 // adds new inspection to DB
   function addInspectionSite(inspectionSite) {
@@ -203,7 +203,7 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
 // all companies from DB
   allCompanies : allCompanies,
 // calls DB for all employees
-  getAllEmployeeNames : getAllEmployeeNames,
+  // getAllEmployeeNames : getAllEmployeeNames,
 // all employee names from DB
   allEmployeeNames : allEmployeeNames,
 // adds new inspection site to DB
