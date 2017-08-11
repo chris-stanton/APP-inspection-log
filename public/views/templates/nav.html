@@ -1,8 +1,9 @@
 
   <!-- <nav class="nav-main"> -->
-    <ul class="flex-nav-container" ng-controller="nav as NavController">
+    <ul class="flex-nav-container" ng-controller="NavController as nav">
       <li>
         <button type="button" ng-click="nav.logout()"> Logout </button>
+        <h5> Username: <i>{{nav.userName}}</i> </h5>
       </li>
       <li class="flex-nav-logoContainer">
         <div>

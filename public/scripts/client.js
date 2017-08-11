@@ -16,11 +16,6 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
             controller: 'LoginController',
             controllerAs: 'lc'
         })
-        // .when ('/nav', {
-        //     templateUrl: '/views/templates/nav.html',
-        //     controller: 'NavController',
-        //     controllerAs: 'nav'
-        // })
         .when ('/add_user', {
             templateUrl: '/views/add_user.html',
             controller: 'Add_userController',
