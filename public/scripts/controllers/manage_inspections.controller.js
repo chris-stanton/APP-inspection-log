@@ -4,9 +4,7 @@ myApp.controller('Manage_inspectionsController',['FactoryFactory', 'UserService'
   var self = this;
   self.message = 'angular sourced';
 
-  self.logout = UserService.logout;
-  var user = UserService.userObject;
-  console.log('user ', user);
+  
 
 
 }]);//end of myApp.controller

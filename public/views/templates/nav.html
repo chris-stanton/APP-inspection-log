@@ -1,6 +1,13 @@
 
-  <!-- <nav class="nav-main"> -->
-    <ul class="flex-nav-container">
+
+    <ul class="flex-nav-container" ng-controller="NavController as nav">
+      <li class="flex-nav-authContainer">
+        <div>
+          <img ng-click="nav.logout()" src="./assets/images/icons/white-logout.ico">
+          Username: {{nav.userName}}
+          <!-- Company ID: {{nav.companies_id}} -->
+        </div>
+      </li>
       <li class="flex-nav-logoContainer">
         <div>
           <h5> Phoenix Fire Alarm Inspection Reporting </h5>
@@ -12,4 +19,3 @@
         <a href="#!dashboard"><img src="/assets/images/icons/white-dashboard.ico"></a>
       </li>
     </ul>
-  <!-- </nav> -->

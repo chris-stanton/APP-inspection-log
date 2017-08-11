@@ -11,30 +11,35 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
             controller: 'LoginController',
             controllerAs: 'lc'
         })
-        .when ('/register', {
-            templateUrl: '/views/templates/register.html',
-            controller: 'LoginController',
-            controllerAs: 'lc'
-        })
         .when ('/add_user', {
             templateUrl: '/views/add_user.html',
             controller: 'Add_userController',
-            controllerAs: 'auc'
+            controllerAs: 'auc',
+            resolve: {
+                getuser : function(UserService){
+                return UserService.getuser();
+              }
+            }
         })
         .when ('/add_company', {
             templateUrl: '/views/add_company.html',
             controller: 'Add_companyController',
-            controllerAs: 'acc'
+            controllerAs: 'acc',
+            resolve: {
+                getuser : function(UserService){
+                return UserService.getuser();
+              }
+            }
         })
         .when ('/dashboard', {
-          templateUrl: '/views/dashboard.html',
-          controller: 'DashboardController',
-          controllerAs: 'dbc',
-          resolve: {
-              getuser : function(UserService){
-              return UserService.getuser();
+            templateUrl: '/views/dashboard.html',
+            controller: 'DashboardController',
+            controllerAs: 'dbc',
+            resolve: {
+                getuser : function(UserService){
+                return UserService.getuser();
+              }
             }
-          }
         })
         .when ('/manage_inspections', {
             templateUrl: '/views/manage_inspections.html',

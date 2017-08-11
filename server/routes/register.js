@@ -12,14 +12,17 @@ var encryptLib = require('../modules/encryption');
 // Handles request for HTML file
 router.get('/', function(req, res, next) {
   console.log('get /register route');
-  res.sendFile(path.resolve(__dirname, '../public/views/templates/register.html'));
+  res.sendFile(path.resolve(__dirname, '../../public/views/templates/register.html'));
 });
 
 // Handles POST request with new user data
 router.post('/', function(req, res, next) {
   var saveUser = {
     username: req.body.username,
-    password: encryptLib.encryptPassword(req.body.password)
+    password: encryptLib.encryptPassword(req.body.password),
+    firstname: req.body.firstname,
+    lastname: req.body.lastname,
+    companyId : req.body.companyId
   };
   console.log('new user:', saveUser);
 
@@ -28,8 +31,8 @@ router.post('/', function(req, res, next) {
       console.log("Error connecting: ", err);
       next(err);
     }
-    client.query("INSERT INTO users (username, password) VALUES ($1, $2) RETURNING id",
-      [saveUser.username, saveUser.password],
+    client.query("INSERT INTO users (username, password, firstname, lastname, companies_id) VALUES ($1, $2, $3, $4, $5) RETURNING id",
+      [saveUser.username, saveUser.password, saveUser.firstname, saveUser.lastname, saveUser.companyId],
         function (err, result) {
           client.end();
 
@@ -41,7 +44,6 @@ router.post('/', function(req, res, next) {
           }
         });
   });
-
 });
 
 
