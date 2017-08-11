@@ -13,12 +13,12 @@
 <!-- first name div -->
         <div>
           <label class="left"> First Name: </label>
-            <input type="text" ng-model="auc.newUser.firstName" class="addUserInputs" style="text-transform: capitalize">
+            <input type="text" ng-model="auc.user.firstname" class="addUserInputs" style="text-transform: capitalize">
         </div>
 <!-- last name div -->
         <div>
           <label> Last Name: </label>
-            <input type="text" ng-model="auc.newUser.lastName" class="addUserInputs" style="text-transform: capitalize">
+            <input type="text" ng-model="auc.user.lastname" class="addUserInputs" style="text-transform: capitalize">
         </div>
         <div id="userDividerContainer">
           <div class="col-md-2">
@@ -34,7 +34,7 @@
 <!-- username div -->
         <div>
           <label> Username: </label>
-            <input type="text" ng-model="auc.newUser.username" class="addUserInputs">
+            <input type="text" ng-model="auc.user.username" class="addUserInputs">
         </div>
 <!-- pasword div -->
         <div>
@@ -43,13 +43,13 @@
         </div>
 <!-- re password div -->
         <div ng-if="auc.password !== NULL">
-          <label ng-hide="auc.newUser.password !== NULL && auc.password !== NULL"> Re-Enter Password: </label>
+          <label ng-hide="auc.user.password !== NULL && auc.password !== NULL"> Re-Enter Password: </label>
           <div>
             <div ng-if="auc.password === NULL"></div>
-            <div ng-if="auc.newUser.password === auc.password"><label> Re-Enter Password: <img class="checkmarks" src="/assets/images/icons/green-checkmark.ico"></label></div>
-            <div ng-if="auc.newUser.password !== auc.password && auc.newUser.password !== NULL"><label> Re-Enter Password: <img class="checkmarks" src="/assets/images/icons/red-checkmark.ico"></label></div>
+            <div ng-if="auc.user.password === auc.password"><label> Re-Enter Password: <img class="checkmarks" src="/assets/images/icons/green-checkmark.ico"></label></div>
+            <div ng-if="auc.user.password !== auc.password && auc.user.password !== NULL"><label> Re-Enter Password: <img class="checkmarks" src="/assets/images/icons/red-checkmark.ico"></label></div>
           </div>
-            <input type="password" ng-model="auc.newUser.password" class="addUserInputs">
+            <input type="password" ng-model="auc.user.password" class="addUserInputs">
         </div>
 <!-- line break div -->
         <div id="userDividerContainer">
@@ -66,13 +66,13 @@
 <!-- select container -->
         <div id="addUserSelectDiv">
           <label> Company Name: </label></br>
-            <select ng-model="auc.newUser.companyId" id="addUserSelect" style="text-transform: capitalize">
+            <select ng-model="auc.user.companyId" id="addUserSelect" style="text-transform: capitalize">
               <option ng-value="company.id" ng-repeat="company in auc.allCompanies.list"> {{company.companyname}} - {{company.city}}, {{company.state}} </option>
             </select>
         </div>
 <!-- register new user button div -->
         <div id="addUserRegisterButtonDiv">
-          <button type="button" ng-click="auc.addNewUser(auc.newUser)" id="addUserRegisterButton"> Register </button>
+          <button type="button" ng-click="auc.addNewUser(auc.user)" id="addUserRegisterButton"> Register </button>
         </div>
 <!-- register new company redirect div -->
         <div class="col-md-12">
