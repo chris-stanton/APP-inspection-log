@@ -23,9 +23,13 @@ myApp.controller('SignatureController',['FactoryFactory', '$location', '$routePa
 
 
   self.completeInspection = function(signature) {
-    console.log(signature);
-    // send to factory to update inspection site info
-     $location.path('/dashboard')
+    var signature = {
+      newInspectionSite_Id : newInspectionSite_Id,
+      users_id : signature.users_id,
+      inspected_date : signature.inspected_date
+    }
+    console.log('signature: ', signature);
+    FactoryFactory.completeInspection(signature);
   }
 
 }]);//end of myApp.controller

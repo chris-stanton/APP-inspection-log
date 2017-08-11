@@ -10,12 +10,12 @@
   <table class="pages-table-container">
     <tr>
       <td><h4> Date </h4></td>
-      <td><input type="date" ng-model="sig.signature.date"></td>
+      <td><input type="date" ng-model="sig.signature.inspected_date"></td>
     </tr>
     <tr>
       <td><h4> Signature Of Inspector </h4></td>
       <td>
-        <select ng-model="sig.signature.signature">
+        <select ng-model="sig.signature.users_id">
           <option ng-value="user.id" ng-repeat="user in sig.company.list"> {{user.lastname}}, {{user.firstname}} </option>
         </select>
       </td>

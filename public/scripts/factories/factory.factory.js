@@ -190,7 +190,20 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
     });
   }; // end getUserByCompanyId()
 
-
+  function completeInspection(signature) {
+    $http({
+      method: 'GET',
+      url: '/inspection/completeInspection',
+      headers: {
+        newInspectionSite_Id : signature.newInspectionSite_Id,
+        users_id : signature.users_id,
+        inspected_date : signature.inspected_date
+      }
+    }).then(function(response) {
+      alertify.success('Inspection was added to DB');
+        $location.path('/dashboard')
+    });
+  }; // end completeInspection()
 
 
 
@@ -227,7 +240,9 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
 // gets specific company id for signature view
   getUserByCompanyId : getUserByCompanyId,
 // return of specific company id for signature view
-  company : company
+  company : company,
+// signature submission to db
+  completeInspection : completeInspection
 
   }
 
