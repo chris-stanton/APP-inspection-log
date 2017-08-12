@@ -1,6 +1,6 @@
 
 myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($http, $location, $routeParams) {
-  console.log('FactoryFactory running');
+  console.log('FactoryFactory running...');
 
 // new inspection site ID
   var newInspectionSite_Id = $routeParams;
