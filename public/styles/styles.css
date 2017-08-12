@@ -323,18 +323,18 @@ body {
 
 .flex-manage-container {
   display: flex;
-  width: 100%;
+  justify-content: center;
+
 }
 
 .flex-manage-dataContainer {
-
-
+  
 }
 
 .flex-manage-repeatContainer {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  padding: 40px;
   border: 2px solid #000000;
 }
 
