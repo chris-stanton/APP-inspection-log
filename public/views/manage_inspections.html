@@ -4,7 +4,8 @@
 <section class="flex-manage-container">
 
     <section class="flex-manage-dataContainer">
-        <div ng-repeat="site in mic.inspectionSitesByUser_id.list">
+
+        <section ng-repeat="site in mic.inspectionSitesByUser_id.list" class="flex-manage-repeatContainer">
           <section>
             <h4> Company Name: </h4>
               <div> {{site.companyname}} </div>
@@ -36,7 +37,8 @@
               <div> Schedualed Date: {{site.schedualeddate}} </div>
               <div> Inspected Date: {{site.inspecteddate}} </div>
           </section>
-        </div>
+        </section>
+
     </section>
 
 </section>
