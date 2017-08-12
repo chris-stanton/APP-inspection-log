@@ -61,7 +61,7 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
       alertify.alert("Inspection location could not be added to DB");
         console.log('error adding inspection site profile to DB', error);
     });
-  }; // addInspectionSite()
+  }; 
 
 // gets all inspection sites by companies_id and active true status
   function getAllInspectionSites(company_Id) {
@@ -74,7 +74,7 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
     }).then(function(response) {
       allInspectionSites.list = response.data;
     });
-  }; // end getAllCompanies()
+  };
 
 // post page two to db
   function postPageTwo(pageTwo) {

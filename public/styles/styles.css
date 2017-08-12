@@ -322,9 +322,18 @@ body {
 //  MANAGE INSPECTIONS  //
 ////////////////////////*/
 
-.flex-manage-headingContainer {
-
+.flex-manage-container {
+  display: flex;
 }
+
+.flex-manage-dataContainer table {
+  flex: 1 1 20px;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+
 
 
 

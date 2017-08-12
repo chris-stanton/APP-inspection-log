@@ -1,9 +1,41 @@
 
 <nav ng-include="'views/templates/nav.html'"></nav>
 
-<section>
-  <section class="flex-manage-headingContainer">
-    <h2> Manage Inspections </h2>
-  </section>
-  
+<section class="flex-manage-container">
+
+    <section class="flex-manage-dataContainer">
+      <table>
+        <tr>
+          <th> Company Name </th>
+          <th> License Number </th>
+          <th> Contact Name </th>
+          <th> Address </th>
+          <th> Contact Info. </th>
+          <th> Inspection Dates </th>
+        </tr>
+        <tr ng-repeat="site in mic.inspectionSitesByUser_id.list">
+          <td> {{site.companyname}} </td>
+          <td> {{site.licensenumber}} </td>
+          <td> {{site.contactname}} </td>
+          <td>
+            <p> Street Address: {{site.streetaddress}} </p>
+            <p> City: {{site.city}} </p>
+            <p> State: {{site.state}} </p>
+            <p> Zip Code: {{site.zipcode}} </p>
+            <p> Country: {{site.country}} </p>
+          </td>
+          <td>
+            <p> Email: {{site.email}} </p>
+            <p> Phone: {{site.phone}} </p>
+            <p> Fax: {{site.fax}} </p>
+          </td>
+          <td>
+            <p> Schedualed Date: {{site.schedualeddate}} </p>
+            <p> Inspected Date: {{site.inspecteddate}} </p>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+
 </section>

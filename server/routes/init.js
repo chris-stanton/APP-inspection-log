@@ -87,6 +87,22 @@ var pool = require('../modules/database-config');
     });//end of .then
   });//end of router.get
 
+  router.get('/getInspectionSitesByUser_id', function (req, res) {
+  var user_Id = req.headers;
+  pool.connect()
+    .then(function (client) {
+      client.query("SELECT * FROM inspection_sites WHERE users_id=$1",[user_Id.user_id])
+        .then(function (result) {
+          client.release();
+          res.send(result.rows);
+        })
+        .catch(function (err) {
+          console.log('error on SELECT', err);
+          res.sendStatus(500);
+        });
+    });//end of .then
+  });//end of router.get
+
 
 
 module.exports = router;
