@@ -4,38 +4,39 @@
 <section class="flex-manage-container">
 
     <section class="flex-manage-dataContainer">
-      <table>
-        <tr>
-          <th> Company Name </th>
-          <th> License Number </th>
-          <th> Contact Name </th>
-          <th> Address </th>
-          <th> Contact Info. </th>
-          <th> Inspection Dates </th>
-        </tr>
-        <tr ng-repeat="site in mic.inspectionSitesByUser_id.list">
-          <td> {{site.companyname}} </td>
-          <td> {{site.licensenumber}} </td>
-          <td> {{site.contactname}} </td>
-          <td>
-            <p> Street Address: {{site.streetaddress}} </p>
-            <p> City: {{site.city}} </p>
-            <p> State: {{site.state}} </p>
-            <p> Zip Code: {{site.zipcode}} </p>
-            <p> Country: {{site.country}} </p>
-          </td>
-          <td>
-            <p> Email: {{site.email}} </p>
-            <p> Phone: {{site.phone}} </p>
-            <p> Fax: {{site.fax}} </p>
-          </td>
-          <td>
-            <p> Schedualed Date: {{site.schedualeddate}} </p>
-            <p> Inspected Date: {{site.inspecteddate}} </p>
-          </td>
-        </tr>
-      </table>
+        <div ng-repeat="site in mic.inspectionSitesByUser_id.list">
+          <section>
+            <h4> Company Name: </h4>
+              <div> {{site.companyname}} </div>
+          </section>
+          <section>
+            <h4> License Number: </h4>
+              <div> {{site.licensenumber}} </div>
+          </section>
+          <section>
+            <h4> Contact Name: </h4>
+              <div> {{site.contactname}} </div>
+          </section>
+          <section>
+            <h4> Address: </h4>
+              <div> Street Address: {{site.streetaddress}} </div>
+              <div> City: {{site.city}} </div>
+              <div> State: {{site.state}} </div>
+              <div> Zip Code: {{site.zipcode}} </div>
+              <div> Country: {{site.country}} </div>
+          </section>
+          <section>
+            <h4> Contact Info. </h4>
+              <div> Email: {{site.email}} </div>
+              <div> Phone: {{site.phone}} </div>
+              <div> Fax: {{site.fax}} </div>
+          </section>
+          <section>
+            <h4> Inspection Dates </h4>
+              <div> Schedualed Date: {{site.schedualeddate}} </div>
+              <div> Inspected Date: {{site.inspecteddate}} </div>
+          </section>
+        </div>
     </section>
-
 
 </section>
