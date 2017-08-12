@@ -331,6 +331,53 @@ body {
 
 
 /*////////////////////////
+//   START INSPECTION   //
+////////////////////////*/
+
+.flex-startInspection-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.flex-startInspection-headingContainer {
+
+}
+
+.flex-startInspection-locationContainer {
+
+}
+
+.flex-startInspection-dataContainer {
+
+}
+
+.flex-startInspection-add_siteContainer {
+
+}
+
+
+
+
+.pages-button-container {
+  margin: 100px 100px 75px 0px;
+  text-align: right;
+  background-color: #ffffff;
+}
+
+.pages-button-container img {
+  height: 50px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/*////////////////////////
 //         PAGES        //
 //    ADD INSPECTION    //
 ////////////////////////*/
@@ -376,16 +423,7 @@ body {
   width: 300px;
 }
 
-.pages-button-container {
-  margin: 100px 100px 75px 0px;
-  text-align: right;
-  background-color: #ffffff;
-}
 
-.pages-button-container img {
-  height: 50px;
-  cursor: pointer;
-}
 
 
 

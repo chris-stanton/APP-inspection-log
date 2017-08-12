@@ -1,26 +1,50 @@
 
 <nav ng-include="'views/templates/nav.html'"></nav>
 
-<section class="flex-pages-container">
-  <div class="pages-header-container">
+<section class="flex-startInspection-container">
+  <section class="flex-startInspection-headingContainer">
     <h1> Start Inspection </h1>
-  </div>
-  <table class="pages-table-container">
-    <tr>
-      <td><h4> Inspection Site Location: </h4></td>
-      <td>
-        <select ng-model="sic.newInspectionId.inspectionSiteId" style="text-transform: capitalize">
-          <option ng-value="inspectionSites.id" ng-repeat="inspectionSites in sic.allInspectionSites.list"> {{inspectionSites.companyname}} - {{inspectionSites.city}}, {{inspectionSites.state}} </option>
-        </select>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <h6><a href="#!add_inspection"> Add Inspection Site Profile </a></h6>
-      </td>
-    </tr>
-  </table>
-  <div class="pages-button-container">
-    <span ng-click="sic.nextPage(sic.newInspectionId)" ><img src="./assets/images/icons/next-button.ico"></span>
-  </div>
+  </section>
+
+  <section class="flex-startInspection-locationContainer">
+    <h4> Inspection Site Location: </h4>
+      <select ng-model="sic.newInspectionId.inspectionSiteId" style="text-transform: capitalize">
+        <option ng-value="inspectionSites.id" ng-repeat="inspectionSites in sic.allInspectionSites.list"> {{inspectionSites.companyname}} - {{inspectionSites.city}}, {{inspectionSites.state}} </option>
+      </select>
+  </section>
+
+  <section class="flex-startInspection-dataContainer">
+    <div>
+      <span><h6> Inspection Site ID: </h6> {{sic.newInspectionId.inspectionSiteId}} </span>
+    </div>
+    <div>
+      <span><h6> Contact Name: </h6> {{sic.newInspectionId.contactname}} </span>
+    </div>
+    <div>
+      <h6> Contact info </h6>
+        <p> Email: </p>
+        <p> Phone: </p>
+        <p> Fax:</p>
+    </div>
+    <div>
+      <span><h6> License Number: </h6>  </span>
+    </div>
+    <div>
+      <h6> Street Address </h6>
+        <p> Street Address</p>
+        <p> City: </p>
+        <p> State: </p>
+        <p> Zip Code: </p>
+        <p> Country: </p>
+    </div>
+  </section>
+
+  <section class="pages-button-container">
+    <span ng-click="sic.nextPage(sic.newInspectionId)"><img src="./assets/images/icons/next-button.ico"></span>
+  </section>
+
+  <section class="flex-startInspection-add_siteContainer">
+    <h6><a href="#!add_inspection"> Add Inspection Site Profile </a></h6>
+  </section>
+
 </section>
