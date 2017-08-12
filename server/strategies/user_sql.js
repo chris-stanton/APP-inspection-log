@@ -64,7 +64,7 @@ passport.deserializeUser(function(id, done) {
           return done(null, false, {message: 'Incorrect credentials.'});
       } else {
         // user found
-        console.log('User row ', user);
+        // console.log('User row ', user);
         done(null, user);
       }
 
