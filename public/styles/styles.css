@@ -250,6 +250,7 @@ body {
 
 
 
+
 /*////////////////////////
 //       ADD_COMPANY    //
 ////////////////////////*/
@@ -293,9 +294,6 @@ body {
 
 
 
-
-
-
 /*////////////////////////
 //      DASHBOARD       //
 ////////////////////////*/
@@ -318,6 +316,7 @@ body {
 
 
 
+
 /*////////////////////////
 //  MANAGE INSPECTIONS  //
 ////////////////////////*/
@@ -327,7 +326,6 @@ body {
 }
 
 .flex-manage-dataContainer table {
-  flex: 1 1 20px;
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
