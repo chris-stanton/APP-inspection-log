@@ -9,7 +9,9 @@ myApp.controller('Manage_inspectionsController',['DataFactory', 'UserService',fu
 
   self.message = 'angular sourced';
 
+// gets user inspection data on init by user_id
   DataFactory.getInspectionSitesByUser_id(user_id);
+// return of user inspection data from DB
   self.inspectionSitesByUser_id = DataFactory.inspectionSitesByUser_id;
 
 
