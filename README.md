@@ -22,8 +22,8 @@
   11. Nodemailer
   12. Sweat Alerts
   13. Alertify
-  14. bcrypt js
-  15. Bootstrap 4
+  14. bcrypt
+  15. Multer
 
 ---
 
