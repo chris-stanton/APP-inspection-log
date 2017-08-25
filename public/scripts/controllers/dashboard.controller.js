@@ -32,9 +32,9 @@ myApp.controller('DashboardController', function() {
                     beginAtZero:true
                 }
             }]
-        }
-    }
-  });
+        } // end of scale
+    } // end of options
+  }); // end of myChart
 
 
 }); // end controller code block
