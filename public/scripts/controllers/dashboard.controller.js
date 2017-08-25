@@ -14,8 +14,8 @@ myApp.controller('DashboardController', function() {
     data: {
         labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
         datasets: [{
-            label: '# of inspection',
-            data: [12, 19, 3, 5, 10, 3, 15, 7, 10, 20, 11, 15],
+            label: 'Number Of Inspections',
+            data: [12, 19, 30, 5, 10, 90, 25, 70, 10, 20, 30, 15],
             backgroundColor: [
                 "transparent"
             ],
