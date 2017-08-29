@@ -6,13 +6,13 @@
 ## Description:
 ###### Full MEAN stack application that uses Passport Authentication and Angular wire frame to create, maintain and save Fire and Gas Inspection logs that follow NFPA regulations and guidelines.
 
-- *Desktop View*
+- *Desktop Views*
 
   ###### Login
-  <img src="./public/assets/images/screenshots/desktop-login.png" width="49%" boarder="1px solid black">
+  <img src="./public/assets/images/screenshots/desktop-login.png" width="49%" border="1px solid black">
 
   ###### Dashboard
-  <img src="./public/assets/images/screenshots/desktop-dashboard.png" width="49%" boarder="1px solid black">
+  <img src="./public/assets/images/screenshots/desktop-dashboard.png" width="49%" border="1px solid black">
 
 ---
 
