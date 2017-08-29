@@ -10,12 +10,12 @@
   #### Login
     <img src="./public/assets/images/screenshots/desktop-login.png" width="49%" border="1px solid black">
 
-    - Login and Authentiaction is being don with Passport JS and bcrypt JS.
+    - ###### Login and Authentiaction is being don with Passport JS and bcrypt JS.
 
   #### Dashboard
     <img src="./public/assets/images/screenshots/desktop-dashboard.png" width="49%" border="1px solid black">
 
-    - Employee/User can see their inspection history viewed on a yearly chart.  Chart shows details on when, where and findings for inspections selected ad index.
+    - ###### Employee/User can see their inspection history viewed on a yearly chart.  Chart shows details on when, where and findings for inspections selected ad index.
 
   #### Start Inspection
     <img src="./public/assets/images/screenshots/desktop-startInspection.png" width="49%" border="1px solid black">
