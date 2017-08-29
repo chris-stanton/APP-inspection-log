@@ -2,8 +2,6 @@
 # Inspection Log Records App
   ###### NOTE - APP is currently still in development.  Most logic and back-end work has been completed. APP is mostly functional minus the implantation of MulterJS and CSS work.  MulterJS and CSS is currently being worked on.
 
-
-
 ## Description:
   ###### Full MEAN stack application that uses Passport Authentication and Angular wire frame to create, maintain and save Fire and Gas Inspection logs that follow NFPA regulations and guidelines.
 
@@ -58,8 +56,6 @@
 
     - Admin can add Inspection Site to DB
 
-
-
 ## Technologies Used:
   1. HTML
   2. CSS
@@ -77,8 +73,6 @@
   14. Multer
   15. Chart JS
 
-
-
 ## Install App:
   1. Download zip file
   2. Open terminal and navigate into folder
@@ -91,8 +85,6 @@
     - ``` npm start ``` Starts server
     - ``` npm test ``` Starts server using Nodemon
   5. Server is listening on port: 5000
-
-
 
 ## License:
 ##### Copyright 2017 Chris Stanton
