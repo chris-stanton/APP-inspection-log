@@ -1,11 +1,11 @@
 
 # Inspection Log Records App
-###### NOTE - APP is currently still in development.  Most logic and back-end work has been completed. APP is mostly functional minus the implantation of MulterJS and CSS work.  MulterJS and CSS is currently being worked on.
+  ###### NOTE - APP is currently still in development.  Most logic and back-end work has been completed. APP is mostly functional minus the implantation of MulterJS and CSS work.  MulterJS and CSS is currently being worked on.
 
 ---
 
 ## Description:
-###### Full MEAN stack application that uses Passport Authentication and Angular wire frame to create, maintain and save Fire and Gas Inspection logs that follow NFPA regulations and guidelines.
+  ###### Full MEAN stack application that uses Passport Authentication and Angular wire frame to create, maintain and save Fire and Gas Inspection logs that follow NFPA regulations and guidelines.
 
 - *Desktop Views*
 
@@ -61,21 +61,21 @@
 ---
 
 ## Technologies Used:
-  1. HTML5
-  2. CSS3
-  3. ES6 Compliant
-  4. Angular.js
-  5. Angular Route
-  6. Node.js
-  7. Express.js
-  8. Express Sessions
-  9. Body-Parser
-  10. Postgres SQL
-  11. Nodemailer
-  12. Sweat Alerts
-  13. Alertify
-  14. bcrypt
-  15. Multer
+  1. HTML
+  2. CSS
+  3. Angular.js
+  4. Angular Route
+  5. Node.js
+  6. Express.js
+  7. Express Sessions
+  8. Body-Parser
+  9. Postgres SQL
+  10. Nodemailer
+  11. SweatAlerts 2
+  12. Alertify
+  13. bcrypt
+  14. Multer
+  15. Chart JS
 
 ---
 
@@ -97,8 +97,8 @@
 ## License
 ##### Copyright 2017 Chris Stanton
 
-###### Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+  ###### Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-###### The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+  ###### The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-###### THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  ###### THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
