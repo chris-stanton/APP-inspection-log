@@ -1,7 +1,7 @@
 
 myApp.controller('DashboardController', function() {
   console.log('DashboardController running');
-
+  
   var self = this;
 // monthy inspections totals chart
   var ctx = document.getElementById("myChart");

@@ -9,7 +9,7 @@ myApp.controller('Start_inspectionController',['FactoryFactory', 'UserService', 
 
   self.message = 'angular sourced';
 
-// gest all active inspection sites by companies_id
+// gets all active inspection sites by companies_id
   FactoryFactory.getAllInspectionSites(companies_id);
 // all companies for DB
   self.allInspectionSites = FactoryFactory.allInspectionSites;

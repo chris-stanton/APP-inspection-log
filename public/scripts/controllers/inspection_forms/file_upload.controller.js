@@ -1,5 +1,5 @@
 
-myApp.controller('File_uploadController',['FactoryFactory', '$location', '$routeParams',function(FactoryFactory, $location, $routeParams) {
+myApp.controller('File_uploadController',['FactoryFactory', '$location', '$routeParams', 'UserService',function(FactoryFactory, $location, $routeParams, UserService) {
 
   console.log('File_uploadController');
 
@@ -10,7 +10,6 @@ myApp.controller('File_uploadController',['FactoryFactory', '$location', '$route
 // inspector's company ID
   var company_id = $routeParams;
     console.log('fileUpload company_id: ', company_id.company_id);
-
 
   self.message = 'angular sourced';
 
