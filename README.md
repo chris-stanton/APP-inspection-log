@@ -7,10 +7,10 @@
 
 - *Desktop Views*
 
-  #### Login
-    <img src="./public/assets/images/screenshots/desktop-login.png" width="49%" border="1px solid black">
+#### Login
+  <img src="./public/assets/images/screenshots/desktop-login.png" width="49%" border="1px solid black">
 
-    - Login and Authentiaction is being don with Passport JS and bcrypt JS.
+  - Login and Authentiaction is being don with Passport JS and bcrypt JS.
 
   #### Dashboard
     <img src="./public/assets/images/screenshots/desktop-dashboard.png" width="49%" border="1px solid black">
