@@ -1,7 +1,7 @@
 
 myApp.controller('DashboardController', function() {
   console.log('DashboardController running');
-  
+
   var self = this;
 // monthy inspections totals chart
   var ctx = document.getElementById("myChart");
@@ -13,7 +13,8 @@ myApp.controller('DashboardController', function() {
     type: 'line',
     data: {
         labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-        datasets: [{
+        datasets: [
+          {
             label: 'Number Of Inspections',
             hidden: false,
             data: [12, 19, 30, 5, 10, 90, 25, 70, 10, 20, 30, 15],
@@ -28,7 +29,8 @@ myApp.controller('DashboardController', function() {
             pointBackgroundColor: '#80ff00',
             borderWidth: 4,
             fill: false
-        }] // end of dataset
+          }
+        ] // end of dataset
     },
     options: {
       tooltips: {
