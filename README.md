@@ -59,21 +59,28 @@
 
 
 ## Technologies Used:
-  1. HTML
-  2. CSS
-  3. Angular.js
-  4. Angular Route
-  5. Node.js
-  6. Express.js
-  7. Express Sessions
-  8. Body-Parser
-  9. Postgres SQL
-  10. Nodemailer
-  11. SweatAlerts 2
-  12. Alertify
-  13. bcrypt
-  14. Multer
-  15. Chart JS
+#### Front-End:
+  - HTML
+  - CSS
+  - Flex Box
+  - Angular
+  - Angular Route
+  - Nodemailer
+  - SweatAlerts 2
+  - Alertify
+  - Chart JS
+
+#### Back-End:
+  - PostgresSQL
+  - Node.js
+  - Passport JS
+  - Passport-local
+  - Express JS
+  - Express Sessions
+  - Body-Parser
+  - bcrypt
+  - Multer
+  - dotenv
 
 
 ## Install App:
