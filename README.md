@@ -11,7 +11,7 @@
   #### Login
     <img src="./public/assets/images/screenshots/desktop-login.png" width="49%" border="1px solid black">
 
-    - ###### Login and Authentiaction is being don with Passport JS and bcrypt JS.
+    - ###### Login and Authentiaction is being done with Passport JS and bcrypt.  All passwords are saved in the database hashed and with a salt added.
 
   #### Dashboard
     <img src="./public/assets/images/screenshots/desktop-dashboard.png" width="49%" border="1px solid black">
