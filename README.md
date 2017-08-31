@@ -4,7 +4,7 @@
 
 
 ## Description:
-  ###### Full MEAN stack application that uses Passport Authentication and Angular wire frame to create, maintain and save Fire and Gas Inspection logs that follow NFPA regulations and guidelines.
+  ###### Full MEAN stack application that uses Passport Authentication, Angular front-end and an Express/Postgresql back-end to create, maintain and save Fire and Gas Inspection logs that follow NFPA regulations and guidelines.  The application has a User/Employee side and an Admin level to manage inspection details.
 
 - *Desktop Views*
 
