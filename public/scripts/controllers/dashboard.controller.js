@@ -26,7 +26,7 @@ myApp.controller('DashboardController', function() {
             ],
             pointHoverRadius: 10,
             pointHoverBorderColor: '#3777f1',
-            pointBackgroundColor: '#80ff00',
+            pointBackgroundColor: '#000000',
             borderWidth: 4,
             fill: false
           }
@@ -34,7 +34,7 @@ myApp.controller('DashboardController', function() {
     },
     options: {
       tooltips: {
-        titleFontColor: '#05ff00',
+        titleFontColor: '#ffffff',
         titleFontSize: 15,
         titleFontStyle: 'italic',
         titleMarginBottom: 10,
@@ -68,7 +68,7 @@ myApp.controller('DashboardController', function() {
             beginAtZero:false,
             fontSize: 15,
             fontColor: '#000000',
-            padding: 10
+            padding: 0
           }
         }],
         xAxes: [{
