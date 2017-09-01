@@ -78,8 +78,8 @@
   - Express JS
   - Express Sessions
   - Body-Parser
-  - bcrypt
   - Multer
+  - bcrypt
   - dotenv
 
 
