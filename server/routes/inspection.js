@@ -18,8 +18,8 @@ router.post('/addInspectionSite', function(req, res){
           console.log('error updating user database:', err);
             res.sendStatus(500);
         });
-    });// end of .then
-});// end router.put
+    });
+});
 
 // adds page two site to DB
 router.post('/postPageTwo', function(req, res){
@@ -35,8 +35,8 @@ router.post('/postPageTwo', function(req, res){
           console.log('error updating user database:', err);
             res.sendStatus(500);
         });
-    });// end of .then
-});// end router.put
+    });
+});
 
 // adds page three to DB
 router.post('/postPageThree', function(req, res){
@@ -52,8 +52,8 @@ router.post('/postPageThree', function(req, res){
           console.log('error updating user database:', err);
             res.sendStatus(500);
         });
-    });// end of .then
-});// end router.put
+    });
+});
 
 // adds page five to DB
 router.post('/postPageFive', function(req, res){
@@ -69,8 +69,8 @@ router.post('/postPageFive', function(req, res){
           console.log('error updating user database:', err);
             res.sendStatus(500);
         });
-    });// end of .then
-});// end router.put
+    });
+});
 
 // adds page six to DB
 router.post('/postPageSix', function(req, res){
@@ -86,8 +86,8 @@ router.post('/postPageSix', function(req, res){
           console.log('error updating user database:', err);
             res.sendStatus(500);
         });
-    });// end of .then
-});// end router.put
+    });
+});
 
 // post page seven to db
 router.post('/postPageSeven', function(req, res){
@@ -103,8 +103,8 @@ router.post('/postPageSeven', function(req, res){
           console.log('error updating user database:', err);
             res.sendStatus(500);
         });
-    });// end of .then
-});// end router.put
+    });
+});
 
 // adds file upload to db
 router.post('/postPageFileUpload', function(req, res){
@@ -120,8 +120,8 @@ router.post('/postPageFileUpload', function(req, res){
           console.log('error updating user database:', err);
             res.sendStatus(500);
         });
-    });// end of .then
-});// end router.put
+    });
+});
 
 router.put('/completeInspection/:id', function(req,res){
   console.log("req.body : ", req.body);
