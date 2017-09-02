@@ -10,6 +10,7 @@ myApp.controller('NavController',['$location', 'UserService',function($location,
   self.userName = user.userName;
   self.companies_id = user.companies_id;
 
+// calls service to log user out of session
   self.logout = UserService.logout;
 
 }]); // end app.controller
