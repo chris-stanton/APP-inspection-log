@@ -1,6 +1,6 @@
 myApp.factory('DataFactory',['$http', '$location', '$routeParams',function($http, $location, $routeParams) {
 
-  console.log('DataFactory running...');
+  console.log('DataFactory Running...');
 
   var inspectionSitesByUser_id = { list : [] };
   console.log('inspectionSitesByUser_id: ', inspectionSitesByUser_id);

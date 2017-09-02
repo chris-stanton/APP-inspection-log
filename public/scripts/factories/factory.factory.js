@@ -1,6 +1,7 @@
 
 myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($http, $location, $routeParams) {
-  console.log('FactoryFactory running...');
+
+  console.log('FactoryFactory Running...');
 
 // new inspection site ID
   var newInspectionSite_Id = $routeParams;
@@ -200,6 +201,8 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
         $location.path('/dashboard')
     });
   }; // end completeInspection()
+
+
 
 
 
