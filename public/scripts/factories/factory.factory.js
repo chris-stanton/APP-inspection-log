@@ -75,7 +75,7 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
     }).then(function(response) {
       allInspectionSites.list = response.data;
     });
-  }; // getAllInspectionSites()
+  }; // end getAllInspectionSites()
 
 // post page two to db
   function postPageTwo(pageTwo) {
