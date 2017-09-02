@@ -1,9 +1,9 @@
+// file needed with Passport JS
 
 var router = require('express').Router();
 var passport = require('passport');
 var path = require('path');
 var pool = require('../modules/database-config');
-
 
 
 // Handles login form POST from index.html
