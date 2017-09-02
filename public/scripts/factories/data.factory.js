@@ -3,10 +3,10 @@ myApp.factory('DataFactory',['$http', '$location', '$routeParams',function($http
   console.log('DataFactory Running...');
 
   var inspectionSitesByUser_id = { list : [] };
-  console.log('inspectionSitesByUser_id: ', inspectionSitesByUser_id);
+    console.log('inspectionSitesByUser_id: ', inspectionSitesByUser_id);
 
 
-
+// gets inspection sites by users logged in ID
   function getInspectionSitesByUser_id(user_id) {
     $http({
       method: 'GET',
@@ -17,11 +17,7 @@ myApp.factory('DataFactory',['$http', '$location', '$routeParams',function($http
     }).then(function(response) {
       inspectionSitesByUser_id.list = response.data;
     });
-  };
-
-
-
-
+  }; // end getInspectionSitesByUser_id()
 
 
 
@@ -34,4 +30,4 @@ myApp.factory('DataFactory',['$http', '$location', '$routeParams',function($http
     }
 
 
-  }]);
+  }]); // end myApp
