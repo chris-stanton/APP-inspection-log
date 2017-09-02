@@ -17,8 +17,8 @@ var pool = require('../modules/database-config');
           console.log('error on SELECT', err);
           res.sendStatus(500);
         });
-    });//end of .then
-  });//end of router.get
+    });
+  });
 
 // gets all Active employees names
   router.get('/getAllEmployeeNames', function (req, res) {
@@ -33,8 +33,8 @@ var pool = require('../modules/database-config');
           console.log('error on SELECT', err);
           res.sendStatus(500);
         });
-    });//end of .then
-  });//end of router.get
+    });
+  });
 
 // gets all inspection sites by companies_id and active true status
   router.get('/getAllInspectionSites', function (req, res) {
@@ -50,8 +50,8 @@ var pool = require('../modules/database-config');
           console.log('error on SELECT', err);
           res.sendStatus(500);
         });
-    });//end of .then
-  });//end of router.get
+    });
+  });
 
 // gets user by company id
   router.get('/getAllInspectionSites', function (req, res) {
@@ -67,8 +67,8 @@ var pool = require('../modules/database-config');
           console.log('error on SELECT', err);
           res.sendStatus(500);
         });
-    });//end of .then
-  });//end of router.get
+    });
+  });
 
 // gets all users by company_id
   router.get('/getUserByCompanyId', function (req, res) {
