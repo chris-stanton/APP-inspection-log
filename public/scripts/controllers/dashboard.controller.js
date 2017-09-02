@@ -15,7 +15,7 @@ myApp.controller('DashboardController',['FactoryFactory',function(FactoryFactory
         labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
         datasets: [
           {
-            label: 'Number of Inspections Monthly',
+            label: 'Number of Total Inspections Monthly',
             hidden: false,
             data: [12, 19, 30, 5, 10, 90, 25, 70, 10, 20, 30, 15],
             backgroundColor: [
