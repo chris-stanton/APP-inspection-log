@@ -19,7 +19,7 @@ myApp.controller('DashboardController',['FactoryFactory',function(FactoryFactory
             hidden: false,
             data: [12, 19, 30, 5, 10, 90, 25, 70, 10, 20, 30, 15],
             backgroundColor: [
-                "#3777f1"
+                '#3777f1'
             ],
             borderColor: [
                 '#3777f1'
@@ -62,7 +62,7 @@ myApp.controller('DashboardController',['FactoryFactory',function(FactoryFactory
         yAxes: [{
           gridLines: {
             display: true,
-            color: "rgba(128, 128, 128, 0.3)"
+            color:'rgba(128, 128, 128, 0.3)'
           },
           ticks: {
             beginAtZero:false,
