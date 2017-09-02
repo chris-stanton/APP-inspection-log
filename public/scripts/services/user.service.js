@@ -20,7 +20,7 @@ myApp.factory('UserService', function($http, $location){
               console.log('getuser -- success: ', userObject.userName);
           } else {
               console.log('getuser -- failure');
-              // user has no session, bounce them back to the login page
+              // user has no session, bouncing them back to the login page
               $location.path("/login");
           }
       },function(response){
