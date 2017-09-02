@@ -35,4 +35,8 @@ myApp.controller('LoginController',['$http', '$location', 'UserService',function
     } // end login
 
 
+    function addNewAddivisor(res, error) {
+      console.log('hello world');
+    }
+
 }]); // end app.controller
