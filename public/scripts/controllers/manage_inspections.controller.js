@@ -1,6 +1,6 @@
 myApp.controller('Manage_inspectionsController',['DataFactory', 'UserService',function(DataFactory, UserService) {
 
-  console.log('Manage_inspectionsController running');
+  console.log('Manage_inspectionsController Running...');
 
   var self = this;
 // data from services API

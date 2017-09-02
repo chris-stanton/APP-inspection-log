@@ -1,6 +1,6 @@
 
   myApp.controller('Add_userController', ['FactoryFactory', '$location', '$http', function(FactoryFactory, $location, $http) {
-    console.log('Add_userController running');
+    console.log('Add_userController Running...');
 
       var self = this;
 

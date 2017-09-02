@@ -1,7 +1,7 @@
 
 myApp.controller('Add_companyController',['FactoryFactory',function(FactoryFactory) {
 
-  console.log('Add_companyController running');
+  console.log('Add_companyController Running...');
 
 
   var self = this;

@@ -1,7 +1,7 @@
 
 myApp.controller('SignatureController',['FactoryFactory', '$location', '$routeParams',function(FactoryFactory, $location, $routeParams) {
 
-  console.log('SignatureController');
+  console.log('SignatureController Running...');
 
   var self = this;
   self.message = 'angular sourced';

@@ -1,6 +1,6 @@
 myApp.controller('Add_inspectionController',['FactoryFactory',function(FactoryFactory) {
 
-  console.log('Add_inspectionController running');
+  console.log('Add_inspectionController Running...');
 
   var self = this;
 

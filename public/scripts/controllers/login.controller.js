@@ -1,7 +1,7 @@
 
 myApp.controller('LoginController',['$http', '$location', 'UserService',function($http, $location, UserService) {
 
-  console.log('LoginController Working...');
+  console.log('LoginController Running...');
 
     var self = this;
     self.user = {

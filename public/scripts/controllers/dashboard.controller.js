@@ -1,6 +1,6 @@
 
 myApp.controller('DashboardController',['FactoryFactory',function(FactoryFactory) {
-  console.log('DashboardController running');
+  console.log('DashboardController Running...');
 
   var self = this;
 

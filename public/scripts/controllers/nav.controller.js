@@ -1,7 +1,7 @@
 
 myApp.controller('NavController',['$location', 'UserService',function($location, UserService) {
 
-  console.log('NavController Working...');
+  console.log('NavController Running...');
 
   var self = this;
 

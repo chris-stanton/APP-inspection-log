@@ -1,7 +1,7 @@
 
 myApp.controller('File_uploadController',['FactoryFactory', '$location', '$routeParams', 'UserService',function(FactoryFactory, $location, $routeParams, UserService) {
 
-  console.log('File_uploadController');
+  console.log('File_uploadController Running...');
 
   var self = this;
 // new inspection site ID

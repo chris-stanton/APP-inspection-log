@@ -1,7 +1,7 @@
 
 myApp.controller('Page_sixController',['FactoryFactory', '$location', '$routeParams',function(FactoryFactory, $location, $routeParams) {
 
-  console.log('Page_sixController');
+  console.log('Page_sixController Running...');
 
   var self = this;
 // new inspection site ID

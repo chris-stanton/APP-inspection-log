@@ -1,7 +1,7 @@
 
 myApp.controller('Start_inspectionController',['FactoryFactory', 'UserService', '$location', '$routeParams',function(FactoryFactory, UserService, $location, $routeParams) {
 
-  console.log('Start_inspectionController');
+  console.log('Start_inspectionController Running...');
 
   var self = this;
   var user = UserService.userObject;
