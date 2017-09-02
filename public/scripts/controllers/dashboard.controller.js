@@ -72,6 +72,10 @@ myApp.controller('DashboardController',['FactoryFactory',function(FactoryFactory
           }
         }],
         xAxes: [{
+          gridLines: {
+            display: true,
+            color:'rgba(128, 128, 128, 0.3)'
+          },
           ticks: {
             fontColor: '#00000',
             fontSize: 15
