@@ -1,5 +1,5 @@
 
-myApp.controller('DashboardController', function() {
+myApp.controller('DashboardController',['FactoryFactory',function(FactoryFactory) {
   console.log('DashboardController running');
 
   var self = this;
@@ -82,4 +82,4 @@ myApp.controller('DashboardController', function() {
   }); // end of myChart
 
 
-}); // end controller code block
+}]); // end controller code block
