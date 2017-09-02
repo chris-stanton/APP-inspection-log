@@ -26,11 +26,11 @@ myApp.controller('Add_inspectionController',['FactoryFactory',function(FactoryFa
       phone : inspectionSite.phone,
       email : inspectionSite.email,
       fax : inspectionSite.fax,
-      schedualedDate : inspectionSite.schedualedDate,
+      schedualedDate : new Date(inspectionSite.schedualedDate).toDateString(),
       inspectedDate : "null"
     }
     console.log('inspectionSite: ', inspectionSite);
-    FactoryFactory.addInspectionSite(inspectionSite);
+    // FactoryFactory.addInspectionSite(inspectionSite);
   }; //end of addInspectionForm
 
 
