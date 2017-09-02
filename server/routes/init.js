@@ -84,9 +84,10 @@ var pool = require('../modules/database-config');
           console.log('error on SELECT', err);
           res.sendStatus(500);
         });
-    });//end of .then
-  });//end of router.get
+    });
+  });
 
+// gets inspection sites by user ID
   router.get('/getInspectionSitesByUser_id', function (req, res) {
   var user_Id = req.headers;
   pool.connect()
@@ -100,8 +101,8 @@ var pool = require('../modules/database-config');
           console.log('error on SELECT', err);
           res.sendStatus(500);
         });
-    });//end of .then
-  });//end of router.get
+    });
+  });
 
 
 
