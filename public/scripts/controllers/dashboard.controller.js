@@ -5,6 +5,7 @@ myApp.controller('DashboardController',['FactoryFactory',function(FactoryFactory
   var self = this;
 
   self.message = 'angular sourced';
+  self.newMessage = 'angular sourced 2'
 
 // monthy inspections totals chart by id
   var ctx = document.getElementById("myChart");
