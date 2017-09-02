@@ -6,7 +6,7 @@ myApp.factory('DataFactory',['$http', '$location', '$routeParams',function($http
     console.log('inspectionSitesByUser_id: ', inspectionSitesByUser_id);
 
 
-// gets inspection sites by users logged in ID
+// gets all inspection sites to users id
   function getInspectionSitesByUser_id(user_id) {
     $http({
       method: 'GET',
@@ -21,7 +21,7 @@ myApp.factory('DataFactory',['$http', '$location', '$routeParams',function($http
 
 
 
-  //public API
+//public API
     return {
 // gets all inspection sites to users id
     getInspectionSitesByUser_id : getInspectionSitesByUser_id,
