@@ -15,23 +15,30 @@ myApp.controller('Add_companyController',['FactoryFactory',function(FactoryFacto
     if (newCompany.companyName == null) {
       console.log("enter company name");
         alertify.alert("Please Enter COMPANY NAME To Continue");
+        self.errorMessage = "Please Enter COMPANY NAME To Continue";
     } else if (newCompany.streetAddress == null) {
       console.log("enter street address");
         alertify.alert("Please Enter STREET ADDRESS To Continue");
+        self.errorMessage = "Please Enter STREET ADDRESS To Continue";
     } else if (newCompany.city == null) {
       console.log("enter city");
         alertify.alert("Please Enter CITY To Continue");
+        self.errorMessage = "Please Enter CITY To Continue";
     } else if (newCompany.state == null) {
       console.log("enter state");
         alertify.alert("Please Enter STATE To Continue");
+        self.errorMessage = "Please Enter STATE To Continue";
     } else if (newCompany.zipCode == null) {
       console.log("enter zip code");
         alertify.alert("Please Enter ZIP CODE To Continue");
+        self.errorMessage = "Please Enter ZIP CODE To Continue";
     } else if (newCompany.country == null) {
       console.log("enter contry");
         alertify.alert("Please Enter COUNTRY To Continue");
+        self.errorMessage = "Please Enter COUNTRY To Continue";
     } else {
       FactoryFactory.addNewCompany(newCompany);
+      // empties inputs on submit
       self.newCompany = {};
     } // end else if
 
