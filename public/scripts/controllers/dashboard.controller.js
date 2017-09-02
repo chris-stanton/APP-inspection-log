@@ -3,11 +3,11 @@ myApp.controller('DashboardController', function() {
   console.log('DashboardController running');
 
   var self = this;
-// monthy inspections totals chart
-  var ctx = document.getElementById("myChart");
 
   self.message = 'angular sourced';
 
+// monthy inspections totals chart by id
+  var ctx = document.getElementById("myChart");
 // Monthly inspection totals chart
   var myChart = new Chart(ctx, {
     type: 'line',
