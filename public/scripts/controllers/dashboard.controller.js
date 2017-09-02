@@ -39,13 +39,13 @@ myApp.controller('DashboardController',['FactoryFactory',function(FactoryFactory
         titleFontStyle: 'italic',
         titleMarginBottom: 10,
         bodyFontSize: 12,
-        callbacks: {
-          label: function(tooltipItem, data) {
-            var label = 'Summary';
-// built out tool tip view HERE and addd to return
-            return label;
-          }
-        }
+//         callbacks: {
+//           label: function(tooltipItem, data) {
+//             var label = 'Summary';
+// // built out tool tip view HERE and addd to return
+//             return label;
+//           }
+//         } // end callback
       },
 
       legend: {
