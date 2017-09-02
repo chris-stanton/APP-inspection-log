@@ -7,7 +7,7 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
   var newInspectionSite_Id = $routeParams;
   var company_id = $routeParams;
 
-// containers form DB results queries
+// containers form DB results response
   var allCompanies = { list : [] };
   var allEmployeeNames = { list : [] };
   var allInspectionSites = { list : [] };

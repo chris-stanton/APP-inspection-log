@@ -101,7 +101,7 @@ passport.use('local', new localStrategy({
               console.log('User obj', user);
               // Hash and compare
               if(encryptLib.comparePassword(password, user.password)) {
-                // all good!
+                // if all good!
                 console.log('passwords match');
                 done(null, user);
               } else {
