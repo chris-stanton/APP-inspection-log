@@ -311,7 +311,12 @@ body {
   padding: 0px 20px 0px 20px;
 }
 
-
+.flex-container-dataOutlook {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px 100px 0px;
+  text-align: center;
+}
 
 
 
