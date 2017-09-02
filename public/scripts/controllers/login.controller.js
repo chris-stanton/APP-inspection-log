@@ -21,7 +21,7 @@ myApp.controller('LoginController',['$http', '$location', 'UserService',function
         $http.post('/', self.user).then(function(response) {
           if(response.data.username) {
             console.log('LoginController -- login -- success: ', response.data);
-            // location works with SPA (ng-route)
+            // redirect if login is successfull
             $location.path('/dashboard');
           } else {
             console.log('LoginController -- login -- failure: ', response);
