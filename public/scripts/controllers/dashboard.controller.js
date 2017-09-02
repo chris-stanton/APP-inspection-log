@@ -38,7 +38,7 @@ myApp.controller('DashboardController',['FactoryFactory',function(FactoryFactory
         titleFontSize: 15,
         titleFontStyle: 'italic',
         titleMarginBottom: 10,
-        bodyFontSize: 18,
+        bodyFontSize: 12,
         // callbacks: {
         //   label: function(tooltipItem, data) {
         //     var datasetLabel = 'Summary';
