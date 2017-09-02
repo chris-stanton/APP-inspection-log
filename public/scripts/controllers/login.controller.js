@@ -4,12 +4,15 @@ myApp.controller('LoginController',['$http', '$location', 'UserService',function
   console.log('LoginController Running...');
 
     var self = this;
+// setting user variable to empty string on init
     self.user = {
       username: '',
       password: ''
     };
+// setting message to empty string on init
     self.message = '';
 
+// login button click
     self.login = function() {
       if(self.user.username === '' || self.user.password === '') {
         self.message = "Enter your username and password!";
@@ -29,7 +32,7 @@ myApp.controller('LoginController',['$http', '$location', 'UserService',function
           self.message = "Wrong!!";
         })
       }
-    }
+    } // end login
 
 
 }]); // end app.controller
