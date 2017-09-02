@@ -24,10 +24,10 @@ myApp.controller('DashboardController',['FactoryFactory',function(FactoryFactory
             borderColor: [
                 '#3777f1'
             ],
-            pointHoverRadius: 10,
+            pointHoverRadius: 7,
             pointHoverBorderColor: '#3777f1',
             pointBackgroundColor: '#000000',
-            borderWidth: 4,
+            borderWidth: 3,
             fill: false
           }
         ] // end of dataset
