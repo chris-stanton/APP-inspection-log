@@ -118,4 +118,5 @@ passport.use('local', new localStrategy({
     }
 ));
 
+
 module.exports = passport;

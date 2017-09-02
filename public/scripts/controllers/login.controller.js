@@ -34,4 +34,5 @@ myApp.controller('LoginController',['$http', '$location', 'UserService',function
       }
     } // end login
 
+
 }]); // end app.controller
