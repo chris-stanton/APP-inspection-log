@@ -198,7 +198,7 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
       data: signature
     }).then(function(response) {
       alertify.success('Inspection was added to DB');
-        $location.path('/dashboard')
+        $location.path('/dashboard');
     });
   }; // end completeInspection()
 
