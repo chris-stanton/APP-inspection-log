@@ -3,7 +3,6 @@ var router = require('express').Router();
 var pg = require('pg');
 var pool = require('../modules/database-config');
 
-
 // adds new inspection site to DB
 router.post('/addInspectionSite', function(req, res){
   var inspectionSite = req.body;
