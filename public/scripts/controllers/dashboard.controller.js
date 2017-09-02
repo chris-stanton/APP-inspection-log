@@ -6,18 +6,6 @@ myApp.controller('DashboardController',['FactoryFactory',function(FactoryFactory
 
   self.message = 'angular sourced';
 
-  self.addNew = function(response, number) {
-    if(newNumber.newNUmber = "1"){
-      console.log("your number was one");
-    } else if(newNumber.newNUmber = "2") {
-      console.log("your number was two");
-    } else if(newNumber.newNUmber = "3") {
-      console.log(newNumber.newNUmber = "3")
-    } else {
-      console.log("newNumber = null");
-    }
-  }
-
 // monthy inspections totals chart by id
   var ctx = document.getElementById("myChart");
 // Monthly inspection totals chart
