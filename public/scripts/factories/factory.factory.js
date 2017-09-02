@@ -62,7 +62,7 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
       alertify.alert("Inspection location could not be added to DB");
         console.log('error adding inspection site profile to DB', error);
     });
-  };
+  }; // end addInspectionSite()
 
 // gets all inspection sites by companies_id and active true status
   function getAllInspectionSites(company_Id) {
@@ -75,7 +75,7 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
     }).then(function(response) {
       allInspectionSites.list = response.data;
     });
-  };
+  }; // getAllInspectionSites()
 
 // post page two to db
   function postPageTwo(pageTwo) {
@@ -176,7 +176,7 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
       alertify.alert("File Upload could not be added to DB");
         console.log('error adding file upload to DB', error);
     });
-  }; // postFileUpload
+  }; // postFileUpload()
 
 // gets all users from company_id
   function getUserByCompanyId(company_id) {
