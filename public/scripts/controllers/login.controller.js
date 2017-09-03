@@ -15,21 +15,21 @@ myApp.controller('LoginController',['$http', '$location', 'UserService',function
 // login button click
     self.login = function() {
       if(self.user.username === '' || self.user.password === '') {
-        self.message = "Enter your username and password!";
+        self.message = "Enter your username and password";
       } else {
-        console.log('LoginController -- login -- sending to server...', self.user);
+        console.log('Login credentials sent to server...', self.user);
         $http.post('/', self.user).then(function(response) {
           if(response.data.username) {
-            console.log('LoginController -- login -- success: ', response.data);
+            console.log('Login success: ', response.data);
             // redirect if login is successfull
             $location.path('/dashboard');
           } else {
-            console.log('LoginController -- login -- failure: ', response);
-            self.message = "Wrong!!";
+            console.log('Login failure response: ', response);
+            self.message = "Wrong Login Credentials";
           }
         }).catch(function(response){
-          console.log('LoginController -- registerUser -- failure: ', response);
-          self.message = "Wrong!!";
+          console.log('Register User failure response: ', response);
+          self.message = "Wrong Login Credentials";
         })
       }
     } // end login
