@@ -13,7 +13,7 @@ myApp.factory('UserService', function($http, $location){
       $http.get('/user').then(function(response) {
           if(response.data.username) {
             console.log('searching DB for userName: ', response.data.username);
-              // user has a current session on the server
+              // user info that has a current session on the server
               userObject.userName = response.data.username;
               userObject.user_id = response.data.user_id;
               userObject.companies_id = response.data.companies_id;
