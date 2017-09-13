@@ -43,7 +43,9 @@ myApp.controller('DashboardController',['FactoryFactory',function(FactoryFactory
 //         callbacks: {
 //           label: function(tooltipItem, data) {
 //             var label = 'Summary';
-// // built out tool tip view HERE and addd to return
+//
+        // built out tool tip view HERE and addd to return
+
 //             return label;
 //           }
 //         } // end callback
