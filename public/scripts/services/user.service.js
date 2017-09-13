@@ -1,7 +1,7 @@
 
 myApp.factory('UserService', function($http, $location){
 
-  console.log('UserService Rorking...');
+  console.log('UserService Running...');
 
   var userObject = {};
 
