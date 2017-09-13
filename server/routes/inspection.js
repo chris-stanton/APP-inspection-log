@@ -122,6 +122,7 @@ router.post('/postPageFileUpload', function(req, res){
     });
 });
 
+// Updates site inspection from active to inactive
 router.put('/completeInspection/:id', function(req,res){
   console.log("req.body : ", req.body);
   var newInspectionSite_Id = req.body.newInspectionSite_Id;

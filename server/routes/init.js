@@ -53,7 +53,7 @@ var pool = require('../modules/database-config');
     });
   });
 
-// gets user by company id
+// gets user by company_Id
   router.get('/getAllInspectionSites', function (req, res) {
   var company_Id = req.headers;
   pool.connect()
@@ -70,7 +70,7 @@ var pool = require('../modules/database-config');
     });
   });
 
-// gets all users by company_id
+// gets all users by company_Id
   router.get('/getUserByCompanyId', function (req, res) {
   var company_Id = req.headers;
   pool.connect()
@@ -87,7 +87,7 @@ var pool = require('../modules/database-config');
     });
   });
 
-// gets inspection sites by user ID
+// gets inspection sites by user_Id
   router.get('/getInspectionSitesByUser_id', function (req, res) {
   var user_Id = req.headers;
   pool.connect()
