@@ -12,12 +12,12 @@ myApp.factory('UserService', function($http, $location){
       console.log('UserService -- getuser');
       $http.get('/user').then(function(response) {
           if(response.data.username) {
-            console.log('getuser -- userName: ', response.data.username);
+            console.log('searching DB for userName: ', response.data.username);
               // user has a current session on the server
               userObject.userName = response.data.username;
               userObject.user_id = response.data.user_id;
               userObject.companies_id = response.data.companies_id;
-              console.log('getuser -- success: ', userObject.userName);
+              console.log('SUCCESSFULL LOGIN, found username: ', userObject.userName);
           } else {
               console.log('getuser -- failure');
               // user has no session, bouncing them back to the login page
