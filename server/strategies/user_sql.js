@@ -1,9 +1,11 @@
+
 var passport = require('passport');
 var localStrategy = require('passport-local').Strategy;
 var encryptLib = require('../modules/encryption');
 var connection = require('../modules/database-config.js');
 var pg = require('pg');
 
+// connection to DB
 var config = {
   user: 'chrisstanton', //env var: PGUSER
   database: 'inspection-log', //env var: PGDATABASE

@@ -41,8 +41,8 @@ router.post('/', function(req, res, next) {
             res.redirect('/');
           }
         });
-  });
-});
+  }); // end pool connect
+}); // end of router post
 
 
 module.exports = router;
