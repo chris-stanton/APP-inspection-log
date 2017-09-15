@@ -206,6 +206,7 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
 
 
 
+
 //public API
   return {
 // adds new company profile to DB
