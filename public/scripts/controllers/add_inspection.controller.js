@@ -30,7 +30,7 @@ myApp.controller('Add_inspectionController',['FactoryFactory',function(FactoryFa
       inspectedDate : "null"
     }
     console.log('inspectionSite: ', inspectionSite);
-    // FactoryFactory.addInspectionSite(inspectionSite);
+    FactoryFactory.addInspectionSite(inspectionSite);
   }; //end of addInspectionForm
 
 
