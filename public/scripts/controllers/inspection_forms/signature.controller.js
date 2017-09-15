@@ -26,7 +26,7 @@ myApp.controller('SignatureController',['FactoryFactory', '$location', '$routePa
     var signature = {
       newInspectionSite_Id : newInspectionSite_Id,
       users_id : signature.users_id,
-      inspected_date : new Date(signature.inspected_date).toDateString()
+      inspected_date : signature.inspected_date
     }
     console.log('signature: ', signature);
     FactoryFactory.completeInspection(signature);
