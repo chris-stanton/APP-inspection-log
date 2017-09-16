@@ -22,11 +22,11 @@
     </section>
     <section>
       <label> Zip Code </label>
-        <input ng-model="acc.newCompany.zipCode" type="text">
+        <input ng-model="acc.newCompany.zipCode" type="number">
     </section>
     <section>
       <label> Country </label>
-        <input ng-model="acc.newCompany.country" type="text">
+        <input ng-model="acc.newCompany.country" type="text" style="text-transform: capitalize">
     </section>
     <section>
       <button ng-click="acc.addNewCompany(acc.newCompany)" type="button"> Create Profile </button>

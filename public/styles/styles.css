@@ -265,6 +265,7 @@ body {
 .flex-add_company-container section {
   display: flex;
   flex-direction: column;
+  width: 80vw;
   margin: 10px;
   color: #000000;
 
@@ -273,6 +274,11 @@ body {
 .flex-add_company-container section label {
   font-size: 18px;
   text-align: center;
+}
+
+.flex-add_company-container section input {
+  height: 7vh;
+  font-size: 16px;
 }
 
 
