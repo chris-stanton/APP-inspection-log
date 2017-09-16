@@ -255,9 +255,25 @@ body {
 //       ADD_COMPANY    //
 ////////////////////////*/
 
+.flex-add_company-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.flex-add_company-container section {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  color: #000000;
 
+}
 
+.flex-add_company-container section label {
+  font-size: 18px;
+  text-align: center;
+}
 
 
 
