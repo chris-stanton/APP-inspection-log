@@ -89,4 +89,5 @@ myApp.controller('DashboardController',['FactoryFactory',function(FactoryFactory
   }); // end of myChart
 
 
+
 }]); // end controller code block
