@@ -63,20 +63,20 @@
   - HTML
   - CSS
   - Flex Box
-  - Angular
-  - Angular Route
+  - AngularJS
+  - Angular-Route
   - Nodemailer
   - SweatAlerts 2
   - Alertify
-  - Chart JS
+  - ChartJS
 
 #### Back-End:
   - PostgresSQL
   - Node.js
   - Passport JS
   - Passport-local
-  - Express JS
-  - Express Sessions
+  - ExpressJS
+  - Express-Sessions
   - Body-Parser
   - Multer
   - bcrypt
