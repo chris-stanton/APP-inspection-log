@@ -39,8 +39,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // routes
-app.use('/login', login); // route for all login views
-app.use('/init', init); // route for all views on init that does not need auth
+app.use('/login', login);
+app.use('/init', init);
 app.use('/inspection', inspection);
 app.use('/register', registerRouter);
 app.use('/user', userRouter);
