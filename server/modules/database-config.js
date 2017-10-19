@@ -39,6 +39,13 @@ if (process.env.DATABASE_URL) {
 
 module.exports = new pg.Pool(config);
 
+
+
+
+/////////////////////////////////
+// basic way for DB connection //
+/////////////////////////////////
+
 // var pg = require('pg');
 // var config = {
 //   database: 'inspection-log',
