@@ -456,7 +456,9 @@ footer {
   height: 40px;
   padding: 0px 0px 10px 10px;
   background-color: transparent;
+  text-align: left;
   font-size: 0.9em;
+  text-shadow: 1px 1px 1px #d77449;
   color: #000000;
 }
 
@@ -500,8 +502,7 @@ footer {
   }
 
   footer {
-    height: 20px;
-    font-size: 10px;
-    padding-top: 2px;
+    font-size: 0.8em;
+    padding: 0px 0px 5px 15px;
   }
 }
