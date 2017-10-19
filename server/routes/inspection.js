@@ -1,4 +1,5 @@
 
+// Dependancies
 var router = require('express').Router();
 var pg = require('pg');
 var pool = require('../modules/database-config');
@@ -131,6 +132,7 @@ router.put('/completeInspection/:id', function(req,res){
   pool.connect( function (err, client, done) {
     client.query('UPDATE inspection_sites SET users_id=$1, inspecteddate=$2, active=false WHERE id=$3;',[users_id, inspected_date, newInspectionSite_Id], function(err, result){
       done();
+      // handles errors
       if(err){
         console.log('Error adding inspection site completion', err);
         res.sendStatus(501);
