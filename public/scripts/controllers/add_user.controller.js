@@ -15,7 +15,7 @@
       self.addNewUser = function(user) {
         console.log('user', user);
         if(self.user.username === '' || self.user.password === '') {
-          self.message = "Choose a username and password!";
+          self.error = "Missing Credentials! Please try again";
         } else {
           console.log('LoginController -- registerUser -- sending to server...', self.user);
           $http.post('/register', self.user).then(function(response) {
@@ -24,7 +24,7 @@
             $location.path('/dashboard');
           }).catch(function(response) {
             console.log('LoginController -- registerUser -- error');
-            self.message = "Please try again."
+            self.error = "Please try again."
           })
         }
       }; // end addNewUser()
