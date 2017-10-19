@@ -16,11 +16,11 @@ myApp.controller('LoginController',['$http', '$location', 'UserService',function
     self.login = function() {
       // checking for null login values
       if(self.user.username === '' && self.user.password === '') {
-        self.message = "Enter your Username and Password";
+        self.message = "Missing Username and Password";
       } else if (self.user.username === '' && self.user.password !== '' ){
-        self.message = "Enter Username";
+        self.message = "Missing Username";
       } else if (self.user.password === '' && self.user.username !== ''){
-        self.message = "Enter your Password";
+        self.message = "Missing Password";
       } else {
         // if login credentials are correct
         console.log('Login credentials sent to server...', self.user);
