@@ -1,4 +1,5 @@
 
+// Dependancies
 var express = require('express');
 var app = express();
 var path = require('path');
@@ -7,7 +8,7 @@ var passport = require('./server/strategies/user_sql.js');
 var session = require('express-session');
 var path = require('path');
 
-// defining route variables
+// Defining route variables
 var login = require('./server/routes/login.js');
 var init = require('./server/routes/init.js');
 var inspection = require('./server/routes/inspection.js');
@@ -20,7 +21,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, './public')));
 
-//Handle index file separately
+//Handles index file separately
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, './public/index.html'));
 })
@@ -34,7 +35,7 @@ app.use(session({
    cookie: {maxage: 60000, secure: false}
 }));
 
-// start up passport sessions
+// starts up passport session
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -45,10 +46,10 @@ app.use('/inspection', inspection);
 app.use('/register', registerRouter);
 app.use('/user', userRouter);
 
-// Catch all bucket, must be last!
+// Catch all bucket
 app.use('/*', indexRouter);
 
-// port listening
+// Port Listening
 app.set('port', process.env.PORT || 5000);
 app.listen(app.get('port'), function() {
     console.log('Listening on port: ', app.get('port'));
