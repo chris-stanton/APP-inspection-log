@@ -14,12 +14,16 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
         .when ('/add_user', {
             templateUrl: '/views/add_user.html',
             controller: 'Add_userController',
-            controllerAs: 'auc',
-            resolve: {
-                getuser : function(UserService){
-                return UserService.getuser();
-              }
-            }
+            controllerAs: 'auc'
+
+              // currently setup without authentication neeeded to add a user
+              // to complany and database
+
+            // resolve: {
+            //     getuser : function(UserService){
+            //     return UserService.getuser();
+            //   }
+            // }
         })
         .when ('/add_company', {
             templateUrl: '/views/add_company.html',
