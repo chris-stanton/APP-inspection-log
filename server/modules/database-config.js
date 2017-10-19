@@ -1,4 +1,9 @@
 
+////////////////////////////////////////
+// DATABASES W/ DEPLOY FILE           //
+// Note: SETUP FOR DEPLOY WITH HEROKU //
+////////////////////////////////////////
+
 var pg = require('pg');
 var url = require('url');
 var config = {};

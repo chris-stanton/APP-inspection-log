@@ -1,4 +1,8 @@
 
+///////////////////
+// Passport file //
+///////////////////
+
 var bcrypt = require('bcrypt');
 var SALT_WORK_FACTOR = 10;
 
