@@ -191,6 +191,7 @@ myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($h
     });
   }; // end getUserByCompanyId()
 
+// completes inspection pmakes inspection active="false"
   function completeInspection(signature) {
     $http({
       method: 'PUT',
