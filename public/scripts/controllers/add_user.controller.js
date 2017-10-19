@@ -17,13 +17,13 @@
         if(self.user.username === '' || self.user.password === '') {
           self.error = "Missing Credentials! Please try again";
         } else {
-          console.log('LoginController -- registerUser -- sending to server...', self.user);
+          console.log('registerUser -- sending to server...', self.user);
           $http.post('/register', self.user).then(function(response) {
-            console.log('LoginController -- registerUser -- success');
+            console.log('registerUser -- success');
             alertify.success('User profile was added to DB');
             $location.path('/dashboard');
           }).catch(function(response) {
-            console.log('LoginController -- registerUser -- error');
+            console.log('registerUser -- error');
             self.error = "Please try again."
           })
         }
