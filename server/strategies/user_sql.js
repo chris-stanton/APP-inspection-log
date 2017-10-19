@@ -12,7 +12,7 @@ var config = {
   password: 'null', //env var: PGPASSWORD
   port: 5432, //env var: PGPORT
   max: 10, // max number of clients in the pool
-  idleTimeoutMillis: 1500, // 1.5s // how long a client is allowed to remain idle before being closed
+  idleTimeoutMillis: 1500, // 1.5s how long a client is allowed to remain idle before being closed
 };
 
 //this initializes a connection pool
@@ -25,7 +25,7 @@ var acquireCount = 0
 pool.on('acquire', function (client) {
   acquireCount++;
   console.log('client acquired: ', acquireCount);
-})
+});
 
 var connectCount = 0
 pool.on('connect', function () {
@@ -45,20 +45,20 @@ passport.deserializeUser(function(id, done) {
       console.log('connection err ', err);
       release();
       done(err);
-    }
+    };
 
     var user = {};
 
     client.query("SELECT * FROM users WHERE id = $1", [id], function(err, result) {
 
-      // Handle Errors
+      // Handles Errors
       if(err) {
         console.log('query err ', err);
         done(err);
         release();
       }
-
       user = result.rows[0];
+
       release();
 
       if(!user) {
@@ -68,7 +68,6 @@ passport.deserializeUser(function(id, done) {
         // user found
         done(null, user);
       }
-
     });
   });
 });

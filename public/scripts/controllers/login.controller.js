@@ -37,8 +37,8 @@ myApp.controller('LoginController',['$http', '$location', 'UserService',function
           console.log('Register User failure response: ', response);
           self.message = "Wrong Login Credentials";
         })
-      }
-    } // end login
+      } // end else
+    }; // end login
 
 
 }]); // end app.controller
