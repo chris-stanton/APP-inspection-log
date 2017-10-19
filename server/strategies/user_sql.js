@@ -116,7 +116,6 @@ passport.use('local', new localStrategy({
               console.log('no user');
               done(null, false);
             }
-
           });
 	    });
     }
