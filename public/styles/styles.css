@@ -454,11 +454,11 @@ footer {
   left: 0;
   right: 0;
   height: 40px;
-  padding: 0px 0px 10px 10px;
+  padding-left: 20px;
   background-color: transparent;
   text-align: left;
-  font-size: 0.9em;
-  text-shadow: 1px 1px 1px #d77449;
+  font-size: 0.8em;
+  text-shadow: 1px 1px 1px #da906f;
   color: #000000;
 }
 
@@ -503,11 +503,7 @@ footer {
   }
 
 
-/*--------  FOOTER --*/
-  footer {
-    font-size: 0.8em;
-    padding: 0px 0px 5px 15px;
-  }
+
 
 
 }

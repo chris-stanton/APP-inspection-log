@@ -9,11 +9,11 @@ var url = require('url');
 var config = {};
 
 if (process.env.DATABASE_URL) {
+
   // Heroku gives a url, not a connection object
-  // https://github.com/brianc/node-pg-pool
   var params = url.parse(process.env.DATABASE_URL);
   var auth = params.auth.split(':');
-
+  // for uses with *heroku 
   config = {
     user: auth[0],
     password: auth[1],
@@ -26,6 +26,7 @@ if (process.env.DATABASE_URL) {
   };
 
 } else {
+  // for use locally
   config = {
     user: process.env.PG_USER || 'chrisstanton', //env var: PGUSER
     password: process.env.DATABASE_SECRET || null, //env var: PGPASSWORD
