@@ -92,7 +92,7 @@ var pool = require('../modules/database-config');
   var user_Id = req.headers;
   pool.connect()
     .then(function (client) {
-      client.query("SELECT * FROM inspection_sites WHERE users_id=$1",[user_Id.user_id])
+      client.query("SELECT * FROM inspection_sites WHERE users_id=$1 AND active='false'",[user_Id.user_id])
         .then(function (result) {
           client.release();
           res.send(result.rows);
