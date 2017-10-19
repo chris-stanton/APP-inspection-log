@@ -109,7 +109,7 @@ passport.use('local', new localStrategy({
                 console.log('passwords match');
                 done(null, user);
               } else {
-                // if falure or error
+                // if falure / error
                 console.log('password does not match');
                 done(null, false, {message: 'Incorrect credentials.'});
               }

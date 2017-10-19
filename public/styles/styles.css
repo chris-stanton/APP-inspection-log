@@ -330,11 +330,6 @@ body {
 .flex-manage-container {
   display: flex;
   justify-content: center;
-
-}
-
-.flex-manage-dataContainer {
-
 }
 
 .flex-manage-repeatContainer {
