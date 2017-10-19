@@ -34,7 +34,7 @@ router.post('/', function(req, res, next) {
       [saveUser.username, saveUser.password, saveUser.firstname, saveUser.lastname, saveUser.companyId],
         function (err, result) {
           client.end();
-
+          // handles errors
           if(err) {
             console.log('Error inserting data: ', err);
             next(err);
