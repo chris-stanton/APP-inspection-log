@@ -470,7 +470,7 @@ footer {
 
 @media(max-width: 568px){
 
-/*main nav bar*/
+/*--------  MAIN NAV BAR --*/
   .flex-nav-container {
     flex-direction: column;
     padding-bottom: 10px;
@@ -481,7 +481,8 @@ footer {
     padding-right: 20px;
   }
 
-/*forms nav bar*/
+
+/*--------  INSPECTION NAV BAR --*/
   .flex-formsNav-container ul {
     flex: 1 1 25px;
     display: flex;
@@ -501,8 +502,12 @@ footer {
     width: 200px;
   }
 
+
+/*--------  FOOTER --*/
   footer {
     font-size: 0.8em;
     padding: 0px 0px 5px 15px;
   }
+
+
 }
