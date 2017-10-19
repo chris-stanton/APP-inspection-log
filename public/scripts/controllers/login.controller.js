@@ -14,8 +14,12 @@ myApp.controller('LoginController',['$http', '$location', 'UserService',function
 
 // login button click
     self.login = function() {
-      if(self.user.username === '' || self.user.password === '') {
-        self.message = "Enter your username and password";
+      if(self.user.username === '' && self.user.password === '') {
+        self.message = "Enter your Username and Password";
+      } else if (self.user.username === '' && self.user.password !== '' ){
+        self.message = "Enter Username";
+      } else if (self.user.password === '' && self.user.username !== ''){
+        self.message = "Enter your Password";
       } else {
         console.log('Login credentials sent to server...', self.user);
         $http.post('/', self.user).then(function(response) {
