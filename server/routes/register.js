@@ -23,7 +23,7 @@ router.post('/', function(req, res, next) {
     lastname: req.body.lastname,
     companyId : req.body.companyId
   };
-  console.log('new user: ', saveUser);
+  console.log('saveUser: ', saveUser);
 
   pool.connect(function(err, client, done) {
     if(err) {
@@ -36,7 +36,7 @@ router.post('/', function(req, res, next) {
           client.end();
 
           if(err) {
-            console.log("Error inserting data: ", err);
+            console.log('Error inserting data: ', err);
             next(err);
           } else {
             res.redirect('/');
