@@ -1,7 +1,10 @@
 
-myApp.factory('FactoryFactory',['$http', '$location', '$routeParams',function($http, $location, $routeParams) {
+myApp.factory('FactoryFactory',['$http', '$location', '$routeParams', 'alertify', function($http, $location, $routeParams, alertify) {
 
   console.log('FactoryFactory Running...');
+
+  // setting screen notifiaction position
+  alertify.logPosition('bottom right');
 
 // new inspection site ID and company ID from $routeParams
   var newInspectionSite_Id = $routeParams;

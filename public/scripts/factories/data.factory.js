@@ -1,6 +1,9 @@
-myApp.factory('DataFactory',['$http', '$location', '$routeParams',function($http, $location, $routeParams) {
+myApp.factory('DataFactory',['$http', '$location', '$routeParams', 'alertify', function($http, $location, $routeParams, alertify) {
 
   console.log('DataFactory Running...');
+
+  // setting screen notifiaction position
+  alertify.logPosition('bottom right');
 
   var inspectionSitesByUser_id = { list : [] };
     console.log('inspectionSitesByUser_id: ', inspectionSitesByUser_id);

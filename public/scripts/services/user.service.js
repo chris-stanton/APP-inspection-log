@@ -1,7 +1,10 @@
 
-myApp.factory('UserService', function($http, $location){
+myApp.factory('UserService', function($http, $location, alertify){
 
   console.log('UserService Running...');
+
+  // setting screen notifiaction position
+  alertify.logPosition('bottom right');
 
   var userObject = {};
 
@@ -11,30 +14,32 @@ myApp.factory('UserService', function($http, $location){
     getuser : function(){
       console.log('UserService -- getuser');
       $http.get('/user').then(function(response) {
-          if(response.data.username) {
-            console.log('searching DB for userName: ', response.data.username);
-              // user info that has a current session on the server
-              userObject.userName = response.data.username;
-              userObject.user_id = response.data.user_id;
-              userObject.companies_id = response.data.companies_id;
-              console.log('SUCCESSFULL LOGIN, found username: ', userObject.userName);
-          } else {
-              console.log('getuser -- failure');
-              // user has no session, bouncing them back to the login page
-              $location.path("/login");
-          }
+        if(response.data.username) {
+          console.log('searching DB for userName: ', response.data.username);
+            // user info that has a current session on the server
+            userObject.userName = response.data.username;
+            userObject.user_id = response.data.user_id;
+            userObject.companies_id = response.data.companies_id;
+            alertify.success("Welcome " + userObject.userName);
+            console.log('SUCCESSFULL LOGIN, found username: ', userObject.userName);
+        } else {
+            console.log('getuser -- failure');
+            $location.path("/login");
+        }
       },function(response){
+        alertify.error("Wrong Login Credentials");
         console.log('UserService -- getuser -- failure: ', response);
         $location.path("/login");
-      }); //end response
-    }, //end getuser
+      });
+    },
 
     logout : function() {
       console.log('UserService -- logout');
       $http.get('/user/logout').then(function(response) {
         console.log('UserService -- logout -- logged out');
         $location.path("/login");
-      }); //end response
-    } //end logout
-  }; //end return object
+      });
+    }
+  }; // end return
+
 }); //end myApp
