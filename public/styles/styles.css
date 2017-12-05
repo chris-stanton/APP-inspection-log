@@ -178,10 +178,10 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  /*background-image: url('../assets/images/background-user.png');*/
-  /*background-position: center;*/
-  /*background-repeat: no-repeat;*/
-  /*background-size: cover;*/
+  background-image: url('../assets/images/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .flex-addUser-container h2 {
