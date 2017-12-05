@@ -13,7 +13,7 @@ if (process.env.DATABASE_URL) {
   // Heroku gives a url, not a connection object
   var params = url.parse(process.env.DATABASE_URL);
   var auth = params.auth.split(':');
-  // for uses with *heroku 
+  // for uses with *heroku deploy
   config = {
     user: auth[0],
     password: auth[1],
@@ -39,21 +39,3 @@ if (process.env.DATABASE_URL) {
 }
 
 module.exports = new pg.Pool(config);
-
-
-
-
-/////////////////////////////////
-// basic way for DB connection //
-/////////////////////////////////
-
-// var pg = require('pg');
-// var config = {
-//   database: 'inspection-log',
-//   host: 'localhost',
-//   port: 5432,
-//   max: 10,
-//   idleTimeoutMillis: 30000
-// };//end of config
-//
-// module.exports = new pg.Pool(config);
