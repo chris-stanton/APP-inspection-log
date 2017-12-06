@@ -1,20 +1,19 @@
 
 // Dependancies
-var express = require('express');
-var app = express();
-var path = require('path');
-var bodyParser = require('body-parser');
-var passport = require('./server/strategies/user_sql.js');
-var session = require('express-session');
-var path = require('path');
+const express = require('express');
+const app = express();
+const path = require('path');
+const bodyParser = require('body-parser');
+const passport = require('./server/strategies/user_sql.js');
+const session = require('express-session');
 
 // Defining route variables
-var login = require('./server/routes/login.js');
-var init = require('./server/routes/init.js');
-var inspection = require('./server/routes/inspection.js');
-var userRouter = require('./server/routes/user.js');
-var registerRouter = require('./server/routes/register.js');
-var indexRouter = require('./server/routes/index_route.js');
+const login = require('./server/routes/login.js');
+const init = require('./server/routes/init.js');
+const inspection = require('./server/routes/inspection.js');
+const userRouter = require('./server/routes/user.js');
+const registerRouter = require('./server/routes/register.js');
+const indexRouter = require('./server/routes/index_route.js');
 
 //Serve back static middleware files
 app.use(bodyParser.json());
