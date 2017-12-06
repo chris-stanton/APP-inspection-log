@@ -3,14 +3,14 @@
 // Passport file //
 ///////////////////
 
-var passport = require('passport');
-var localStrategy = require('passport-local').Strategy;
-var encryptLib = require('../modules/encryption');
-var connection = require('../modules/database-config.js');
-var pg = require('pg');
+const passport = require('passport');
+const localStrategy = require('passport-local').Strategy;
+const encryptLib = require('../modules/encryption');
+const connection = require('../modules/database-config.js');
+const pg = require('pg');
 
 // connection to DB
-var config = {
+const config = {
   user: 'chrisstanton', //env var: PGUSER
   database: 'inspection-log', //env var: PGDATABASE
   password: 'null', //env var: PGPASSWORD

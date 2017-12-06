@@ -4,9 +4,9 @@
 // Note: SETUP FOR DEPLOY WITH HEROKU //
 ////////////////////////////////////////
 
-var pg = require('pg');
-var url = require('url');
-var config = {};
+const pg = require('pg');
+const url = require('url');
+let config = {};
 
 if (process.env.DATABASE_URL) {
 
@@ -28,9 +28,9 @@ if (process.env.DATABASE_URL) {
 } else {
   // for use locally
   config = {
-    user: process.env.PG_USER || 'chrisstanton', //env var: PGUSER
-    password: process.env.DATABASE_SECRET || null, //env var: PGPASSWORD
-    host: process.env.DATABASE_SERVER || 'localhost', // Server hosting the postgres database
+    user: process.env.PG_USER || 'chrisstanton', //env PGUSER
+    password: process.env.DATABASE_SECRET || null, //env PGPASSWORD
+    host: process.env.DATABASE_SERVER || 'localhost', // server hosting the postgres database
     port: process.env.DATABASE_PORT || 5432, //env var: PGPORT
     database: process.env.DATABASE_NAME || 'inspection-log', //env var: PGDATABASE
     max: 10, // max number of clients in the pool
