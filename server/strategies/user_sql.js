@@ -23,13 +23,13 @@ const config = {
 var pool = new pg.Pool(config);
 
 var acquireCount = 0
-pool.on('acquire', function (client) {
+pool.on('acquire', function(client) {
   acquireCount++;
   console.log('client acquired: ', acquireCount);
 });
 
 var connectCount = 0
-pool.on('connect', function () {
+pool.on('connect', function() {
   connectCount++;
   console.log('client connected: ', connectCount);
 });
