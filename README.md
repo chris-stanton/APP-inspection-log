@@ -72,8 +72,8 @@
 
 #### Back-End:
   - PostgresSQL
-  - Node.js
-  - Passport JS
+  - Node.JS
+  - PassportJS
   - Passport-local
   - ExpressJS
   - Express-Sessions
