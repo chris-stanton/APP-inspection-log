@@ -60,8 +60,8 @@
 
 ## Technologies Used:
 #### Front-End:
-  - HTML
-  - CSS
+  - HTML5
+  - CSS3
   - Flex Box
   - AngularJS
   - Angular-Route
@@ -72,7 +72,7 @@
 
 #### Back-End:
   - PostgresSQL
-  - Node.JS
+  - NodeJS
   - PassportJS
   - Passport-local
   - ExpressJS
