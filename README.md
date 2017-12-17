@@ -67,7 +67,7 @@
   - Angular-Route
   - Nodemailer
   - SweatAlerts 2
-  - Alertify
+  - ng-Alertify
   - ChartJS
 
 #### Back-End:
